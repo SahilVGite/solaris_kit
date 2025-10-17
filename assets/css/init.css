@@ -48,6 +48,20 @@
   --fs-sh: 18px;
   --fs-body: 16px;
   --fs-caption: 14px;
+
+
+  /* =====================
+     Font Weight
+  ===================== */
+  --fw-light:300;
+   --fw-regular:400;
+   --fw-medium:500;
+   --fw-semi-bold:600;
+   --fw-bold:700;
+   --fw-extra-bold:800;
+   --fw-black:900;
+
+   --secGap: 80px;
 }
 
 *{-webkit-tap-highlight-color:transparent;}
@@ -153,3 +167,6 @@ body.menu-open{overflow:hidden;}
  *::-webkit-scrollbar{width:10px;}
 *::-webkit-scrollbar-track{background:#ffffff;}
 *::-webkit-scrollbar-thumb{background-color:var(--primary-950);border-radius:10px;border:3px solid #ffffff;}
+
+.comBtn{width: max-content; padding: 12px 16px; font-size: var(--fs-body); font-weight: var(--fw-semi-bold); letter-spacing: 0.005em; border-radius: 8px; color: var(--Black); background: var(--primary-400); float: left; font-family: var(--primary-font);}
+.comBtnHollow{width: max-content; padding: 12px 16px; font-size: var(--fs-body); font-weight: var(--fw-semi-bold); letter-spacing: 0.005em; border-radius: 8px; color: var(--primary-950); border: 1px solid var(--gray-700) !important; float: left; font-family: var(--primary-font);}

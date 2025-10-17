@@ -1,0 +1,94 @@
+/* Header */
+.header{padding: 2.5em 0;}
+.headerSec{display: flex; justify-content: space-between; align-items: center;}
+.siteLogo{max-width: 204px;}
+.headMenu > nav > ul{display: flex; gap: 33px;}
+.headMenu > nav > ul > li a{color: var(--primary-950);}
+.headRgt{display: flex; align-items: center; gap: 24px;}
+
+
+/* ==== page common banner */
+.psComPageHead{background-image: url('../images/productheadbann.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 7.93em 0 6.687em;}
+.psComPageInfo{max-width: 569px; width: 100%;}
+.psComPageInfo h1{font-size: var(--fs-h1); color: var(--white); margin-bottom: 0.333em;}
+.psComPageInfo p{color: var(--white); line-height: 1.3; letter-spacing: 0.005em;}
+
+
+/* ==== footer ==== */
+.psFooter{padding-top: 5.8em;}
+.psFooterInfo{display: flex; justify-content: space-between;}
+.psFootBox{max-width: calc(20% - 1em); width: 100%;}
+.psFooteBox5{padding-left: 6.4em;}
+.psFootBox > h3{font-size: var(--fs-sh); color: var(--gray-900); font-weight: var(--fw-medium); margin-bottom: 2em;}
+.psFootBox > ul > li:not(:last-child) {margin-bottom: 1em;}
+.psFootBox > ul > li > a{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-800);}
+.psFooteBox3 .psCompanyLinks > li > .psfoottEmail{text-decoration: underline;}
+.psFootNewLetter > input{padding: 0.59em  0.5em 0.5em 1em; border: none; border-bottom: 1px solid var(--gray-200); font-family: var(--primary-font);}
+.psFootNewLetter input::placeholder{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; font-family: var(--primary-font);}
+.psFootNewLetter > .psFootMailIcon{position: absolute; top: 0; right: 0.5em;}
+.psCertifiedLogo{max-width: 61px; margin-top: 2em;}
+.psBottomFooter{border-top: 1px solid var(--gray-200); padding: 1.8em 0 2.37em; margin-top: 2.75em;}
+.psBottomFooter > p{text-align: center; color: var(--gray-600);}
+
+
+
+/* ==== Contact Page ==== */
+.psContactSection {background-color: var(--primary-950);color: var(--gray-100);}
+.psContactContainer {display: flex;flex-wrap: wrap;justify-content: space-between;}
+.psContactInfo {flex: 1; max-width: calc(50% - 83px); width: 100%;}
+.psContactInfo h2 {color: var(--primary-50);font-size: var(--fs-h1);margin-bottom: 16px;}
+.psContactInfo p {color: var(--primary-100);font-size: var(--fs-body);line-height: 1.3; letter-spacing: 0.005em;}
+.psContactDetails{margin-top: 5em; display: flex; row-gap: 24px; flex-direction: column;}
+.psContactDetails .psDetailItem {display: flex;align-items: center;font-size: var(); gap: 21px;}
+.psDetailItem > span > a{color: var(--primary-50); font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em;}
+
+.psContactForm {flex: 1; max-width: calc(50% - 83px); width: 1005;}
+.psFormRow {display: flex;row-gap: 1.8em; flex-wrap: wrap; justify-content: space-between;}
+.psFormRow .psformBox{max-width: calc(50% - 1em); width: 100%;}
+.psFormRow.psFull {flex-direction: column;}
+.psFormRow input,.psFormRow select,.psFormRow textarea {flex: 1;background-color: var(--primary-900);border: none;color: var(--primary-100);padding: 0.59em 1em;border-radius: 4px;font-size: 16px; font-family: var(--primary-font); font-size: var(--fs-body); font-weight: var(--fw-regular); line-height: 1.3; letter-spacing: 0.005em;}
+.psformBox2 select{appearance: none; background-image: url(../images/selectdownarrow.svg);background-repeat: no-repeat;background-position: 30%;}
+.psFormRow input::placeholder, .psFormRow textarea::placeholder {color: var(--primary-100);}
+.contactNumPrefix{background-color: var(--primary-900); border-radius: 4px; display: flex;}
+.contactNumPrefix .psContactSelect{max-width: 85px; width: 100%;}
+.contactNumPrefix .psContactSelect::after{content: ""; width: 1px; height: 24px; background-color: var(--primary-100); position: absolute; top: 22%; right: 0;display: flex; align-items: center;}
+.contactNumPrefix .psContactSelect select{width: 100%; appearance: none;background-image: url(../images/selectdownarrow.svg);background-repeat: no-repeat;background-position: 78%;}
+textarea {resize: none;min-height: 120px;}
+.psButtonRow {display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap;}
+.psContactBtnGroup{display: flex; gap: 1em;}
+.psSendBtn {color: var(--black); border: none; padding: 14px 28px; border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.3s;}
+.psMeetingBtn {background-color: transparent; border: 1px solid var(--gray-700); color: var(--primary-50); padding: 14px 28px; border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.3s; text-decoration: underline;}
+
+
+.psFaqSection {background-color: var(--gray-50);}
+.psFaqContent{display: flex;}
+.psFaqHeading{max-width: 45%; width: 100%;}
+.psFaqHeading h2{font-size: var(--fs-h1); color: var(--gray-900); margin-bottom: 26px;}
+.psFaqHeading p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700);}
+.psFaqBox{max-width: 55%; width: 100%;}
+
+.psAccBox{border-bottom: 1px solid var(--gray-200);}
+.psAccHeading {color: var(--black); font-size: 20px; font-weight: var(--fw-medium); padding: 22px 0 19px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;}
+.psAccHeading.psAccActive{border: none;}
+.psAccArrow{width: 24px;}
+.psAccHeading:nth-last-child(2) {border-bottom: 0;}
+.psAccHeading:nth-last-child(2):hover {border-radius: 0 0 3px 3px;}
+.psAccActive.psAccHeading::before {transform: rotate(-180deg);}
+.not-active.psAccHeading::before {transform: rotate(0deg);}
+.psAccContents {display: none; background: #FFFAFA; padding-bottom: 25px; color: #7f8fa4; font-size: 13px; line-height: 1.5;}
+.psAccContents > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em;}
+.psAccRotate {display: inline-block; transition: transform 0.5s;}
+.psAccActive .psAccRotate {transform: rotate(180deg);}
+
+
+
+/* ==== Product page */
+.psProductBox{background-color: var(--gray-50);}
+.psProductContent{display: flex; row-gap: 60px; flex-direction: column;}
+.psProudctDetails {display: flex; justify-content: space-between;}
+.psProductImg{max-width: 500px; width: 100%; }
+.psProductInfo{max-width: 1140px; width: 100%; padding: 62px 80px; background-color: var(--white); display: flex; flex-direction: column; justify-content: center; border-radius: 16px;}
+.psProductInfo > h2{font-size: var(--fs-h1); color: var(--black); margin-bottom: 46px; letter-spacing: 0.005em;}
+.psProductInfo > h2 > sup{font-weight: var(--fw-regular);}
+.psProductInfo > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--black); margin-bottom: 40px;}
+.psProBtnBox {display: flex; gap: 8px;}

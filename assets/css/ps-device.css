@@ -1,0 +1,77 @@
+@media only screen and (max-width:1800px){}
+
+@media only screen and (max-width:1728px){
+    .main-wrapper{max-width: 1570px;}
+
+    .psformBox2 select{background-position: 40%;}
+
+    .psProductInfo{max-width: 1060px; padding: 62px 40px; }
+    .psProductContent{row-gap: 40px;}
+    .psFooteBox5 {padding-left: 2.4em;}
+    .psProductInfo{max-width: 1018px;}
+}
+
+@media only screen and (max-width:1600px){
+    .main-wrapper{max-width: 1400px;}
+
+    .psProductImg {max-width: 481px;width: 100%;}
+    .psProductInfo {max-width: 869px;}
+
+    .psformBox2 select{background-position: 40%;}
+    .contactNumPrefix{overflow: hidden;}
+    .contactNumPrefix .psContactSelect{width: 100%; flex: 1 1 80px;}
+    .contactNumPrefix .psContactSelect select{width: 80px;}
+}
+
+@media only screen and (max-width:1500px){}
+
+@media only screen and (max-width:1440px){
+    :root{
+        /* =====================
+        Typography
+        ===================== */
+        --fs-base: 16px; /* Base Value: 16 */
+
+        --fs-h1: 48px;
+        --fs-h2: 40px;
+        --fs-h3: 32px;
+        --fs-h4: 24px;
+        --fs-h5: 20px;
+        --fs-sh: 18px;
+        --fs-body: 16px;
+        --fs-caption: 14px;
+    }
+
+    .main-wrapper{max-width: 1280px;}
+
+
+    /* ==== footer ==== */
+    .psFooteBox1{max-width: 129px !important; width: 100%;}
+    .psFooteBox2{max-width: 175px !important; width: 100%;}
+    .psFooteBox1{max-width: 189px !important; width: 100%;}
+    .psFooteBox1{max-width: 284px !important; width: 100%;}
+    .psFooteBox1{max-width: 117px !important; width: 100%;}
+    .psFooteBox5 {padding-left: 2em;}
+
+
+    /* ==== Contact Page ==== */
+    .psContactInfo{max-width: 565px;}
+    .psContactForm{max-width: 632px;}
+    .psFormRow{gap: 16px;}
+    .psFormRow .psformBox{max-width: calc(50% - 16px);}
+
+    .psformBox2 select{background-position: 40%;}
+    .contactNumPrefix{overflow: hidden;}
+    .contactNumPrefix .psContactSelect{width: 100%; flex: 1 1 80px;}
+    .contactNumPrefix .psContactSelect select{width: 80px;}
+
+    .psFaqHeading{max-width: 582px;}
+    .psFaqHeading p{max-width: 404px;}
+    .psFaqBox{max-width: 640px;}
+
+
+    /* ==== Product page ==== */
+    .psProductContent{row-gap: 24px;}
+    .psProductImg{max-width: 518px;}
+    .psProductInfo {max-width: 737px; padding: 0px 40px;}
+}

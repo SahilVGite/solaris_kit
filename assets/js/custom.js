@@ -31,4 +31,28 @@ $(document).ready(function () {
     easing: 'ease-in-out',
   });
 
+
+
+  // Accordians
+  // Show the first accordion content by default
+  $(".psAccContents:first").css("display", "block");
+  $(".psAccHeading:first").addClass("psAccActive"); // optional: make first active
+
+  // Accordion click
+  $(".psAccHeading").click(function () {
+      var $content = $(this).next(".psAccContents");
+
+      // Toggle clicked content
+      $content.slideToggle(500);
+
+      // Close other contents
+      $(".psAccContents").not($content).slideUp(500);
+
+      // Toggle active class for clicked heading
+      $(this).toggleClass("psAccActive");
+
+      // Remove active from other headings
+      $(".psAccHeading").not(this).removeClass("psAccActive");
+  });
+
 });
