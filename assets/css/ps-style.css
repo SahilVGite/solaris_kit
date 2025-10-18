@@ -3,19 +3,19 @@
 .headerSec{display: flex; justify-content: space-between; align-items: center;}
 .siteLogo{max-width: 204px;}
 .headMenu > nav > ul{display: flex; gap: 33px;}
-.headMenu > nav > ul > li a{color: var(--primary-950);}
+.headMenu > nav > ul > li a{color: var(--primary-950); letter-spacing: 0.005em;}
 .headRgt{display: flex; align-items: center; gap: 24px;}
 
 
 /* ==== page common banner */
-.psComPageHead{background-image: url('../images/productheadbann.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 7.93em 0 6.687em;}
-.psComPageInfo{max-width: 569px; width: 100%;}
-.psComPageInfo h1{font-size: var(--fs-h1); color: var(--white); margin-bottom: 0.333em;}
+.psComPageHead{background-repeat: no-repeat; background-size: cover; background-position: center; padding: 7.93em 0 6.687em;}
+.psComPageInfo{max-width: 720px; width: 100%;}
+.psComPageInfo h1{font-size: var(--fs-h1); color: var(--white); margin-bottom: 0.333em; letter-spacing: 0.005em;}
 .psComPageInfo p{color: var(--white); line-height: 1.3; letter-spacing: 0.005em;}
 
 
 /* ==== footer ==== */
-.psFooter{padding-top: 5.8em;}
+.psFooter{padding-top: 5.8em;background-image: url(../images/footBg.png);background-repeat: no-repeat;background-position: left;background-size: 51%;}
 .psFooterInfo{display: flex; justify-content: space-between;}
 .psFootBox{max-width: calc(20% - 1em); width: 100%;}
 .psFooteBox5{padding-left: 6.4em;}
@@ -36,7 +36,7 @@
 .psContactSection {background-color: var(--primary-950);color: var(--gray-100);}
 .psContactContainer {display: flex;flex-wrap: wrap;justify-content: space-between;}
 .psContactInfo {flex: 1; max-width: calc(50% - 83px); width: 100%;}
-.psContactInfo h2 {color: var(--primary-50);font-size: var(--fs-h1);margin-bottom: 16px;}
+.psContactInfo h2 {color: var(--primary-50);font-size: var(--fs-h1);margin-bottom: 16px; letter-spacing: 0.005em;}
 .psContactInfo p {color: var(--primary-100);font-size: var(--fs-body);line-height: 1.3; letter-spacing: 0.005em;}
 .psContactDetails{margin-top: 5em; display: flex; row-gap: 24px; flex-direction: column;}
 .psContactDetails .psDetailItem {display: flex;align-items: center;font-size: var(); gap: 21px;}
@@ -63,7 +63,7 @@ textarea {resize: none;min-height: 120px;}
 .psFaqSection {background-color: var(--gray-50);}
 .psFaqContent{display: flex;}
 .psFaqHeading{max-width: 45%; width: 100%;}
-.psFaqHeading h2{font-size: var(--fs-h1); color: var(--gray-900); margin-bottom: 26px;}
+.psFaqHeading h2{font-size: var(--fs-h1); color: var(--gray-900); margin-bottom: 26px; letter-spacing: 0.005em;}
 .psFaqHeading p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700);}
 .psFaqBox{max-width: 55%; width: 100%;}
 
@@ -75,14 +75,15 @@ textarea {resize: none;min-height: 120px;}
 .psAccHeading:nth-last-child(2):hover {border-radius: 0 0 3px 3px;}
 .psAccActive.psAccHeading::before {transform: rotate(-180deg);}
 .not-active.psAccHeading::before {transform: rotate(0deg);}
-.psAccContents {display: none; background: #FFFAFA; padding-bottom: 25px; color: #7f8fa4; font-size: 13px; line-height: 1.5;}
+.psAccContents {display: none; padding-bottom: 25px; color: #7f8fa4; font-size: 13px; line-height: 1.5;}
 .psAccContents > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em;}
 .psAccRotate {display: inline-block; transition: transform 0.5s;}
 .psAccActive .psAccRotate {transform: rotate(180deg);}
 
 
 
-/* ==== Product page */
+/* ==== Product page ==== */
+.psProPageHead{background-image: url('../images/productheadbann.png');}
 .psProductBox{background-color: var(--gray-50);}
 .psProductContent{display: flex; row-gap: 60px; flex-direction: column;}
 .psProudctDetails {display: flex; justify-content: space-between;}
@@ -92,3 +93,30 @@ textarea {resize: none;min-height: 120px;}
 .psProductInfo > h2 > sup{font-weight: var(--fw-regular);}
 .psProductInfo > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--black); margin-bottom: 40px;}
 .psProBtnBox {display: flex; gap: 8px;}
+
+
+
+/* ==== Knowledge page ==== */
+.psKnowPageHead{background-image: url('../images/knowheadbann.png');}
+.psAboutKnowledge{background-color: var(--gray-50); display: flex;}
+.psAboutKnowImage{max-width: 698px; width: 100%;}
+.psAboutKnowTextBox{display: flex; flex-direction: column; justify-content: center;}
+.psAboutKnowText{max-width: 765px; margin-left: 67px;}
+.psAboutKnowText > h2{font-size: var(--fs-h1); margin-bottom: 0.958em;}
+.psAboutKnowText > p {color: var(--black); line-height: 1.3; letter-spacing: 0.005em;}
+
+.psKnowSecHeading{max-width: 720px; width: 100%; margin-bottom: 2.8em;}
+.psKnowSecHeading > h2{font-size: var(--fs-h1); letter-spacing: 0.005em; color: var(--black); margin-bottom: 0.8333em;}
+.psArticleSlideWrapper{max-width: 1818px; margin-left: auto;}
+.psArticleSlider > .slick-list.draggable .slick-track{padding-left: 258px;}
+.psArticleSlider > .slick-list.draggable .slick-track .slick-slide{margin: 0 14px;}
+.psArticleSlider > .slick-slider button{top: -10%;}
+
+.psArticleText {max-width: 460px; width: 100%; background: rgba(0, 0, 0, 0.6); border-radius: 13.9062px; margin: auto; position: absolute; left: 0; right: 0; bottom: 14px; padding: 14px;}
+.psArticleText > h3{font-size: var(--fs-sh); font-weight: var(--fw-semi-bold); color: var(--white); margin-bottom: 0.777em;}
+.psArticleText > p{font-size: var(--fs-body); color: var(--white); line-height: 1.1313; letter-spacing: 0.005em;}
+
+.psArticleSlider > li:hover .psArticleText
+
+
+

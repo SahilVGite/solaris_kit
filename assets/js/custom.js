@@ -32,7 +32,6 @@ $(document).ready(function () {
   });
 
 
-
   // Accordians
   // Show the first accordion content by default
   $(".psAccContents:first").css("display", "block");
@@ -53,6 +52,17 @@ $(document).ready(function () {
 
       // Remove active from other headings
       $(".psAccHeading").not(this).removeClass("psAccActive");
+  });
+
+
+
+  // Latest article slider knowledge
+  $('.psArticleSlider').slick({
+    slidesToShow: 3.5,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 80000,
   });
 
 });
