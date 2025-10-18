@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Knowledge hub</title>
 
-    <linkrel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png"/>
-    <linkrel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png"/>
     <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest" />
 
@@ -55,7 +55,7 @@
         </div>
     </header>
 
-    <main class="col-100 floatLft relative clr">
+    <main class="mainBody col-100 floatLft relative clr">
         <section class="psComPageHead psKnowPageHead col-100 floatLft relative clr">
             <div class="main-wrapper">
                 <div class="psComPageInfo col-100 floatLft relative clr">
@@ -90,7 +90,7 @@
 
             <div class="psArticleSlideWrapper">
                 <ul class="psArticleSlider col-100 floatLft relative clr">
-                    <li class="relative">
+                    <li class="psArtSlideInfo relative">
                         <a href="javascript:;" class="col-100 relative">
                             <img src="./assets/images/artslide1.png" alt="" loading="lazy">
                             <div class="psArticleText col-100 floatLft clr">
@@ -99,7 +99,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="relative">
+                    <li class="psArtSlideInfo relative">
                         <a href="javascript:;" class="col-100 relative">
                             <img src="./assets/images/artslide2.png" alt="" loading="lazy">
                             <div class="psArticleText col-100 floatLft clr">
@@ -108,7 +108,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="relative">
+                    <li class="psArtSlideInfo relative">
                         <a href="javascript:;" class="col-100 relative">
                             <img src="./assets/images/artslide3.png" alt="" loading="lazy">
                             <div class="psArticleText col-100 floatLft clr">
@@ -117,7 +117,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="relative">
+                    <li class="psArtSlideInfo relative">
                         <a href="javascript:;" class="col-100 relative">
                             <img src="./assets/images/artslide4.png" alt="" loading="lazy">
                             <div class="psArticleText col-100 floatLft clr">
@@ -126,7 +126,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="relative">
+                    <li class="psArtSlideInfo relative">
                         <a href="javascript:;" class="col-100 relative">
                             <img src="./assets/images/artslide3.png" alt="" loading="lazy">
                             <div class="psArticleText col-100 floatLft clr">
@@ -135,9 +135,101 @@
                             </div>
                         </a>
                     </li>
-                    
-                    
                 </ul>
+            </div>
+        </section>
+
+
+        <section class="psAllArtBox col-100 floatLft sv-secGap relative clr">
+            <div class="main-wrapper">
+                <div class="psKnowSecHeading col-100 floatLft relative clr">
+                    <h2>All articles</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Massa sit tempus sapien duis tincidunt id. Ut bibendum dui sit non magna quis vitae varius sed. Nulla egestas augue vulputate vitae amet vel in.</p>
+
+                    <div class="psAllArtSearch col-100 floatLft relative clr">
+                        <span class="psArtSearchIcon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.5308 20.4693L16.8368 15.7762C18.1973 14.1428 18.8757 12.0478 18.7309 9.92691C18.5861 7.80604 17.6293 5.82265 16.0593 4.38932C14.4894 2.95599 12.4274 2.18308 10.3021 2.23138C8.17687 2.27968 6.15205 3.14547 4.64888 4.64864C3.14571 6.15181 2.27993 8.17663 2.23163 10.3019C2.18333 12.4271 2.95623 14.4892 4.38956 16.0591C5.82289 17.629 7.80629 18.5859 9.92715 18.7307C12.048 18.8755 14.1431 18.1971 15.7765 16.8365L20.4696 21.5306C20.5393 21.6003 20.622 21.6556 20.713 21.6933C20.8041 21.731 20.9017 21.7504 21.0002 21.7504C21.0988 21.7504 21.1963 21.731 21.2874 21.6933C21.3784 21.6556 21.4612 21.6003 21.5308 21.5306C21.6005 21.4609 21.6558 21.3782 21.6935 21.2871C21.7312 21.1961 21.7506 21.0985 21.7506 21C21.7506 20.9014 21.7312 20.8038 21.6935 20.7128C21.6558 20.6218 21.6005 20.539 21.5308 20.4693ZM3.75021 10.5C3.75021 9.16495 4.14609 7.8599 4.88779 6.74987C5.62949 5.63984 6.6837 4.77467 7.9171 4.26378C9.1505 3.75289 10.5077 3.61922 11.8171 3.87967C13.1264 4.14012 14.3292 4.78299 15.2732 5.727C16.2172 6.671 16.8601 7.87374 17.1205 9.18311C17.381 10.4925 17.2473 11.8497 16.7364 13.0831C16.2255 14.3165 15.3603 15.3707 14.2503 16.1124C13.1403 16.8541 11.8352 17.25 10.5002 17.25C8.71061 17.248 6.99488 16.5362 5.72944 15.2708C4.464 14.0053 3.7522 12.2896 3.75021 10.5Z" fill="#5D5D5D"/>
+                            </svg>
+
+                        </span>
+
+                        <div class="psAllArtSearchInput col-100">
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="psAllArtGallery col-100 floatLft relative clr">
+                    <ul class="psAllArtBox col-100 floatLft relative clr">
+                        <li class="psAllArtBoxInfo relative">
+                            <a href="javascript:;" class="col-100 relative">
+                                <img src="./assets/images/allart1.png" alt="" loading="lazy">
+                                <div class="psAllArtText col-100 floatLft clr">
+                                    <h3>Solar training centre in Kenya</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Massa sit tempus sapien duis tincidunt id. Ut bibendum dui sit non magna quis vitae varius sed. Nulla egestas augue vulputate vitae amet vel in. </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="psAllArtBoxInfo relative">
+                            <a href="javascript:;" class="col-100 relative">
+                                <img src="./assets/images/allart2.png" alt="" loading="lazy">
+                                <div class="psAllArtText col-100 floatLft clr">
+                                    <h3>Solar training centre in Kenya</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Massa sit tempus sapien duis tincidunt id. Ut bibendum dui sit non magna quis vitae varius sed. Nulla egestas augue vulputate vitae amet vel in. </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="psAllArtBoxInfo relative">
+                            <a href="javascript:;" class="col-100 relative">
+                                <img src="./assets/images/allart3.png" alt="" loading="lazy">
+                                <div class="psAllArtText col-100 floatLft clr">
+                                    <h3>Solar training centre in Kenya</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Massa sit tempus sapien duis tincidunt id. Ut bibendum dui sit non magna quis vitae varius sed. Nulla egestas augue vulputate vitae amet vel in. </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="psAllArtBoxInfo relative">
+                            <a href="javascript:;" class="col-100 relative">
+                                <img src="./assets/images/allart4.png" alt="" loading="lazy">
+                                <div class="psAllArtText col-100 floatLft clr">
+                                    <h3>Solar training centre in Kenya</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Massa sit tempus sapien duis tincidunt id. Ut bibendum dui sit non magna quis vitae varius sed. Nulla egestas augue vulputate vitae amet vel in. </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="psAllArtBoxInfo relative">
+                            <a href="javascript:;" class="col-100 relative">
+                                <img src="./assets/images/allart5.png" alt="" loading="lazy">
+                                <div class="psAllArtText col-100 floatLft clr">
+                                    <h3>Solar training centre in Kenya</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Massa sit tempus sapien duis tincidunt id. Ut bibendum dui sit non magna quis vitae varius sed. Nulla egestas augue vulputate vitae amet vel in. </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="psAllArtBoxInfo relative">
+                            <a href="javascript:;" class="col-100 relative">
+                                <img src="./assets/images/allart6.png" alt="" loading="lazy">
+                                <div class="psAllArtText col-100 floatLft clr">
+                                    <h3>Solar training centre in Kenya</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Massa sit tempus sapien duis tincidunt id. Ut bibendum dui sit non magna quis vitae varius sed. Nulla egestas augue vulputate vitae amet vel in. </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="psSolution col-100 floatLft relative clr">
+            <div class="psSolutionText col-100 floatLft relative clr">
+                <h2>Solutions</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Massa sit tempus sapien duis tincidunt id. Ut bibendum dui sit non magna quis vitae varius sed. Nulla egestas augue vulputate vitae amet vel in. </p>
+                <p>Lorem ipsum dolor sit amet consectetur. Massa sit tempus sapien duis tincidunt id. Ut bibendum dui sit non magna quis vitae varius sed. Nulla egestas augue vulputate vitae amet vel in. </p>
+                <p>Lorem ipsum dolor sit amet consectetur. Massa sit tempus sapien duis tincidunt id. Ut bibendum dui sit non magna quis vitae varius sed. Nulla egestas augue vulputate vitae amet vel in. </p>
+                <p>Lorem ipsum dolor sit amet consectetur. Massa sit tempus sapien duis tincidunt id. Ut bibendum dui sit non magna quis vitae varius sed. Nulla egestas augue vulputate vitae amet vel in. </p>
             </div>
         </section>
 

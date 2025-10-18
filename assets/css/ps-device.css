@@ -1,3 +1,9 @@
+@media only screen and (max-width:1880px){
+
+    /* ==== knowledge page ==== */
+    .psArticleSlideWrapper {max-width: 1797px; margin-left: auto;}
+}
+
 @media only screen and (max-width:1800px){}
 
 @media only screen and (max-width:1728px){
@@ -13,6 +19,11 @@
     .psProductInfo{max-width: 1060px; padding: 62px 40px; }
     .psProductContent{row-gap: 40px;}
     .psProductInfo{max-width: 1018px;}
+
+
+    /* ==== knowledge page ==== */
+    .psArticleSlideWrapper {max-width: 1672px; margin-left: auto;}
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 247px;}
 }
 
 @media only screen and (max-width:1600px){
@@ -27,6 +38,10 @@
     /* ==== Product ==== */
     .psProductImg {max-width: 481px;width: 100%;}
     .psProductInfo {max-width: 869px;}
+
+    /* ==== knowledge page ==== */
+    .psArticleSlideWrapper{max-width: 1500px;}
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 200px;}
 }
 
 @media only screen and (max-width:1500px){}
@@ -82,6 +97,16 @@
     .psProductContent{row-gap: 24px;}
     .psProductImg{max-width: 518px;}
     .psProductInfo {max-width: 737px; padding: 0px 40px;}
+
+
+    /* ==== Knowledge page ==== */
+    
+    .psAboutKnowImage {max-width: 598px;width: 100%;}
+    .psAboutKnowText {max-width: 565px;}
+    .psArticleSlideWrapper{max-width: 95.5%;}
+    .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 176px;}
+    .psArticleText{max-width:309px;}
+    .psSolutionText{max-width: 817px;}
 }
 
 @media (max-width:1400px){}

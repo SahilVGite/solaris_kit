@@ -1,12 +1,14 @@
 /* Header */
-.header{padding: 2.5em 0;}
+.header{padding: 2.5em 0; position: fixed; top: 0; z-index: 1000;}
 .headerSec{display: flex; justify-content: space-between; align-items: center;}
 .siteLogo{max-width: 204px;}
 .headMenu > nav > ul{display: flex; gap: 33px;}
 .headMenu > nav > ul > li a{color: var(--primary-950); letter-spacing: 0.005em;}
 .headRgt{display: flex; align-items: center; gap: 24px;}
+.header.stickyHead {width: 100%; background: var(--white); box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+.mainBody{padding-top:128px;}
 
-
+ 
 /* ==== page common banner */
 .psComPageHead{background-repeat: no-repeat; background-size: cover; background-position: center; padding: 7.93em 0 6.687em;}
 .psComPageInfo{max-width: 720px; width: 100%;}
@@ -109,14 +111,29 @@ textarea {resize: none;min-height: 120px;}
 .psKnowSecHeading > h2{font-size: var(--fs-h1); letter-spacing: 0.005em; color: var(--black); margin-bottom: 0.8333em;}
 .psArticleSlideWrapper{max-width: 1818px; margin-left: auto;}
 .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 258px;}
-.psArticleSlider > .slick-list.draggable .slick-track .slick-slide{margin: 0 14px;}
+.psArticleSlider > .slick-list.draggable .slick-track .slick-slide{margin: 0 14px; border-radius: 14px;}
 .psArticleSlider > .slick-slider button{top: -10%;}
-
-.psArticleText {max-width: 460px; width: 100%; background: rgba(0, 0, 0, 0.6); border-radius: 13.9062px; margin: auto; position: absolute; left: 0; right: 0; bottom: 14px; padding: 14px;}
+.psArticleText {max-width: 460px; width: 100%; background: rgba(0, 0, 0, 0.6); border-radius: 13.9062px; margin: auto; position: absolute; left: 0; right: 0; bottom: -50px; opacity: 0; padding: 14px; transition: all 0.5s ease;}
 .psArticleText > h3{font-size: var(--fs-sh); font-weight: var(--fw-semi-bold); color: var(--white); margin-bottom: 0.777em;}
 .psArticleText > p{font-size: var(--fs-body); color: var(--white); line-height: 1.1313; letter-spacing: 0.005em;}
+.psArtSlideInfo:hover .psArticleText{bottom: 14px; opacity: 1;}
 
-.psArticleSlider > li:hover .psArticleText
+.psAllArtBox{background-color: var(--gray-50);}
+.psAllArtSearch{max-width: 511px; width: 100%; border-radius: 8px; background-color: var(--white); display: flex; padding: 0.75em 0.5em; gap: 1em; margin-top: 3.5em;}
+.psAllArtSearchInput input{width: 100%; border: none;}
+.psAllArtSearchInput input::placeholder{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; font-family: var(--primary-font);}
+.psAllArtBox{display: flex; flex-wrap: wrap; gap: 14px;}
+.psAllArtBoxInfo{max-width: calc(33.33% - 14px); overflow: hidden; border-radius: 14px;}
+.psAllArtText {max-width: 525px; width: 100%; background: rgba(0, 0, 0, 0.6); border-radius: 13.9062px; margin: auto; position: absolute; left: 0; right: 0; bottom: -50px; opacity: 0; padding: 14px; transition: all 0.5s ease;}
+.psAllArtText > h3{font-size: var(--fs-sh); font-weight: var(--fw-semi-bold); color: var(--white); margin-bottom: 0.777em;}
+.psAllArtText > p{font-size: var(--fs-body); color: var(--white); line-height: 1.1313; letter-spacing: 0.005em;}
+.psAllArtBoxInfo:hover .psAllArtText{bottom: 14px; opacity: 1;}
+
+.psSolution{background-image: url('../images/solution-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;}
+.psSolutionText{max-width: 1030px; width: 100%; height: 100%; background: rgba(0, 0, 0, 60%); padding: 40px 40px 357px 80px; backdrop-filter:blur(10px);}
+.psSolutionText > h2{font-size: var(--fs-h1); color: var(--white); margin-bottom: 0.4em;}
+.psSolutionText p{font-size: var(--fs-body); color: var(--white); line-height: 1.3; letter-spacing: 0.005em;}
+.psSolutionText p:not(:last-child) {margin-bottom: 0.66em;}
 
 
 
