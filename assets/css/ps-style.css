@@ -137,3 +137,41 @@ textarea {resize: none;min-height: 120px;}
 
 
 
+/* ==== Solution page ==== */
+.psSolutionPageHead{background-image: url('../images/solutionheadbg.png'); padding: 10.06em 0 18.06em;}
+.psSolutionPageHead > div > .psComPageInfo{padding: 40px; background-color: rgba(0, 0, 0, 0.6);
+backdrop-filter: blur(20px); border-radius: 16px;}
+
+.psEnergySave{padding: 80px 0; background-color: var(--gray-50);}
+.psEnergySaveHeading{max-width: 979px; margin-bottom: 2.5em;}
+.psEnergySaveHeading > h2{margin-bottom: 16px;}
+
+.psNavTabs{max-width: 646px; width: 100%; display: flex; gap: 2.437em; border-bottom: 1px solid var(--gray-200); margin-bottom: 1.5em;}
+.psNavTabs > li{padding: 10px;}
+.psNavTabs > li > a{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--black);}
+.psNavTabs > li.psActive{border-bottom: 2px solid var(--black);}
+.psTabPane {display: none;}
+.psTabPane.psActive {display: block;}
+.psTabInfoBox{display: flex; align-items: center; border-radius: 1em; overflow: hidden; background-color: var(--primary-400);}
+.psTabImg{max-width: 516px; width: 100%;}
+.psTabInfo{max-width: 860px; padding-left:3.5em; }
+.psTabInfo > h2{font-size: var(--fs-h3); margin-bottom: 0.75em;}
+.psTabInfo > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--black);}
+
+.psHotWaterContent{display: flex; justify-content: space-between; align-items: center;}
+.psHotWaterInfo{max-width: 600px; width: 100%;}
+.psHotWaterImg{max-width: 700px; width: 100%;}
+.psHotWaterSec{padding: 2.62em 0;}
+.psHotWaterHeading{margin-bottom: 2.5em;}
+.psHotWaterHeading > h2{margin-bottom: 16px; font-family: var(--fs-h1); letter-spacing: 0.005em; color: var(--gray-900);}
+.psHotWaterHeading > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700);}
+.psEnergyCapSec ul li:not(:last-child) {margin-bottom: 1.5em;}
+.psEnergyCapHead{display: flex; align-items: center; gap: 1em; margin-bottom: 1.5em;}
+.psEnergyCapHead > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700);}
+
+
+.psCustomSol{background-color: var(--gray-50); padding: 10.68em 0;}
+.psCustomSolInfo{display: flex; align-items: center;}
+.psCustomSolHead{max-width: 50%; width: 100%; padding-right: 4.375em;}
+.psCostumSolText{max-width: 50%; width: 100%; padding-left: 4.375em;}
+

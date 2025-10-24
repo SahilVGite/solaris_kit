@@ -55,14 +55,29 @@ $(document).ready(function () {
   });
 
 
-
   // Latest article slider knowledge
   $('.psArticleSlider').slick({
     slidesToShow: 3.5,
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
-    autoplaySpeed: 200000,
+    autoplaySpeed: 2000,
+  });
+
+
+
+  // solution tabing
+  $('.psNavTabs li a').click(function(e) {
+    e.preventDefault();
+
+    // Update tab active class
+    $('.psNavTabs li').removeClass('psActive');
+    $(this).parent().addClass('psActive');
+
+    // Show the selected tab content
+    $('.psTabPane').removeClass('psActive');
+    var target = $(this).attr('href');
+    $(target).addClass('psActive');
   });
 
 });

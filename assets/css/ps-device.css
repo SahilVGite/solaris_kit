@@ -107,6 +107,10 @@
     .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 176px;}
     .psArticleText{max-width:309px;}
     .psSolutionText{max-width: 817px;}
+
+
+    /* ==== Solution page ==== */
+    .psEnergySave{padding: 58px 0;}
 }
 
 @media (max-width:1400px){}
