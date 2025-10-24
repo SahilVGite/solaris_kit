@@ -6,8 +6,8 @@ $(document).ready(function () {
   });
 
   // Hamburger menu toggle
-  $('.hambergerMenu').on('click', function () {
-    $('.headNav > nav').toggleClass('active');
+  $('.menuIcon').on('click', function () {
+    $('.menuCont').toggleClass('active');
     $('body').toggleClass('menu-open');
 
     if (!$('.menu-overlay').length) {
@@ -16,8 +16,8 @@ $(document).ready(function () {
   });
 
   // Close menu
-  $(document).on('click', '.HamClose, .menu-overlay', function () {
-    $('.headNav > nav').removeClass('active');
+  $(document).on('click', '.menuClose, .menu-overlay', function () {
+    $('.menuCont').removeClass('active');
     $('body').removeClass('menu-open');
     $('.menu-overlay').remove();
   });
