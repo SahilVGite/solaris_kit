@@ -17,7 +17,7 @@
 
 
 /* ==== footer ==== */
-.psFooter{padding-top: 5.8em;background-image: url(../images/footBg.png);background-repeat: no-repeat;background-position: left;background-size: 51%; display: none;}
+.psFooter{padding-top: 5.8em;background-image: url(../images/footBg.png);background-repeat: no-repeat;background-position: left;background-size: 51%;}
 .psFooterInfo{display: flex; justify-content: space-between;}
 .psFootBox{max-width: calc(20% - 1em); width: 100%;}
 .psFooteBox5{padding-left: 6.4em;}
