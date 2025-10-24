@@ -17,7 +17,7 @@
 
 
 /* ==== footer ==== */
-.psFooter{padding-top: 5.8em;background-image: url(../images/footBg.png);background-repeat: no-repeat;background-position: left;background-size: 51%;}
+.psFooter{padding-top: 5.8em;background-image: url(../images/footBg.png);background-repeat: no-repeat;background-position: left;background-size: 51%; display: none;}
 .psFooterInfo{display: flex; justify-content: space-between;}
 .psFootBox{max-width: calc(20% - 1em); width: 100%;}
 .psFooteBox5{padding-left: 6.4em;}
@@ -44,7 +44,7 @@
 .psContactDetails .psDetailItem {display: flex;align-items: center;font-size: var(); gap: 21px;}
 .psDetailItem > span > a{color: var(--primary-50); font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em;}
 
-.psContactForm {flex: 1; max-width: calc(50% - 83px); width: 1005;}
+.psContactForm {flex: 1; max-width: calc(50% - 83px); width: 100%;}
 .psFormRow {display: flex;row-gap: 1.8em; flex-wrap: wrap; justify-content: space-between;}
 .psFormRow .psformBox{max-width: calc(50% - 1em); width: 100%;}
 .psFormRow.psFull {flex-direction: column;}
@@ -70,7 +70,8 @@ textarea {resize: none;min-height: 120px;}
 .psFaqBox{max-width: 55%; width: 100%;}
 
 .psAccBox{border-bottom: 1px solid var(--gray-200);}
-.psAccHeading {color: var(--black); font-size: 20px; font-weight: var(--fw-medium); padding: 22px 0 19px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;}
+.psAccHeading {color: var(--black); font-weight: var(--fw-medium); padding: 22px 0 19px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;}
+.psAccHeading > h3{font-size: var(--fs-h5);}
 .psAccHeading.psAccActive{border: none;}
 .psAccArrow{width: 24px;}
 .psAccHeading:nth-last-child(2) {border-bottom: 0;}
@@ -140,7 +141,7 @@ textarea {resize: none;min-height: 120px;}
 /* ==== Solution page ==== */
 .psSolutionPageHead{background-image: url('../images/solutionheadbg.png'); padding: 10.06em 0 18.06em;}
 .psSolutionPageHead > div > .psComPageInfo{padding: 40px; background-color: rgba(0, 0, 0, 0.6);
-backdrop-filter: blur(20px); border-radius: 16px;}
+backdrop-filter: blur(5px); border-radius: 16px;}
 
 .psEnergySave{padding: 80px 0; background-color: var(--gray-50);}
 .psEnergySaveHeading{max-width: 979px; margin-bottom: 2.5em;}
@@ -172,6 +173,30 @@ backdrop-filter: blur(20px); border-radius: 16px;}
 
 .psCustomSol{background-color: var(--gray-50); padding: 10.68em 0;}
 .psCustomSolInfo{display: flex; align-items: center;}
-.psCustomSolHead{max-width: 50%; width: 100%; padding-right: 4.375em;}
-.psCostumSolText{max-width: 50%; width: 100%; padding-left: 4.375em;}
+.psCustomSolHead{max-width: 50%; width: 100%; padding-right: 5em;}
+.psCustomHEading{max-width: 100%;}
+.psCustomHEading > h2{margin-bottom: 16px;}
+.psCostumSolText{max-width: 50%; width: 100%; padding: 13.5px 0; padding-left: 5em; border-left: 1px solid var(--gray-200);}
+
+
+
+/* ==== Product Details page ==== */
+.psProDetailPageHead{background-image: url('../images/poductdetailheadban.png');}
+.psProDetailPageInfo{max-width: 773px; width: 100%;}
+.psProDetailPageInfo h1{max-width: 521px; margin-bottom: 16px;}
+
+.psProdetailSliderBox{padding: 80px 0;}
+.psProDetailHeading{max-width: 927px; width: 100%; padding-right: 2.5em;}
+.psProDetailHeading >  h2{font-size: var(--fs-h3); color: var(--black); padding-bottom: 1em; margin-bottom: 1em; border-bottom: 1px solid var(--gray-200);}
+
+.psProDetailVidBox{background-image: url('../images/prodetailvidbg.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 14.15em 0; display: flex; align-items: center; justify-content: center;}
+.psVideoPlayBtn{max-width: 114px; height: 114px;}
+
+.psProDetailFeature{background-color: var(--gray-50);}
+.psProFeatureHead{margin-bottom: 1.5em;}
+.psProFeatureHead h2{font-size: var(--fs-h3); color: var(--black); margin-bottom: 0;}
+.psProFeatureBlock {display: flex; gap: 1em; flex-wrap: wrap;}
+.psProFeatureBlock li{max-width: calc(50% - 1em); width: 100%; background-color: var(--white); padding: 2.5em;  border-radius: 1.5em;}
+.psProFeatureBlock li .psProHead{display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5em;}
+.psProFeatureBlock li .psProHead p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em;}
 

@@ -69,19 +69,19 @@
 
     /* ==== footer ==== */
     .psFooter {background-repeat: no-repeat;background-position: -5%;background-size: 51%;}
-    .psFooteBox1{max-width: 129px !important; width: 100%;}
-    .psFooteBox2{max-width: 175px !important; width: 100%;}
-    .psFooteBox1{max-width: 189px !important; width: 100%;}
-    .psFooteBox1{max-width: 284px !important; width: 100%;}
-    .psFooteBox1{max-width: 117px !important; width: 100%;}
+    .psFooteBox1{max-width: 129px; width: 100%;}
+    .psFooteBox2{max-width: 175px; width: 100%;}
+    .psFooteBox1{max-width: 189px; width: 100%;}
+    .psFooteBox1{max-width: 284px; width: 100%;}
+    .psFooteBox1{max-width: 117px; width: 100%;}
     .psFooteBox5 {padding-left: 2em;}
 
 
     /* ==== Contact Page ==== */
     .psContactInfo{max-width: 565px;}
     .psContactForm{max-width: 632px;}
-    .psFormRow{gap: 16px;}
-    .psFormRow .psformBox{max-width: calc(50% - 16px);}
+    .psFormRow{gap: 24px 16px;}
+    .psFormRow .psformBox{max-width: calc(50% - 8px);}
 
     .psformBox2 select{background-position: 40%;}
     .contactNumPrefix{overflow: hidden;}
@@ -113,13 +113,44 @@
     .psEnergySave{padding: 58px 0;}
 }
 
-@media (max-width:1400px){}
+@media (max-width:1400px){
+    .main-wrapper{max-width: 1400px; padding: 0 15px;}
+
+    /* ==== Contact ==== */
+    .psFaqContent{display: flex; justify-content: space-between;}
+}
 
 @media (max-width:1366px){}
 
-@media (max-width:1280px){}
+@media (max-width:1280px){
+    :root{
+        /* =====================
+        Typography
+        ===================== */
+        --fs-base: 16px; /* Base Value: 16 */
 
-@media (max-width:1200px){}
+        --fs-h1: 40px;
+        --fs-h2: 32px;
+        --fs-h3: 26px;
+        --fs-h4: 18px;
+        --fs-h5: 18px;
+        --fs-sh: 18px;
+        --fs-body: 16px;
+        --fs-caption: 14px;
+
+
+        --secGap: 50px;
+    }
+
+    .header{padding: 1.5em 0;}
+    .mainBody {padding-top: 96px;}
+    .psFaqHeading p { max-width: 100%; padding-right: 42px;}
+}
+
+@media (max-width:1200px){
+
+    .psContactInfo, .psContactForm{max-width: calc(50% - 16px);}
+}
 
 @media (max-width:1160px){}
 
