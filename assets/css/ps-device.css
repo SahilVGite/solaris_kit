@@ -44,7 +44,9 @@
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 200px;}
 }
 
-@media only screen and (max-width:1500px){}
+@media only screen and (max-width:1500px){
+    .menuSec{max-width:65%;}
+}
 
 @media only screen and (max-width:1440px){
     :root{
@@ -100,27 +102,38 @@
 
 
     /* ==== Knowledge page ==== */
-    
     .psAboutKnowImage {max-width: 598px;width: 100%;}
     .psAboutKnowText {max-width: 565px;}
     .psArticleSlideWrapper{max-width: 95.5%;}
     .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 176px;}
     .psArticleText{max-width:309px;}
     .psSolutionText{max-width: 817px;}
-
+    .psAllArtText{max-width: 383px;}
 
     /* ==== Solution page ==== */
     .psEnergySave{padding: 58px 0;}
 }
 
 @media (max-width:1400px){
-    .main-wrapper{max-width: 1400px; padding: 0 15px;}
+    .main-wrapper{max-width: 1400px; padding: 0 30px;}
+    .psFooter {background-repeat: no-repeat; background-position: -5%; background-size: 63%;}
+
+    .psArticleSlideWrapper{max-width: 100%; }
+    .psArticleSlideWrapper ul{padding-left: 30px; }
 
     /* ==== Contact ==== */
     .psFaqContent{display: flex; justify-content: space-between;}
+
+
+    
 }
 
-@media (max-width:1366px){}
+@media (max-width:1366px){
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 166px;}
+
+    .psSolutionText {max-width: 710px;}
+    .psAboutKnowText{padding-right: 20px;}
+}
 
 @media (max-width:1280px){
     :root{
@@ -144,31 +157,194 @@
 
     .header{padding: 1.5em 0;}
     .mainBody {padding-top: 96px;}
+
+    /* ==== Contact ==== */
     .psFaqHeading p { max-width: 100%; padding-right: 42px;}
+
+
+    .psAllArtText {max-width: 93%; padding-right: 60px
 }
 
 @media (max-width:1200px){
-
+    /* ==== Contact ==== */
     .psContactInfo, .psContactForm{max-width: calc(50% - 16px);}
+    .psformBox2 select { background-position: 52%;}
+    .psContactDetails{margin-top: 3em;}
+    .psFormRow input, .psFormRow select, .psFormRow textarea{font-size: 14px;}
+    .psContactDetails{row-gap: 15px;}
+
+
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 160px;}
+    .psSolutionText {max-width: 650px; padding: 40px 40px 280px 40px;}
 }
 
-@media (max-width:1160px){}
+@media (max-width:1160px){
+    .psFooter {background-repeat: no-repeat; background-position: top left; background-size: 100% 100%;}
 
-@media (max-width:1100px){}
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 146px;}
+}
 
-@media (max-width:1024px){}
+@media (max-width:1100px){
+    .psFooterInfo{flex-flow: row wrap;gap: 2em;}
+    .psFooterInfo > *{max-width: calc(33.333% - 1.4em);}
+    .psFooteBox5 {padding-left: 0em;}
+}
+
+@media (max-width:1024px){
+    .menuIcon,.menuClose{display: block;}
+    .menuCont{opacity: 0;align-items: start;position: fixed;z-index: 99;background-color: white;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;top: 0;right: -9999px;flex-direction: column;height: 100%;width: 100%;max-width: 400px;padding: 1em 1em 1em 2em; transition: all 0.5s;}
+    .menuCont.active{opacity: 1;right: 0;}
+    .menuSec{justify-content: end;}
+    .headMenu > nav > ul{flex-direction: column;margin-bottom: 2em;margin-top: 3em;}
+
+
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 154px;}
+}
 
 @media (max-width:991px){}
 
-@media (max-width:950px){}
+@media (max-width:950px){
 
-@media (max-width:820px){}
+    /* ==== Contact ==== */
+    .psformBox2 select{background-size: 7%; background-position: 61%;}
+    .contactNumPrefix .psContactSelect select {width: 63px;}
+    .contactNumPrefix .psContactSelect select{background-position: 79%; background-size: 19%;}
 
-@media (max-width:760px){}
 
-@media (max-width:610px){}
+    .psArticleText, .psAllArtText  {max-width: 95%; bottom: 8px; opacity: 1;}
+    .psArtSlideInfo:hover .psArticleText, .psAllArtBoxInfo:hover .psAllArtText {bottom: 8px; opacity: 1;}
 
-@media (max-width:550px){}
+    .psAllArtBoxInfo {max-width: calc(50% - 7px);overflow: hidden;border-radius: 14px;}
+    .psAllArtText {max-width: 93%;padding-right: 14px;}
 
-@media (max-width:380px){}
+    .psSolutionText{max-width: 540px;}
+}
+
+@media (max-width:820px){
+    :root{
+        /* =====================
+        Typography
+        ===================== */
+        --fs-base: 16px; /* Base Value: 16 */
+
+        --fs-h1: 32px;
+        --fs-h2: 28px;
+        --fs-h3: 22px;
+        --fs-h4: 18px;
+        --fs-h5: 18px;
+        --fs-sh: 18px;
+        --fs-body: 14px;
+        --fs-caption: 14px;
+
+
+        --secGap: 50px;
+    }
+
+    .header {padding: 1em 0;}
+    .mainBody {padding-top: 82px;}
+
+    /* ==== Contact ==== */
+    .psContactContainer{flex-direction: column;}
+    .psContactInfo, .psContactForm {max-width: calc(100% - 0px);}
+    .psContactDetails {margin-top: 2em;}
+    .psContactForm {margin-top: 3em;}
+    .psFormRow {gap: 16px;}
+    .psformBox2 select { background-size: 4%; background-position: 28%;}
+
+    .psFaqContent{flex-wrap: wrap; flex-direction: column;}
+    .psFaqHeading{max-width: 100%;}
+    .psFaqHeading p {max-width: 100%; padding-right: 0px;}
+    .psFaqBox{max-width: 100%; margin-top: 2em;}
+
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 154px;}
+    .psAboutKnowText{padding-right: 20px; margin-left: 50px;}
+}
+
+@media (max-width:768px){
+    .psFooterInfo > *{max-width: calc(50% - 1.4em);}
+    .psFooteBox5{padding-left:0;}
+
+
+    /* ==== knowledge page ==== */
+    .psAboutKnowledge{flex-flow: row wrap-reverse;}
+    .psAboutKnowText {max-width: 100%; margin-left: 0; padding: 30px;}
+    .psAboutKnowImage{max-width: 100%;}
+    .psAboutKnowImage img{object-fit: cover; aspect-ratio: 16/9;}
+
+
+    .psArticleText {max-width: 95%;}
+    .psArtSlideInfo:hover .psArticleText {bottom: 8px;opacity: 1;}
+
+    .psSolutionText {max-width: 100%; padding: 50px 30px;}
+
+}
+
+@media (max-width:610px){
+    .psFooterInfo > *{max-width: 100%;}
+    .psFooteBox1,.psFooteBox2{max-width: calc(50% - 1.4em);}
+
+    .psArticleSlideWrapper {max-width: 95%;}    
+    .psArticleSlideWrapper ul {padding-left: 0;}
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 83px;}
+
+
+    .psAllArtBox {padding-bottom: 60px; justify-content: center;}
+    .psAllArtBox .slick-slider button{top: auto; bottom: -21px;}
+    .psAllArtBox .slick-slider .slick-prev, .psAllArtBox .slick-slider .slick-next{left: auto; }
+    .psAllArtBox .slick-slider .slick-prev{right: calc(50% + 26px); background-image: url("data:image/svg+xml,%3Csvg width='32' height='20' viewBox='0 0 32 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M32 10C32 10.6137 31.4883 11.1111 30.8571 11.1111L3.90196 11.1111L11.0938 18.1032C11.5402 18.5371 11.5402 19.2406 11.0938 19.6746C10.6475 20.1085 9.9239 20.1085 9.47759 19.6746L0.334733 10.7857C-0.11158 10.3518 -0.11158 9.64824 0.334733 9.21433L9.47759 0.325437C9.9239 -0.108479 10.6475 -0.108479 11.0938 0.325437C11.5402 0.759353 11.5402 1.46287 11.0938 1.89679L3.90196 8.88889L30.8571 8.88889C31.4883 8.88889 32 9.38635 32 10Z' fill='black'/%3E%3C/svg%3E");}
+    .psAllArtBox .slick-slider .slick-next{right: calc(50% - 52px); background-image: url("data:image/svg+xml,%3Csvg width='32' height='20' viewBox='0 0 32 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 10C0 9.38635 0.511675 8.88889 1.14286 8.88889L28.098 8.88889L20.9062 1.89679C20.4599 1.46287 20.4599 0.759352 20.9062 0.325438C21.3525 -0.108479 22.0761 -0.108479 22.5224 0.325438L31.6653 9.21432C32.1116 9.64824 32.1116 10.3518 31.6653 10.7857L22.5224 19.6746C22.0761 20.1085 21.3525 20.1085 20.9062 19.6746C20.4599 19.2406 20.4599 18.5371 20.9062 18.1032L28.098 11.1111L1.14286 11.1111C0.511675 11.1111 0 10.6136 0 10Z' fill='black'/%3E%3C/svg%3E");}
+}
+
+@media (max-width:550px){
+    :root{
+        /* =====================
+        Typography
+        ===================== */
+        --fs-base: 16px; /* Base Value: 16 */
+
+        --fs-h1: 28px;
+        --fs-h2: 24px;
+        --fs-h3: 20px;
+        --fs-h4: 16px;
+        --fs-h5: 16px;
+        --fs-sh: 16px;
+        --fs-body: 14px;
+        --fs-caption: 14px;
+
+
+        --secGap: 50px;
+    }
+}
+
+@media (max-width:500px){
+
+    .psFooter {background-size: cover;}
+
+    .psFormRow .psformBox {max-width: calc(100% - 0px);}
+    .contactNumPrefix .psContactSelect select {width: 75px;}
+    .contactNumPrefix .psContactSelect select {background-position: 98%; background-size: 21%;}
+
+
+    .psArticleSlideWrapper {max-width: 100%;padding: 0 15px;}
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0;}
+    .psArticleText {max-width: 95%; bottom: 8px; opacity: 1;}
+    .psArtSlideInfo:hover .psArticleText {bottom: 8px; opacity: 1;}
+}
+
+@media only screen and (max-width:400px){
+    .psFooteBox1,.psFooteBox2{max-width: 100%;}
+}
+
+@media (max-width:380px){
+    .main-wrapper{padding: 0 10px;}
+
+    .psformBox2 select{background-position: 36%;}
+    .contactNumPrefix .psContactSelect select {background-position: 86%; background-size: 15%;}
+    .psContactBtnGroup {flex-wrap: wrap;}
+    .psSendBtn, .psMeetingBtn  {width: 100% !important;}
+
+    .psDetailItem > span:first-child {min-width: 23px;}
+
+    .psAboutKnowText {max-width: 100%; margin-left: 0; padding: 15px;}
+}
 

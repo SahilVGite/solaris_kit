@@ -41,7 +41,7 @@
 .psContactInfo h2 {color: var(--primary-50);font-size: var(--fs-h1);margin-bottom: 16px; letter-spacing: 0.005em;}
 .psContactInfo p {color: var(--primary-100);font-size: var(--fs-body);line-height: 1.3; letter-spacing: 0.005em;}
 .psContactDetails{margin-top: 5em; display: flex; row-gap: 24px; flex-direction: column;}
-.psContactDetails .psDetailItem {display: flex;align-items: center;font-size: var(); gap: 21px;}
+.psContactDetails .psDetailItem {display: flex;align-items: center;font-size: var(--fs-body); gap: 21px;}
 .psDetailItem > span > a{color: var(--primary-50); font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em;}
 
 .psContactForm {flex: 1; max-width: calc(50% - 83px); width: 100%;}
@@ -114,7 +114,7 @@ textarea {resize: none;min-height: 120px;}
 .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 258px;}
 .psArticleSlider > .slick-list.draggable .slick-track .slick-slide{margin: 0 14px; border-radius: 14px;}
 .psArticleSlider > .slick-slider button{top: -10%;}
-.psArticleText {max-width: 460px; width: 100%; background: rgba(0, 0, 0, 0.6); border-radius: 13.9062px; margin: auto; position: absolute; left: 0; right: 0; bottom: -50px; opacity: 0; padding: 14px; transition: all 0.5s ease;}
+.psArticleText {max-width: 460px; width: 100%; background: rgba(0, 0, 0, 0.6); border-radius: 13.9062px; margin: auto; position: absolute; left: 0; right: 0; bottom: -50px; opacity: 0; padding: 14px; transition: all 0.5s ease; backdrop-filter: blur(10px);}
 .psArticleText > h3{font-size: var(--fs-sh); font-weight: var(--fw-semi-bold); color: var(--white); margin-bottom: 0.777em;}
 .psArticleText > p{font-size: var(--fs-body); color: var(--white); line-height: 1.1313; letter-spacing: 0.005em;}
 .psArtSlideInfo:hover .psArticleText{bottom: 14px; opacity: 1;}
@@ -125,11 +125,10 @@ textarea {resize: none;min-height: 120px;}
 .psAllArtSearchInput input::placeholder{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; font-family: var(--primary-font);}
 .psAllArtBox{display: flex; flex-wrap: wrap; gap: 14px;}
 .psAllArtBoxInfo{max-width: calc(33.33% - 14px); overflow: hidden; border-radius: 14px;}
-.psAllArtText {max-width: 525px; width: 100%; background: rgba(0, 0, 0, 0.6); border-radius: 13.9062px; margin: auto; position: absolute; left: 0; right: 0; bottom: -50px; opacity: 0; padding: 14px; transition: all 0.5s ease;}
+.psAllArtText {max-width: 95%; width: 100%; background: rgba(0, 0, 0, 0.6); border-radius: 13.9062px; margin: auto; position: absolute; left: 0; right: 0; bottom: -50px; opacity: 0; padding: 14px; padding-right: 83px; transition: all 0.5s ease; backdrop-filter: blur(5px);}
 .psAllArtText > h3{font-size: var(--fs-sh); font-weight: var(--fw-semi-bold); color: var(--white); margin-bottom: 0.777em;}
 .psAllArtText > p{font-size: var(--fs-body); color: var(--white); line-height: 1.1313; letter-spacing: 0.005em;}
 .psAllArtBoxInfo:hover .psAllArtText{bottom: 14px; opacity: 1;}
-
 .psSolution{background-image: url('../images/solution-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;}
 .psSolutionText{max-width: 1030px; width: 100%; height: 100%; background: rgba(0, 0, 0, 60%); padding: 40px 40px 357px 80px; backdrop-filter:blur(10px);}
 .psSolutionText > h2{font-size: var(--fs-h1); color: var(--white); margin-bottom: 0.4em;}
