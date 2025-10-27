@@ -66,7 +66,7 @@
     }
 
     .main-wrapper{max-width: 1280px;}
-    .psComPageInfo{max-width: 569px; width: 100%;}
+    .psComPageInfo{max-width: 660px; width: 100%;}
 
 
     /* ==== footer ==== */
@@ -112,9 +112,14 @@
 
     /* ==== Solution page ==== */
     .psEnergySave{padding: 58px 0;}
+    .psTabInfo {max-width: 662px;padding-left: 2.5em;}
+    .psHotWaterInfo {max-width: 497px;}
+    .psHotWaterImg {max-width: 598px;}
+    .psCostumSolText {max-width: 598px;}
+    
 }
 
-@media (max-width:1400px){
+@media only screen and (max-width:1400px){
     .main-wrapper{max-width: 1400px; padding: 0 30px;}
     .psFooter {background-repeat: no-repeat; background-position: -5%; background-size: 63%;}
 
@@ -128,14 +133,14 @@
     
 }
 
-@media (max-width:1366px){
+@media only screen and (max-width:1366px){
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 166px;}
 
     .psSolutionText {max-width: 710px;}
     .psAboutKnowText{padding-right: 20px;}
 }
 
-@media (max-width:1280px){
+@media only screen and (max-width:1280px){
     :root{
         /* =====================
         Typography
@@ -161,11 +166,12 @@
     /* ==== Contact ==== */
     .psFaqHeading p { max-width: 100%; padding-right: 42px;}
 
+    .psAllArtText {max-width: 93%; padding-right: 60px}
 
-    .psAllArtText {max-width: 93%; padding-right: 60px
+    .psTabInfo {padding-right: 2em;}
 }
 
-@media (max-width:1200px){
+@media only screen and (max-width:1200px){
     /* ==== Contact ==== */
     .psContactInfo, .psContactForm{max-width: calc(50% - 16px);}
     .psformBox2 select { background-position: 52%;}
@@ -178,19 +184,24 @@
     .psSolutionText {max-width: 650px; padding: 40px 40px 280px 40px;}
 }
 
-@media (max-width:1160px){
+@media only screen and (max-width:1160px){
     .psFooter {background-repeat: no-repeat; background-position: top left; background-size: 100% 100%;}
 
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 146px;}
 }
 
-@media (max-width:1100px){
+@media only screen and (max-width:1100px){
     .psFooterInfo{flex-flow: row wrap;gap: 2em;}
     .psFooterInfo > *{max-width: calc(33.333% - 1.4em);}
     .psFooteBox5 {padding-left: 0em;}
+
+    .psHotWaterContent{gap: 30px;}
+
+    .psCustomSolHead{padding-right: 3em;}
+    .psCostumSolText{padding-left: 3em;}
 }
 
-@media (max-width:1024px){
+@media only screen and (max-width:1024px){
     .menuIcon,.menuClose{display: block;}
     .menuCont{opacity: 0;align-items: start;position: fixed;z-index: 99;background-color: white;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;top: 0;right: -9999px;flex-direction: column;height: 100%;width: 100%;max-width: 400px;padding: 1em 1em 1em 2em; transition: all 0.5s;}
     .menuCont.active{opacity: 1;right: 0;}
@@ -201,9 +212,16 @@
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 154px;}
 }
 
-@media (max-width:991px){}
+@media only screen and (max-width:991px){
+    .psSolutionPageHead{padding: 8.06em 0 14.06em;}
 
-@media (max-width:950px){
+    .psCustomSol{padding: 3.15em 0;}
+    .psCustomSolInfo{flex-flow: row wrap;}
+    .psCustomSolHead{max-width: 100%; padding-right: 0;}
+    .psCostumSolText{max-width: 100%; border-top: 1px solid var(--gray-200); border-left: 0; padding: 0; padding-top: 2em;}
+}
+
+@media only screen and (max-width:950px){
 
     /* ==== Contact ==== */
     .psformBox2 select{background-size: 7%; background-position: 61%;}
@@ -218,9 +236,17 @@
     .psAllArtText {max-width: 93%;padding-right: 14px;}
 
     .psSolutionText{max-width: 540px;}
+
+
+    .psNavTabs{max-width: 100%; gap: 1.437em;} 
+    .psTabInfoBox{flex-wrap: wrap-reverse;}
+    .psTabImg, .psTabInfo{max-width: 100%;}
+    .psTabInfo{padding: 2em;}
+    .psHotWaterContent{flex-wrap: wrap; gap: 50px;}
+    .psHotWaterInfo, .psHotWaterImg{max-width: 100%;}
 }
 
-@media (max-width:820px){
+@media only screen and (max-width:820px){
     :root{
         /* =====================
         Typography
@@ -260,7 +286,7 @@
     .psAboutKnowText{padding-right: 20px; margin-left: 50px;}
 }
 
-@media (max-width:768px){
+@media only screen and (max-width:768px){
     .psFooterInfo > *{max-width: calc(50% - 1.4em);}
     .psFooteBox5{padding-left:0;}
 
@@ -277,9 +303,13 @@
 
     .psSolutionText {max-width: 100%; padding: 50px 30px;}
 
+
+
+    .psSolutionPageHead{padding: 8.06em 0 8.06em;}
+
 }
 
-@media (max-width:610px){
+@media only screen and (max-width:610px){
     .psFooterInfo > *{max-width: 100%;}
     .psFooteBox1,.psFooteBox2{max-width: calc(50% - 1.4em);}
 
@@ -295,7 +325,7 @@
     .psAllArtBox .slick-slider .slick-next{right: calc(50% - 52px); background-image: url("data:image/svg+xml,%3Csvg width='32' height='20' viewBox='0 0 32 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 10C0 9.38635 0.511675 8.88889 1.14286 8.88889L28.098 8.88889L20.9062 1.89679C20.4599 1.46287 20.4599 0.759352 20.9062 0.325438C21.3525 -0.108479 22.0761 -0.108479 22.5224 0.325438L31.6653 9.21432C32.1116 9.64824 32.1116 10.3518 31.6653 10.7857L22.5224 19.6746C22.0761 20.1085 21.3525 20.1085 20.9062 19.6746C20.4599 19.2406 20.4599 18.5371 20.9062 18.1032L28.098 11.1111L1.14286 11.1111C0.511675 11.1111 0 10.6136 0 10Z' fill='black'/%3E%3C/svg%3E");}
 }
 
-@media (max-width:550px){
+@media only screen and (max-width:550px){
     :root{
         /* =====================
         Typography
@@ -314,9 +344,20 @@
 
         --secGap: 50px;
     }
+
+
+    .psSolutionPageHead > div > .psComPageInfo{padding: 20px;}
+    .psEnergySave {padding: 50px 0;}
+    .psEnergySaveHeading{margin-bottom: 1.5em;}
+    .psEnergyCapHead{margin-bottom: 0.5em;}
+    .psKnowSecHeading{margin-bottom: 1.5em;}
+    .psCostumSolText{padding-top: 1.5em;}
+
+
+    .psEnergyCapHead{gap: 0.5em;}
 }
 
-@media (max-width:500px){
+@media only screen and (max-width:500px){
 
     .psFooter {background-size: cover;}
 
@@ -333,9 +374,11 @@
 
 @media only screen and (max-width:400px){
     .psFooteBox1,.psFooteBox2{max-width: 100%;}
+
+    .psNavTabs {gap: 0.437em;}
 }
 
-@media (max-width:380px){
+@media only screen and (max-width:380px){
     .main-wrapper{padding: 0 10px;}
 
     .psformBox2 select{background-position: 36%;}
@@ -346,5 +389,6 @@
     .psDetailItem > span:first-child {min-width: 23px;}
 
     .psAboutKnowText {max-width: 100%; margin-left: 0; padding: 15px;}
+    .psSolutionText{padding-left: 10px; padding-right: 10px;}
 }
 

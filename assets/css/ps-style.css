@@ -167,7 +167,8 @@ backdrop-filter: blur(5px); border-radius: 16px;}
 .psHotWaterHeading > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700);}
 .psEnergyCapSec ul li:not(:last-child) {margin-bottom: 1.5em;}
 .psEnergyCapHead{display: flex; align-items: center; gap: 1em; margin-bottom: 1.5em;}
-.psEnergyCapHead > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700);}
+.psEnergyCapHead h3{font-size: var(--fs-h5);}
+.psEnergyCapSec ul li > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700);}
 
 
 .psCustomSol{background-color: var(--gray-50); padding: 10.68em 0;}
@@ -189,7 +190,7 @@ backdrop-filter: blur(5px); border-radius: 16px;}
 .psProDetailHeading >  h2{font-size: var(--fs-h3); color: var(--black); padding-bottom: 1em; margin-bottom: 1em; border-bottom: 1px solid var(--gray-200);}
 
 .psProDetailVidBox{background-image: url('../images/prodetailvidbg.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 14.15em 0; display: flex; align-items: center; justify-content: center;}
-.psVideoPlayBtn{max-width: 114px; height: 114px;}
+.psVideoPlayBtn{max-width: 114px; height: auto;}
 
 .psProDetailFeature{background-color: var(--gray-50);}
 .psProFeatureHead{margin-bottom: 1.5em;}
