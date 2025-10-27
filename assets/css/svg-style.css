@@ -5,3 +5,17 @@
 .siteLogo{}
 .globalIcon{width: max-content;}
 .menu-overlay{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.4);z-index: 95;}
+
+
+/* Singel Product GSAP Animation Cards */
+
+.cards{position:relative;display:flex;justify-content:center;align-items:center;min-height:62vh;margin-bottom:90px;margin-top: 5em;}
+.custom-card{position:absolute;width:100%;top:0px;height:auto;color:#fff;margin-bottom:50px;display:flex;justify-content:center;align-items:center;border-radius:24px;box-shadow:0 0 30px 0 rgba(0,0,0,0.2);background-color:var(--primary-800);overflow: hidden;}
+.custom-card:nth-child(2n){background-color: var(--primary-950);}
+.card1{top: 40px;}
+.card2{top:0px;transform: scaleX(0.95);}
+.opacity{-moz-transition:0.4s ease;-ms-transition:0.4s ease;-o-transition:0.4s ease;transition:0.4s ease;-webkit-transition:0.4s ease;opacity:0.6;}
+.scale{moz-transition:0.4s ease;-ms-transition:0.4s ease;-o-transition:0.4s ease;transition:0.4s ease;-webkit-transition:0.4s ease;width:95%;}
+.custom-card-txt{padding: 5em;}
+.custom-card-txt > h4{color: var(--white);font-size: var(--fs-h4);padding-bottom: 0.5rem;margin-bottom: 1rem;border-bottom: 1px solid white;}
+.custom-card-txt > p{color: var(--gray-50);font-size: var(--fs-body);}
