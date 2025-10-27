@@ -162,10 +162,10 @@ body.menu-open{overflow:hidden;}
 
 /* ===== Scrollbar CSS ===== */
  /* Firefox */
- *{scrollbar-width:auto;scrollbar-color:var(--primary-950) #ffffff;}
+ *{scrollbar-width:auto;scrollbar-color:var(--primary-950) var(--gray-200);}
 /* Chrome,Edge,and Safari */
  *::-webkit-scrollbar{width:10px;}
-*::-webkit-scrollbar-track{background:#ffffff;}
+*::-webkit-scrollbar-track{background:var(--gray-200);}
 *::-webkit-scrollbar-thumb{background-color:var(--primary-950);border-radius:10px;border:3px solid #ffffff;}
 
 .comBtn{width: max-content; padding: 12px 16px; font-size: var(--fs-body); font-weight: var(--fw-semi-bold); letter-spacing: 0.005em; border-radius: 8px; color: var(--Black); background: var(--primary-400); float: left; font-family: var(--primary-font);}
