@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   // Sticky Header
   $(window).on("scroll", function () {
-    $("header").toggleClass("stickyHead", $(this).scrollTop() > 0);
+    $("header").toggleClass("stickyHead", $(this).scrollTop() > 30);
   });
 
   // Hamburger menu toggle
@@ -127,6 +127,74 @@ $(document).ready(function () {
     $('.psTabPane').removeClass('psActive');
     var target = $(this).attr('href');
     $(target).addClass('psActive');
+  });
+
+  // Home Partners and Supporters Marquee
+  $('.hmPartnerSupportMarquee').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 3000,
+    cssEase: 'linear',
+    infinite: true,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: { slidesToShow: 5 }
+      },
+      {
+        breakpoint: 1300,
+        settings: { slidesToShow: 4 }
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 3 }
+      },
+      {
+        breakpoint: 480,
+        settings: { slidesToShow: 2 }
+      }
+    ]
+  });
+
+    $('.feedBackSlider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 3000,
+
+    responsive: [
+      {
+        breakpoint: 1024, // for tablet / medium screen
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 768, // for mobile landscape
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 600, // for mobile landscape
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 500, // for small mobile
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
 });

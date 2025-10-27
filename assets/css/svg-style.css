@@ -19,3 +19,17 @@
 .custom-card-txt{padding: 5em;}
 .custom-card-txt > h4{color: var(--white);font-size: var(--fs-h4);padding-bottom: 0.5rem;margin-bottom: 1rem;border-bottom: 1px solid white;}
 .custom-card-txt > p{color: var(--gray-50);font-size: var(--fs-body);}
+
+
+/* Home Page */
+.hmPartnerSupportSec{background-color: var(--gray-50);}
+.PartnerMarqueeCard{margin-inline: 3.75em;}
+
+.feedBackSec{background-color: var(--primary-800);background-image: url(../images/feedBack-bg.png);background-position: center;background-size: cover;background-repeat: no-repeat;}
+
+.feedBackSec .psKnowSecHeading > p,.hmPartnerSupportSec .psKnowSecHeading > p{max-width: 475px;}
+.feedBackSec .psKnowSecHeading > *{color: var(--gray-50);}
+.feedBackSliderCard{padding: 1.5em;background:rgba(45,44,43,0.5);border-radius:16px;backdrop-filter: blur(10px);margin-inline: 1em;}
+.feedBackSliderCardTitle > *{font-size: var(--fs-h5);color: var(--gray-50);}
+.starRating{gap: 0.3125em;margin-top: 0.3125em;margin-bottom: 2.1563em;}
+.feedBackSliderCardComment > p{font-size: var(--fs-body);color: var(--white);}
