@@ -112,7 +112,7 @@ textarea {resize: none;min-height: 120px;}
 .psKnowSecHeading > h2{font-size: var(--fs-h1); letter-spacing: 0.005em; color: var(--black); margin-bottom: 0.8333em;}
 .psArticleSlideWrapper{max-width: 1818px; margin-left: auto;}
 .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 258px;}
-.psArticleSlider > .slick-list.draggable .slick-track .slick-slide{margin: 0 14px; border-radius: 14px;}
+.psArticleSlider > .slick-list.draggable .slick-track .slick-slide{margin: 0 14px; border-radius: 14px; overflow: hidden;}
 .psArticleSlider > .slick-slider button{top: -10%;}
 .psArticleText {max-width: 460px; width: 100%; background: rgba(0, 0, 0, 0.6); border-radius: 13.9062px; margin: auto; position: absolute; left: 0; right: 0; bottom: -50px; opacity: 0; padding: 14px; transition: all 0.5s ease; backdrop-filter: blur(10px);}
 .psArticleText > h3{font-size: var(--fs-sh); font-weight: var(--fw-semi-bold); color: var(--white); margin-bottom: 0.777em;}
@@ -158,8 +158,8 @@ backdrop-filter: blur(5px); border-radius: 16px;}
 .psTabInfo > h2{font-size: var(--fs-h3); margin-bottom: 0.75em;}
 .psTabInfo > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--black);}
 
-.psHotWaterContent{display: flex; justify-content: space-between; align-items: center;}
-.psHotWaterInfo{max-width: 600px; width: 100%;}
+.psHotWaterContent{display: flex; justify-content: space-between; align-items: center; gap: 60px;}
+.psHotWaterInfo{max-width: 765px; width: 100%;}
 .psHotWaterImg{max-width: 700px; width: 100%;}
 .psHotWaterSec{padding: 2.62em 0;}
 .psHotWaterHeading{margin-bottom: 2.5em;}
@@ -217,3 +217,22 @@ backdrop-filter: blur(5px); border-radius: 16px;}
 .psAboutStoryText{max-width: 463px; width: 100%;}
 .psAboutStoryText > h2{font-size: var(--fs-h1); color: var(--white); letter-spacing: 0.005em; margin-bottom: 0.8333em;}
 .psAboutStoryText > p{color: var(--white); font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em;}
+
+.psGlobTransBlock{display: flex;}
+.psGlobTextBLock{ padding:2.375em 4.78em;}
+.psglobTextInfo {margin-bottom: 2.5em;}
+.psglobTextInfo > h2{font-size: var(--fs-h3); margin-bottom: 0.812em;}
+.psglobTextInfo> p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-800);}
+.psglobTextInfo> p:not(:last-child) {margin-bottom: 1em}
+.psCertificateBlock {padding: 1.5em; border: 1px solid var(--gray-200); border-radius: 1em;}
+.psCertLogoTxt{display:flex; gap: 1.5em 1em; align-items: end; margin-bottom: 1em;}
+.psCertType > h3{font-size: var(--fs-h5); margin-bottom: 0.8em;}
+.psCertType > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-800);}
+.psCertLogo{max-width: 61px;}
+.psPartnerInfoBlock{max-width: 50%; background-image: url('../images/globtransimg.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 2.06em 5.62em 4.81em;}
+.psPartnerInfoBlock > ul > li{background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px); padding: 2.5em; border-radius: 1em;} 
+.psPartnerInfoBlock > ul > li:not(:last-child){margin-bottom: 1.5em;}
+.psPartnerInfoBlock > ul li > h4{font-size: var(--fs-h5); color: var(--white); margin-bottom: 0.8em;} 
+.psPartnerInfoBlock > ul li > ul{list-style-type: disc; color: var(--white); font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; padding-left: 19px;}
+
+.psAboutCompany{background-color: var(--gray-50);}
