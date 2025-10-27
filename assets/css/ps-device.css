@@ -120,7 +120,7 @@
 }
 
 @media only screen and (max-width:1400px){
-    .main-wrapper{max-width: 1400px; padding: 0 30px;}
+    .main-wrapper{padding: 0 30px;}
     .psFooter {background-repeat: no-repeat; background-position: -5%; background-size: 63%;}
 
     .psArticleSlideWrapper{max-width: 100%; }
@@ -138,6 +138,10 @@
 
     .psSolutionText {max-width: 710px;}
     .psAboutKnowText{padding-right: 20px;}
+
+
+    .psProductImg {max-width: 35%;}
+    .psProductInfo {max-width: 63%;padding: 0px 40px;}
 }
 
 @media only screen and (max-width:1280px){
@@ -199,6 +203,13 @@
 
     .psCustomSolHead{padding-right: 3em;}
     .psCostumSolText{padding-left: 3em;}
+
+
+    .psProductContent {row-gap: 20px;}
+    .psProductInfo {max-width: 68%;padding: 0px 40px;}
+    .psProductImg {max-width: 30%;}
+    .psProductInfo > h2{margin-bottom: 20px;}
+    .psProductInfo > p{margin-bottom: 20px;}
 }
 
 @media only screen and (max-width:1024px){
@@ -210,6 +221,12 @@
 
 
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 154px;}
+
+
+    .psProudctDetails{flex-wrap: wrap; gap:20px}
+    .psProductImg{max-width: 100%; background-color: var(--white); padding: 20px 0;}
+    .psProductImg > img{max-width: 40%; margin: auto;}
+    .psProductInfo{max-width: 100%; padding: 30px;}
 }
 
 @media only screen and (max-width:991px){
@@ -217,7 +234,7 @@
 
     .psCustomSol{padding: 3.15em 0;}
     .psCustomSolInfo{flex-flow: row wrap;}
-    .psCustomSolHead{max-width: 100%; padding-right: 0;}
+    .psCustomSolHead{max-width: 100%; padding-right: 0; padding-bottom: 2em;}
     .psCostumSolText{max-width: 100%; border-top: 1px solid var(--gray-200); border-left: 0; padding: 0; padding-top: 2em;}
 }
 
@@ -345,15 +362,15 @@
         --secGap: 50px;
     }
 
-
     .psSolutionPageHead > div > .psComPageInfo{padding: 20px;}
     .psEnergySave {padding: 50px 0;}
     .psEnergySaveHeading{margin-bottom: 1.5em;}
     .psEnergyCapHead{margin-bottom: 0.5em;}
     .psCostumSolText{padding-top: 1.5em;}
 
-
     .psEnergyCapHead{gap: 0.5em;}
+
+    .psProductImg > img {max-width: 95%;margin: auto;}
 }
 
 @media only screen and (max-width:500px){
@@ -369,6 +386,12 @@
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0;}
     .psArticleText {max-width: 95%; bottom: 8px; opacity: 1;}
     .psArtSlideInfo:hover .psArticleText {bottom: 8px; opacity: 1;}
+}
+
+@media only screen and (max-width:410px){
+    .psProBtnBox{flex-wrap: wrap;}
+    .psProEnqBtn {width: 100%; text-align: center;}
+    .psProDiscBtn {width: 100%; text-align: center;}
 }
 
 @media only screen and (max-width:400px){
