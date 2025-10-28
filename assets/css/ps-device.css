@@ -144,6 +144,9 @@
 
     .psProductImg {max-width: 35%;}
     .psProductInfo {max-width: 63%;padding: 0px 40px;}
+
+    .psGlobTextBLock{padding: 2.375em;}
+    .psPartnerInfoBlock{padding: 2.375em;}
 }
 
 @media only screen and (max-width:1280px){
@@ -180,7 +183,8 @@
     .psVmLargeBlock {max-width: 100%;}
     .psAboutStory{padding: 6.75em 0 6.75em;}
     .psAboutStoryText{max-width: 540px;}
-    .psGlobTextBLock {padding: 2.375em 2.78em;}
+    .psGlobTextBLock {padding: 2.375em 1.88em;}
+    .psPartnerInfoBlock {padding: 2.375em 1.88em;}
 }
 
 @media only screen and (max-width:1200px){
@@ -194,6 +198,10 @@
 
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 160px;}
     .psSolutionText {max-width: 650px; padding: 40px 40px 280px 40px;}
+
+
+    .psVmSmallBlock {max-width: 480px;}
+    .psVmHeading{padding: 0 60px;}
 }
 
 @media only screen and (max-width:1160px){
@@ -232,6 +240,14 @@
     .psProductImg{max-width: 100%; background-color: var(--white); padding: 20px 0; border-radius: 16px;}
     .psProductImg > img{max-width: 40%; margin: auto;}
     .psProductInfo{max-width: 100%; padding: 30px;}
+
+    .psVmSmallBlock {max-width: 47%;}
+    .psVmHeading {padding: 40px}
+
+    .psGlobTransBlock{flex-direction: column;}
+    .psPartnerInfoBlock{max-width: 100%; padding: 50px 2.375em;}
+    .psPartnerInfoBlock ul{display: flex; column-gap: 20px; flex-wrap: wrap;}
+    .psPartnerInfoBlock > ul > li{max-width: calc(50% - 10px);}
 }
 
 @media only screen and (max-width:991px){
@@ -318,6 +334,7 @@
     .psAboutKnowText {max-width: 100%; margin-left: 0; padding: 30px;}
     .psAboutKnowImage{max-width: 100%;}
     .psAboutKnowImage img{object-fit: cover; aspect-ratio: 16/9;}
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 232px;}
 
 
     .psArticleText {max-width: 95%;}
@@ -326,8 +343,11 @@
     .psSolutionText {max-width: 100%; padding: 50px 30px;}
 
 
-
     .psSolutionPageHead{padding: 8.06em 0 8.06em;}
+
+    
+    .psVmSmallBlock {max-width: 46%;}
+    .psVmHeading {padding: 30px;}
 
 }
 
