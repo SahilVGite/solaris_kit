@@ -1,5 +1,6 @@
 /* Hamberger Menu */
-.menuIcon,.menuClose{display: none;max-width: 50px;margin-left: auto;}
+.showInHamMenu{display: none;}
+.menuIcon,.menuClose{display: none;max-width: 40px;margin-left: auto;}
 .menuClose{max-width: 40px;}
 .menuSec{max-width: 62%;justify-content: space-between;}
 .siteLogo{}
@@ -54,11 +55,8 @@
 .whoWeserveCard > *{display: flex;align-items: center;flex-direction: column;justify-content: center;border-radius: 16px;}
 .whoWeserveCards > .whoWeserveCard > *{width: 100%;}
 .whoWeserveCards > * > .whoWeserveCardImg > img{height: 100%;object-fit: cover;border-radius: 16px;}
-.whoWeserveCards > *:first-child > .whoWeserveCardImg{max-width: calc(41.41% - 0.75em);}
-.whoWeserveCards > *:first-child > .whoWeserveCardTxt{max-width: calc(58.59% - 0.75em);}
-.whoWeserveCards > *:nth-child(2) > *{max-width: calc(50% - 0.75em);}
-.whoWeserveCards > *:nth-child(3) > .whoWeserveCardImg{max-width: calc(32.97% - 0.75em);}
-.whoWeserveCards > *:nth-child(3) > .whoWeserveCardTxt{max-width: calc(67.03% - 0.75em);}
+.whoWeserveCards > * > .whoWeserveCardImg{max-width: calc(41.41% - 0.75em);}
+.whoWeserveCards > * > .whoWeserveCardTxt{max-width: calc(58.59% - 0.75em);}
 .whoWeserveCardTitle > *{font-size: var(--fs-h1);max-width: 657px;margin-bottom: 0.5em;font-weight: var(--fw-semi-bold);}
 .whoWeserveCardDesc{gap: 1.125em;}
 .whoWeserveCardDesc > p{font-size: var(--fs-body);}
@@ -133,7 +131,7 @@
 .playBtn{top: 50%;left: 50%;transform: translate(-50%, -50%);}
 .playBtn > *{cursor: pointer;background-color: transparent;border: none;outline: none;width: clamp(35px, 6vw, 78px);}
 /* Home Hero Section */
-.hmHeroSection{background: url(../images/hmHero-bg.png) center / cover no-repeat;padding-bottom: var(--secGap);}
+.hmHeroSection{background: url(../images/hmHero-bg.png) left top / cover no-repeat;background-size: 85% 100%;padding-bottom: var(--secGap);}
 .hmHeroSection .hmHeroTop{gap: 5.0625em;}
 .hmHeroSection .hmHeroTop > *{width: 50%;}
 .hmBtns a.d-flex{gap: 0.5em;}

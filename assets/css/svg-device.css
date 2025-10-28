@@ -34,8 +34,7 @@
     .psProFeatureBlock li{max-width:calc(75% - 1em);}
     .psProFeatureBlock{justify-content: center;}
     .whoWeserveCard{flex-direction: column-reverse;}
-    .whoWeserveCard:nth-child(2n){flex-direction: column;}
-    .whoWeserveCards > .whoWeserveCard > *{width: 100%;max-width: 100% !important;}
+    .whoWeserveCards > .whoWeserveCard > *{width: 100%;max-width: 100%;}
     .whoWeserveCards > * > .whoWeserveCardImg > img{aspect-ratio: 16 / 9;}
     .whySolarisHead{flex-direction: column;gap: 1em;padding: 2.5em 1.5em;}
     .whySolarisTitle{margin-right: 0;padding-right: 0;}
@@ -69,4 +68,7 @@
     .whoWeserveCardBtns > *{width: 100%;text-align: center;}
     .hmBtns a,.hmBtns div{width: 100%;text-align: center;}
     .hmBtns a.d-flex{justify-content: center;}
+    .siteLogo{max-width:160px;}
+    .menuSec{gap:1.3em;}
+
 }

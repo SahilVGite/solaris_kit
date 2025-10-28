@@ -4,7 +4,7 @@
 .siteLogo{max-width: 204px;}
 .headMenu > nav > ul{display: flex; gap: 33px;}
 .headMenu > nav > ul > li a{color: var(--primary-950); letter-spacing: 0.005em;}
-.headRgt{display: flex; align-items: center; gap: 24px;}
+.headRgt{display: flex; align-items: center; gap: 16px;}
 .header.stickyHead {width: 100%; background: var(--white); box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;padding: 1em 0;}
 .mainBody{padding-top:128px;}
 
