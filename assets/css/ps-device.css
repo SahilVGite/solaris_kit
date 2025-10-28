@@ -105,7 +105,7 @@
     .psAboutKnowImage {max-width: 598px;width: 100%;}
     .psAboutKnowText {max-width: 565px;}
     .psArticleSlideWrapper{max-width: 95.5%;}
-    .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 176px;}
+    .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 198px;}
     .psArticleText{max-width:309px;}
     .psSolutionText{max-width: 817px;}
     .psAllArtText{max-width: 383px;}
@@ -116,6 +116,9 @@
     .psHotWaterInfo {max-width: 497px;}
     .psHotWaterImg {max-width: 598px;}
     .psCostumSolText {max-width: 598px;}
+
+
+    .psVmSmallBlock {max-width: 623px;}
     
 }
 
@@ -138,7 +141,6 @@
 
     .psSolutionText {max-width: 710px;}
     .psAboutKnowText{padding-right: 20px;}
-
 
     .psProductImg {max-width: 35%;}
     .psProductInfo {max-width: 63%;padding: 0px 40px;}
@@ -173,6 +175,12 @@
     .psAllArtText {max-width: 93%; padding-right: 60px}
 
     .psTabInfo {padding-right: 2em;}
+
+    .psVmSmallBlock {max-width: 560px;}
+    .psVmLargeBlock {max-width: 100%;}
+    .psAboutStory{padding: 6.75em 0 6.75em;}
+    .psAboutStoryText{max-width: 540px;}
+    .psGlobTextBLock {padding: 2.375em 2.78em;}
 }
 
 @media only screen and (max-width:1200px){
@@ -204,7 +212,6 @@
     .psCustomSolHead{padding-right: 3em;}
     .psCostumSolText{padding-left: 3em;}
 
-
     .psProductContent {row-gap: 20px;}
     .psProductInfo {max-width: 68%;padding: 0px 40px;}
     .psProductImg {max-width: 30%;}
@@ -219,12 +226,10 @@
     .menuSec{justify-content: end;}
     .headMenu > nav > ul{flex-direction: column;margin-bottom: 2em;margin-top: 3em;}
 
-
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 154px;}
 
-
     .psProudctDetails{flex-wrap: wrap; gap:20px}
-    .psProductImg{max-width: 100%; background-color: var(--white); padding: 20px 0;}
+    .psProductImg{max-width: 100%; background-color: var(--white); padding: 20px 0; border-radius: 16px;}
     .psProductImg > img{max-width: 40%; margin: auto;}
     .psProductInfo{max-width: 100%; padding: 30px;}
 }
