@@ -131,7 +131,7 @@
 .playBtn{top: 50%;left: 50%;transform: translate(-50%, -50%);}
 .playBtn > *{cursor: pointer;background-color: transparent;border: none;outline: none;width: clamp(35px, 6vw, 78px);}
 /* Home Hero Section */
-.hmHeroSection{background: url(../images/hmHero-bg.png) left top / cover no-repeat;background-size: 85% 100%;padding-bottom: var(--secGap);}
+.hmHeroSection{background: url(../images/hmHero-bg.png) left top / 85% 100% no-repeat;padding-bottom: var(--secGap);}
 .hmHeroSection .hmHeroTop{gap: 5.0625em;}
 .hmHeroSection .hmHeroTop > *{width: 50%;}
 .hmBtns a.d-flex{gap: 0.5em;}
