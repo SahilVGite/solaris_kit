@@ -108,7 +108,7 @@ textarea {resize: none;min-height: 120px;}
 .psAboutKnowText > h2{font-size: var(--fs-h1); margin-bottom: 0.958em;}
 .psAboutKnowText > p {color: var(--black); line-height: 1.3; letter-spacing: 0.005em;}
 
-.psKnowSecHeading{max-width: 720px; width: 100%; margin-bottom: 2.5em;}
+.psKnowSecHeading{max-width: 720px; width: 100%; margin-bottom: 1em;}
 .psKnowSecHeading > h2{font-size: var(--fs-h1); letter-spacing: 0.005em; color: var(--black); margin-bottom: 0.8333em;}
 .psArticleSlideWrapper{max-width: 1818px; margin-left: auto;}
 .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 258px;}
@@ -139,44 +139,51 @@ textarea {resize: none;min-height: 120px;}
 
 /* ==== Solution page ==== */
 .psSolutionPageHead{background-image: url('../images/solutionheadbg.png'); padding: 10.06em 0 18.06em;}
-.psSolutionPageHead > div > .psComPageInfo{padding: 40px; background-color: rgba(0, 0, 0, 0.6);
-backdrop-filter: blur(5px); border-radius: 16px;}
+.psSolutionPageHead > div > .psComPageInfo{padding: 40px; background: rgba(0, 54, 52, 0.8);
+backdrop-filter: blur(15px); border-radius: 16px;}
+.psSolutionPageHead > div > .psComPageInfo p:not(:last-child) {margin-bottom: 1em;}
 
-.psEnergySave{padding: 80px 0; background-color: var(--gray-50);}
-.psEnergySaveHeading{max-width: 979px; margin-bottom: 2.5em;}
-.psEnergySaveHeading > h2{margin-bottom: 16px;}
+.psEnergySave{padding: 80px 0; background-color: var(--primary-800);}
+.psEnergySaveHeading{max-width: 996px; margin: auto; margin-bottom: 2.5em;}
+.psEnergySaveHeading > h2{margin-bottom: 16px; text-align: center; color: var(--white);}
+.psEnergySaveHeading > p{text-align: center; color: var(--white);}
 
-.psNavTabs{max-width: 646px; width: 100%; display: flex; gap: 2.437em; border-bottom: 1px solid var(--gray-200); margin-bottom: 1.5em;}
+.psNavTabs{max-width: 100%; width: 100%; display: flex; justify-content: center; gap: 2.437em; border-bottom: 1px solid var(--gray-200); margin-bottom: 1.5em;}
 .psNavTabs > li{padding: 10px;}
-.psNavTabs > li > a{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--black);}
-.psNavTabs > li.psActive{border-bottom: 2px solid var(--black);}
+.psNavTabs > li > a{font-size: var(--fs-h2); line-height: 1.3; letter-spacing: 0.005em; color: var(--white);}
+.psNavTabs > li.psActive{border-bottom: 2px solid var(--white); font-weight: var(--fw-semi-bold); color: var(--black);}
+.psNavTabs > li.psActive a{font-weight: var(--fw-semi-bold); color: var(--white);}
 .psTabPane {display: none;}
 .psTabPane.psActive {display: block;}
-.psTabInfoBox{display: flex; align-items: center; border-radius: 1em; overflow: hidden; background-color: var(--primary-400);}
+.psTabInfoBox{display: flex; align-items: center; border-radius: 1em; overflow: hidden; background-color: var(--gray-50);}
 .psTabImg{max-width: 516px; width: 100%;}
 .psTabInfo{max-width: 860px; padding-left:3.5em; }
-.psTabInfo > h2{font-size: var(--fs-h3); margin-bottom: 0.75em;}
+.psTabInfo > h2{font-size: var(--fs-h3); margin-bottom: 0.75em; font-weight: var(--fw-semi-bold); color: var(--primary-950);}
 .psTabInfo > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--black);}
+.psTabBtn{margin-top: 1.5em;}
+.psTabBtn > .comBtnHollow{background-color: var(--white);}
 
 .psHotWaterContent{display: flex; justify-content: space-between; align-items: center; gap: 60px;}
 .psHotWaterInfo{max-width: 765px; width: 100%;}
-.psHotWaterImg{max-width: 700px; width: 100%;}
-.psHotWaterSec{padding: 2.62em 0;}
+.psHotWaterImg{max-width: 700px; width: 100%; border-radius: 16px; overflow: hidden;}
+.psHotWaterSec {padding: 4.13em 0 0;}
 .psHotWaterHeading{margin-bottom: 2.5em;}
-.psHotWaterHeading > h2{margin-bottom: 16px; font-family: var(--fs-h1); letter-spacing: 0.005em; color: var(--gray-900);}
-.psHotWaterHeading > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700);}
+.psHotWaterHeading > h2{margin-bottom: 16px; font-family: var(--fs-h1); letter-spacing: 0.005em; color: var(--white);}
+.psHotWaterHeading > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--white);}
 .psEnergyCapSec ul li:not(:last-child) {margin-bottom: 1.5em;}
 .psEnergyCapHead{display: flex; align-items: center; gap: 1em; margin-bottom: 1.5em;}
-.psEnergyCapHead h3{font-size: var(--fs-h5);}
-.psEnergyCapSec ul li > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700);}
+.psEnergyCapHead h3{font-size: var(--fs-h5); color: var(--white);}
+.psEnergyCapSec ul li > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--white);}
 
 
-.psCustomSol{background-color: var(--gray-50); padding: 10.68em 0;}
+.psCustomSol{background-color: var(--gray-50); padding: 7.625em 0;}
 .psCustomSolInfo{display: flex; align-items: center;}
-.psCustomSolHead{max-width: 50%; width: 100%; padding-right: 5em;}
+.psCustomSolHead{max-width: 50%; width: 100%; padding-right: 5em;  }
 .psCustomHEading{max-width: 100%;}
 .psCustomHEading > h2{margin-bottom: 16px;}
 .psCostumSolText{max-width: 50%; width: 100%; padding: 13.5px 0; padding-left: 5em; border-left: 1px solid var(--gray-200);}
+.psCostumSolText .psEnergyCapHead h3 {font-size: var(--fs-h5);color: var(--gray-900);}
+.psCostumSolText .psEnergyCapSec ul li > p{color: var(--gray-700);}
 
 
 
