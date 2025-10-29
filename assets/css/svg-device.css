@@ -39,9 +39,10 @@
 .ourStoryTxt{width: 100%;}
 .ourStoryImg{width: 100%;height: auto;position: relative;}
 .hmHeroTop{width: 100%;}
-.hmHeroVideo{position: relative;width: 100%;margin-top: 2em;}
-.hmHeroVideo > img, .hmHeroVideo > video{aspect-ratio: 16/9;object-fit: cover;}
+.hmHeroVideo{position: relative;width: 100%;margin-top: 2em;margin-bottom: var(--secGap);max-width: 400px;}
+/* .hmHeroVideo > img, .hmHeroVideo > video{aspect-ratio: 16/9;object-fit: cover;} */
 .hmHeroSection{display: flex;flex-direction: column-reverse;padding-bottom: 0;}
+.hmHeroSection .main-wrapper.d-flex{flex-direction: column-reverse;}
 }
 @media (max-width:768px){
 .caseStudyTxt{max-width: 100%;}
