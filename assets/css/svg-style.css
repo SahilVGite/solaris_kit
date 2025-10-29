@@ -116,10 +116,9 @@
 /* Home Slider Section */
 .hmSec2{overflow: hidden;}
 .hmSec2slideImg{top: 0;left: 0;height: 100%;max-width: 48.615%;}
-/* .hmSec2Txt.sv-secGap{padding-block: calc(var(--secGap) + 4em);} */
 .hmSec2Txt{max-width: calc(53.385% - 3.6em);margin-left: auto;}
 .hmSec2slideImg > img{width: 100%;height: 100%;object-fit: cover;}
-.hmSec2slide{min-height: 90vh;align-content: center;}
+.hmSec2slide{min-height: 95vh;align-content: center;}
 .hmSec2slide:first-child{background-color: var(--primary-950);}
 .hmSec2slide:nth-child(2){background-color: var(--primary-800);}
 .hmSec2slide:nth-child(3){background-color: var(--primary-600);}

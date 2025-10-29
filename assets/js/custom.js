@@ -174,17 +174,17 @@ $(document).ready(function () {
     ]
   });
 
-  $('.hmSec2').slick({
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 300,
-    autoplay: true,
-    autoplaySpeed: 8000,
-    fade: true,
-    cssEase: 'linear',
-    pauseOnHover: false,
-  });
+  // $('.hmSec2').slick({
+  //   dots: false,
+  //   arrows: false,
+  //   infinite: true,
+  //   speed: 300,
+  //   autoplay: true,
+  //   autoplaySpeed: 8000,
+  //   fade: true,
+  //   cssEase: 'linear',
+  //   pauseOnHover: false,
+  // });
 
   $('.psProductImg').slick({
     dots: true,
@@ -324,4 +324,94 @@ cards.forEach((card, i) => {
       ease: "power2.inOut"
     }, "<");
   }
+});
+
+
+
+
+
+// Home Page Second Section animation
+function initHmSec2Animation() {
+  const $section = $(".hmSec2");
+  const slides = gsap.utils.toArray(".hmSec2slide");
+
+  if (window.innerWidth >= 1024) {
+    // Kill slick if exists
+    if ($section.hasClass("slick-initialized")) {
+      $section.slick("unslick");
+    }
+
+    // Kill old ScrollTriggers
+    ScrollTrigger.getAll().forEach(st => st.kill());
+
+    // ✅ Wrap slides in a container if not wrapped
+    if (!$section.find(".hmSec2Inner").length) {
+      $section.wrapInner('<div class="hmSec2Inner"></div>');
+    }
+
+    const inner = $section.find(".hmSec2Inner")[0];
+
+    gsap.set($section, {
+      position: "relative",
+      height: "100vh",
+      overflow: "hidden",
+    });
+
+    gsap.set(inner, {
+      display: "flex",
+      flexWrap: "nowrap",
+      width: `${slides.length * 100}%`,
+      height: "100%",
+    });
+
+    gsap.set(slides, {
+      width: `${100 / slides.length}%`,
+      height: "100%",
+      flexShrink: 0,
+    });
+
+    // ✅ Calculate dynamic scroll distance based on inner width
+    const totalScroll = inner.scrollWidth - $section.outerWidth();
+
+    gsap.to(inner, {
+      x: -totalScroll,
+      ease: "none",
+      scrollTrigger: {
+        trigger: $section[0],
+        start: "top-=80 top", // pin 80px below top
+        end: `+=${totalScroll}`, // dynamically match scroll distance
+        scrub: 1,
+        pin: true,
+        anticipatePin: 1,
+        invalidateOnRefresh: true, // important for resize recalculations
+      },
+    });
+  } else {
+    // ✅ Below 1024px — use slick
+    if ($section.hasClass("slick-initialized")) return;
+
+    // Unwrap if wrapped
+    if ($section.find(".hmSec2Inner").length) {
+      const inner = $section.find(".hmSec2Inner");
+      inner.children().unwrap();
+    }
+
+    $section.slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      autoplay: true,
+      autoplaySpeed: 8000,
+      pauseOnHover: false,
+      adaptiveHeight: true
+    });
+
+    ScrollTrigger.getAll().forEach(st => st.kill());
+  }
+}
+
+$(document).ready(initHmSec2Animation);
+$(window).on("resize", function () {
+  setTimeout(initHmSec2Animation, 500);
 });
