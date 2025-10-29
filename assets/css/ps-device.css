@@ -22,8 +22,8 @@
 
 
     /* ==== knowledge page ==== */
-    .psArticleSlideWrapper {max-width: 1672px; margin-left: auto;}
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 247px;}
+    .psArticleSlideWrapper {max-width: 1625px; margin-left: auto;}
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 225px;}
 }
 
 @media only screen and (max-width:1600px){
@@ -40,7 +40,7 @@
     .psProductInfo {max-width: 869px;}
 
     /* ==== knowledge page ==== */
-    .psArticleSlideWrapper{max-width: 1500px;}
+    .psArticleSlideWrapper{max-width: 1460px;}
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 200px;}
 }
 

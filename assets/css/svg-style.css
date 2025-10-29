@@ -40,6 +40,7 @@
 .feedBackSlider{margin-top: 2.5em;}
 .feedBackSec{background: var(--primary-800) url(../images/feedBack-bg.png) center / cover no-repeat;}
 .feedBackSec .psKnowSecHeading > p,.hmPartnerSupportSec .psKnowSecHeading > p{max-width: 475px;}
+.hmPartnerSupportSec .psKnowSecHeading > p{margin-bottom: 2.5em;}
 .feedBackSec .psKnowSecHeading > *{color: var(--gray-50);}
 .feedBackSliderCard{padding: 1.5em;background:rgba(45,44,43,0.5);border-radius:16px;backdrop-filter: blur(10px);margin-inline: 1em;}
 .feedBackSliderCardTitle > *{font-size: var(--fs-h5);color: var(--gray-50);}

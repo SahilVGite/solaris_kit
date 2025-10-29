@@ -31,6 +31,8 @@
 .psCertifiedLogo{max-width: 61px; margin-top: 2em;}
 .psBottomFooter{border-top: 1px solid var(--gray-200); padding: 1.8em 0 2.37em; margin-top: 2.75em;}
 .psBottomFooter > p{text-align: center; color: var(--gray-600);}
+.psCompanyLinks > li > a.d-flex{gap: 0.5em;}
+.psCompanyLinks > li > a.d-flex > span{max-width: 18px;}
 
 
 
@@ -110,7 +112,7 @@ textarea {resize: none;min-height: 120px;}
 
 .psKnowSecHeading{max-width: 720px; width: 100%;}
 .psKnowSecHeading > h2{font-size: var(--fs-h1); letter-spacing: 0.005em; color: var(--black); margin-bottom: 0.3333em;font-weight: var(--fw-semi-bold);}
-.psKnowSecHeading > p{font-size: var(--fs-body);color: var(--black);}
+.psKnowSecHeading > p{font-size: var(--fs-body);color: var(--black);margin-bottom: 2.5em;}
 .psKnowSecHeading > p:not(:last-child){margin-bottom: 1.5em;}
 .psArticleSlideWrapper{max-width: 1818px; margin-left: auto;}
 .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 258px;}
@@ -249,3 +251,5 @@ backdrop-filter: blur(15px); border-radius: 16px;}
 .psPartnerInfoBlock > ul li > ul{list-style-type: disc; color: var(--white); font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; padding-left: 19px;}
 
 .psAboutCompany{background-color: var(--gray-50);}
+.psOurProject{padding-bottom: 0;}
+.psOurProject .psArtSlideInfo{border-bottom-left-radius: 0 !important;border-bottom-right-radius: 0 !important;}
