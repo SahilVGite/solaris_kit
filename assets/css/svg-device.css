@@ -5,70 +5,73 @@
 .wrapper1336{max-width: 1336px;}
 .hmHeroImg{top: 4em;}
 .hmHeroImg > img{max-width: 558px;top: 4em;}
-.hmHeroBtn{margin-top:-0.5em;}
 
 }
 @media (max-width:1366px){
 .wrapper1336{padding-inline: 30px;}
- .psProDetailVidBox{padding:10em 0;}
- .psVideoPlayBtn{max-width:6%;}
+.psProDetailVidBox{padding:10em 0;}
+.psVideoPlayBtn{max-width:6%;}
+.ourStoryTxt{width: calc(50.833% - 2.5em);}
 }
 @media (max-width:1100px){
-    .custom-card{flex-direction: column;}
-    .custom-card-img > img{aspect-ratio:16 / 9;width: 100%;}
-    .psProDetailHeading{padding-right: 0;}
-    .custom-card-txt{padding:3em;}
-    .whySolarisCards,.whatWeOfferCards > ul{flex-flow: row wrap;justify-content: center;}
-    .whySolarisCard{width: calc(50% - 0.5625em);}
-    .whatWeOfferCard{width: calc(50% - 0.75em);}
-    .caseStudyTxt{max-width:calc(52% - 1.625em);}
-    .psLateArticleBox .main-wrapper.d-flex{margin-bottom:2.5em;}
-    .PartnerMarqueeCard{margin-inline:1.75em;}
-    .hmHeroBtn{margin-top:1.5em;}
-    .hmHeroImg{top:0;align-content:center;}
-
-
-
+.custom-card{flex-direction: column;}
+.custom-card-img > img{aspect-ratio:16 / 9;width: 100%;}
+.psProDetailHeading{padding-right: 0;}
+.custom-card-txt{padding:3em;}
+.whySolarisCards,.whatWeOfferCards > ul{flex-flow: row wrap;justify-content: center;}
+.whySolarisCard{width: calc(50% - 0.5625em);}
+.whatWeOfferCard{width: calc(50% - 0.75em);}
+.caseStudyTxt{max-width:calc(52% - 1.625em);}
+.psLateArticleBox .main-wrapper.d-flex{margin-bottom:2.5em;}
+.PartnerMarqueeCard{margin-inline:1.75em;}
+.hmHeroImg{top:0;align-content:center;}
 }
 @media (max-width:950px){
-    .psProFeatureBlock li{max-width:calc(75% - 1em);}
-    .psProFeatureBlock{justify-content: center;}
-    .whoWeserveCard{flex-direction: column-reverse;}
-    .whoWeserveCards > .whoWeserveCard > *{width: 100%;max-width: 100%;}
-    .whoWeserveCards > * > .whoWeserveCardImg > img{aspect-ratio: 16 / 9;}
-    .whySolarisHead{flex-direction: column;gap: 1em;padding: 2.5em 1.5em;}
-    .whySolarisTitle{margin-right: 0;padding-right: 0;}
-    .whySolarisTitle::after{width: 0;}
-    .whySolarisHead > *{width: 100%;max-width: 100%;}
+.psProFeatureBlock li{max-width:calc(75% - 1em);}
+.psProFeatureBlock{justify-content: center;}
+.whoWeserveCard{flex-direction: column-reverse;}
+.whoWeserveCards > .whoWeserveCard > *{width: 100%;max-width: 100%;}
+.whoWeserveCards > * > .whoWeserveCardImg > img{aspect-ratio: 16 / 9;}
+.whySolarisHead{flex-direction: column;gap: 1em;padding: 2.5em 1.5em;}
+.whySolarisTitle{margin-right: 0;padding-right: 0;}
+.whySolarisTitle::after{width: 0;}
+.whySolarisHead > *{width: 100%;max-width: 100%;}
+.ourStoryTxt{width: 100%;}
+.ourStoryImg{width: 100%;height: auto;position: relative;}
+.hmHeroTop{width: 100%;}
+.hmHeroVideo{position: relative;width: 100%;margin-top: 2em;}
+.hmHeroVideo > img, .hmHeroVideo > video{aspect-ratio: 16/9;object-fit: cover;}
+.hmHeroSection{display: flex;flex-direction: column-reverse;padding-bottom: 0;}
 }
 @media (max-width:768px){
-    .caseStudyTxt{max-width: 100%;}
-    .caseStudyImg{position: relative;width: 100%;}
-    .caseStudyImg > img{height: auto;aspect-ratio: 16 / 9;}
+.caseStudyTxt{max-width: 100%;}
+.caseStudyImg{position: relative;width: 100%;}
+.caseStudyImg > img{height: auto;aspect-ratio: 16 / 9;}
 }
 @media (max-width:767px){
-    .hmHeroSection .hmHeroTop{flex-direction: column-reverse;}
-    .hmHeroSection .hmHeroTop > *{width: 100%;}
-    .hmHeroImg > img{max-width:358px;}
-    .hmHeroTxt{margin-top: var(--secGap);}
-    .hmHeroSection .hmHeroTop{gap:2em;}
-    .certifyLogo{max-width:45px;}
-    .hmSec2Txt{max-width: 100%;}
-    .hmSec2slideImg{position: relative;max-width: 100%;aspect-ratio: 16 / 9;}
-    .hmSec2slide{min-height: auto;}
-    .hmSec2slide{display: flex !important;flex-direction: column-reverse;}
+.hmHeroSection .hmHeroTop{flex-direction: column-reverse;}
+.hmHeroSection .hmHeroTop > *{width: 100%;}
+.hmHeroImg > img{max-width:358px;}
+.hmHeroTxt{margin-top: var(--secGap);}
+.hmHeroSection .hmHeroTop{gap:2em;}
+.certifyLogo{max-width:45px;}
+.hmSec2Txt{max-width: 100%;}
+.hmSec2slideImg{position: relative;max-width: 100%;aspect-ratio: 16 / 9;}
+.hmSec2slide{min-height: auto;}
+.hmSec2slide{display: flex !important;flex-direction: column-reverse;}
 
 }
 @media (max-width:610px){
-    .psProFeatureBlock li{max-width: 100%;}
-    .psProDetailVidBox{padding:6em 0;}
-    .custom-card-txt{padding:3em 2em;}
-    .hmVideoSecTxt{flex-direction: column;gap: 1em;}
-    .hmVideoSecTxt > *,.whySolarisCard,.whatWeOfferCard{width: 100%;max-width: 100%;}
-    .whoWeserveCardBtns > *{width: 100%;text-align: center;}
-    .hmBtns a,.hmBtns div{width: 100%;text-align: center;}
-    .hmBtns a.d-flex{justify-content: center;}
-    .siteLogo{max-width:160px;}
-    .menuSec{gap:1.3em;}
-
+.psProFeatureBlock li{max-width: 100%;}
+.psProDetailVidBox{padding:6em 0;}
+.custom-card-txt{padding:3em 2em;}
+.hmVideoSecTxt{flex-direction: column;gap: 1em;}
+.hmVideoSecTxt > *,.whySolarisCard,.whatWeOfferCard{width: 100%;max-width: 100%;}
+.whoWeserveCardBtns > *{width: 100%;text-align: center;}
+.hmBtns a,.hmBtns div{width: 100%;text-align: center;}
+.hmBtns a.d-flex{justify-content: center;}
+.siteLogo{max-width:160px;}
+.menuSec{gap:1.3em;}
+.psVisionBlock{flex-direction: column;}
+.psVisionBlock:nth-child(2){flex-direction: column-reverse;}
 }

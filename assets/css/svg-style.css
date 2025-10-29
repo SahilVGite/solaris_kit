@@ -2,14 +2,21 @@
 .showInHamMenu{display: none;}
 .menuIcon,.menuClose{display: none;max-width: 40px;margin-left: auto;}
 .menuClose{max-width: 40px;}
-.menuSec{max-width: 62%;justify-content: space-between;}
+.menuSec{max-width: 66%;justify-content: space-between;}
 .siteLogo{}
 .globalIcon{width: max-content;}
 .menu-overlay{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.4);z-index: 95;}
 
+/* Common Banners */
+.psComPageInfo p:not(:last-child){margin-bottom: 1em;}
+
+/* Slick Slider */
+.slick-dots{bottom: 36px;}
+.slick-dots li button{width: 8px;height: 8px;border: none;background-color: #D9D9D9;}
+.slick-dots li.slick-active button{width: 12px;height: 12px;background-color: var(--primary-600);padding-bottom: 3px;}
+.slick-dots li:only-child button{display: none;}
 
 /* Singel Product GSAP Animation Cards */
-
 .cards{position:relative;display:flex;justify-content:center;align-items:center;min-height:62vh;margin-bottom:90px;margin-top: 5em;}
 .custom-card{position:absolute;width:100%;top:0px;height:auto;color:#fff;margin-bottom:50px;display:flex;justify-content:center;align-items:center;border-radius:24px;box-shadow:0 0 30px 0 rgba(0,0,0,0.2);background-color:var(--primary-800);overflow: hidden;}
 .custom-card:nth-child(2n){background-color: var(--primary-950);}
@@ -30,6 +37,7 @@
 .hmPartnerSupportSec .psKnowSecHeading > h2{margin-bottom: 0.3333em;}
 .PartnerMarqueeCard{margin-inline: 3.75em;}
 /* Home Reviews Section */
+.feedBackSlider{margin-top: 2.5em;}
 .feedBackSec{background: var(--primary-800) url(../images/feedBack-bg.png) center / cover no-repeat;}
 .feedBackSec .psKnowSecHeading > p,.hmPartnerSupportSec .psKnowSecHeading > p{max-width: 475px;}
 .feedBackSec .psKnowSecHeading > *{color: var(--gray-50);}
@@ -132,8 +140,6 @@
 .playBtn > *{cursor: pointer;background-color: transparent;border: none;outline: none;width: clamp(35px, 6vw, 78px);}
 /* Home Hero Section */
 .hmHeroSection{background: url(../images/hmHero-bg.png) left top / 85% 100% no-repeat;padding-bottom: var(--secGap);}
-.hmHeroSection .hmHeroTop{gap: 5.0625em;}
-.hmHeroSection .hmHeroTop > *{width: 50%;}
 .hmBtns a.d-flex{gap: 0.5em;}
 .hmBtns a.d-flex span{max-width: 18px;}
 .hmBtns{gap: 0.5em;}
@@ -148,4 +154,44 @@
 .downlBrochBtn{margin-left:auto;position:absolute;left:50%;transform:translateX(-50%);text-align: center;}
 .downlBrochBtn > *{font-size:var(--fs-body);color:var(--primary-950);font-weight:var(--fw-semi-bold);background-color:#E4E4E4;border:1px solid #ECECEC;border-radius:50px;padding:0.75em 1em;}
 .certifyLogo{max-width:76px;}
-.hmHeroBtn{margin-top:-3.5em;}
+.hmHeroVideo{left: 0;width: 45.523%;height: 100%;}
+.hmHeroVideo > img,.hmHeroVideo > video{height: 100%;object-fit: cover;}
+.hmHeroTop{width: calc(54.477% - 4.125em);}
+.hmHeroBtn{margin-top: 0.8125em;}
+
+
+/* About Page */
+.ourStoryTxtTitle > *{font-size: var(--fs-h1);font-weight: var(--fw-semi-bold);color: var(--black);margin-bottom: 0.5416em;}
+.ourStoryTxtDesc > p{font-size: var(--fs-body);color: var(--gray-800);line-height: 1.3;}
+.ourStoryTxtDesc > p:not(:last-child){margin-bottom: 1.5em;}
+.ourStoryTxtDesc{margin-bottom: 2.5em;}
+.psCertificateBlock{background-color: var(--primary-950);}
+.psCertDesc > p{font-size: var(--fs-body);color: var(--gray-100);line-height: 1.3;}
+.ourStoryImg{top: 0;right: 0;width: 49.167%;height: 100%;}
+.ourStoryImg > img{height: 100%;object-fit: cover;}
+.ourStoryTxt{width: calc(50.833% - 4.5em);}
+
+/* Product Details */
+.psProdDetsCase .psKnowSecHeading > p,.psKnowledgeArticleBox .psKnowSecHeading > p{margin-bottom: 2.5em;}
+
+/* Knowledge Page */
+.psKnowledgeArticleBox{background-color: var(--gray-50);}
+.knowledgeHubTabBtns{margin-bottom: 2.5em;}
+.knowledgeHubTabBtns > ul{gap: 2.75em;border-bottom: 1px solid var(--gray-200);overflow-x: auto;}
+/* Map Sections */
+.mapSec{background-color: var(--gray-50);}
+.mapSecTitle > *{font-size: var(--fs-h1);color: var(--gray-900);font-weight: var(--fw-semi-bold);margin-bottom: 0.8333em;margin-top: var(--secGap);}
+.mapData{transition: all 0.3s;opacity: 0;pointer-events: none;position: absolute;top: 100%;left: 0;width: max-content;padding-top: 0.9375em;}
+.mapData > div{background-color: var(--primary-800);padding: 1.5em;border-radius: 8px;max-width: 386px;}
+.mapPoint.active .mapData,.mapPoint:hover .mapData,.mapData:hover{opacity:1;pointer-events:auto;}
+.mapDataTitle{gap: 0.5em;}
+.mapDataTitle > span.icon{max-width: 16px;width: 100%;}
+.mapDataTitle > *{font-size: var(--fs-h5);font-weight: var(--fw-semi-bold);color: var(--white);}
+.mapDataDesc > p{font-size: var(--fs-body);color: var(--gray-50);line-height: 1.3;margin-block: 1.5em;}
+.mapDataBtn > a{font-size: var(--fs-body);color: var(--gray-50);font-weight: var(--fw-semi-bold);line-height: 1.3;text-decoration: underline;}
+.mapPoint{font-size: var(--fs-body);width: 4.875em;height: 4.875em;border-radius: 100%;background-color: var(--primary-400);cursor: pointer;}
+.mapPoint::before{content: '';font-size: var(--fs-body);background-color: var(--primary-800);width: 1em;height: 1em;border-radius: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.mapPoint1{top:6%;right:26%;}
+.mapPoint2{top:24%;right:39%;}
+.mapPoint3{top:70%;left:35%;display: flex;}
+.mapPoint3 .mapData{top: 0;left: 100%;padding-left: 0.9375em;padding-top: 0;}

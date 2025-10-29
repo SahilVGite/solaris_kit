@@ -92,29 +92,6 @@ $(document).ready(function () {
   });
 
 
-  function initSlider() {
-    if ($(window).width() <= 610) {
-      if (!$('.psAllArtBox').hasClass('slick-initialized')) {
-        $('.psAllArtBox').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: true,
-          arrows: true,
-          autoplaySpeed: 200000
-        });
-      }
-    } else {
-      if ($('.psAllArtBox').hasClass('slick-initialized')) {
-        $('.psAllArtBox').slick('unslick');
-      }
-    }
-  }
-
-  initSlider();
-  $(window).on('resize', initSlider);
-
-
-
   // solution tabing
   $('.psNavTabs li a').click(function (e) {
     e.preventDefault();
@@ -198,7 +175,7 @@ $(document).ready(function () {
   });
 
   $('.hmSec2').slick({
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
     speed: 300,
@@ -208,6 +185,95 @@ $(document).ready(function () {
     cssEase: 'linear',
     pauseOnHover: false,
   });
+
+  $('.psProductImg').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    fade: true,
+    cssEase: 'linear',
+    pauseOnHover: false,
+  });
+
+  // Tab Section
+  $(".tabBtn").click(function () {
+    var tab_id = $(this).data("id");
+
+    $(".tabBtn, .tab-content").removeClass("active");
+    $(this).addClass("active");
+    $("#" + tab_id).addClass("active");
+
+    // Reinitialize Slick slider inside the active tab
+    // $("#" + tab_id).find(".psAllArtBox").slick("setPosition");
+  });
+
+
+  // Map hover and mobile click code
+  function isMobile() {
+    return window.matchMedia("(max-width: 1023px)").matches;
+  }
+
+  // Desktop hover
+  $(".mapPoint").on("mouseenter", function () {
+    if (!isMobile()) {
+      $(this).addClass("active");
+    }
+  });
+
+  $(".mapPoint").on("mouseleave", function () {
+    if (!isMobile()) {
+      $(this).removeClass("active");
+    }
+  });
+
+  // Mobile click
+  $(".mapPoint").on("click", function (e) {
+    if (isMobile()) {
+      e.stopPropagation();
+      const parent = $(this).closest(".mapPoints");
+
+      // Close all others first
+      $(".mapPoints").not(parent).removeClass("active");
+
+      // Toggle current one
+      parent.toggleClass("active");
+    }
+  });
+
+  // Click anywhere outside to close on mobile
+  $(document).on("click", function () {
+    if (isMobile()) {
+      $(".mapPoints").removeClass("active");
+    }
+  });
+
+
+
+
+// Video play code
+function setupVideoPlayer(videoSelector, playBtnSelector) {
+  $(videoSelector).each(function () {
+    const video = $(this).get(0);
+    const playBtn = $(this).closest(".psProDetailVidBox").find(playBtnSelector);
+
+    playBtn.on("click", function () {
+      video.setAttribute("controls", true);
+      video.play();
+      playBtn.fadeOut(300);
+    });
+
+    $(video).on("ended", function () {
+      video.removeAttribute("controls");
+      playBtn.fadeIn(300);
+    });
+  });
+}
+
+// only pass the video and play Button selector
+setupVideoPlayer(".psProDetailVidBox video", ".psVideoPlayBtn");
 
 });
 
@@ -224,7 +290,7 @@ let tl = gsap.timeline({
     pinSpacing: true,
     markers: false,
     start: "top-=200px top", // when the top of the trigger hits the top of the viewport
-    end: "+=2000", // end after scrolling 1000px beyond the start
+    end: "+=1000", // end after scrolling 1000px beyond the start
     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
   }
 });
@@ -235,9 +301,9 @@ cards.forEach((card, i) => {
   if (nextCard) {
     // Animate the front card going backward (fade & scale down)
     tl.to(card, {
-      yPercent: -30,
+      yPercent: -15,
       scale: 0.95,
-      opacity: 0.6,
+      opacity: 0.4,
       zIndex: 8 - i,
       ease: "power2.inOut"
     });
@@ -256,34 +322,6 @@ cards.forEach((card, i) => {
       scale: 0.95,
       opacity: 1,
       ease: "power2.inOut"
-    });
+    }, "<");
   }
 });
-
-// Animation for card 2
-// tl.from('.card2', {  yPercent:0,  opacity: 1,}) 
-tl.addLabel("card2");
-// tl.add(() => setActiveNav(tl.scrollTrigger.direction > 0 ? 1 : 0), "-=0.15");
-// tl.to('.card1',{  scale:0.925,  yPercent:-0.75,  opacity: 1}, "-=0.3")
-// tl.to('.card2', {  yPercent:0,  opacity: 1})
-
-
-
-// Additional animations for scaling down previous cards
-// tl.to('.card1',{
-//   // scale:0.925,
-//   yPercent:-1.5,
-//   opacity: 0.9
-// }, "-=0.3")
-
-// tl.to('.card2',{
-//   // scale:0.95,
-//   yPercent:-1.125,
-//   opacity: 0.9
-// }, "-=0.3")
-
-
-// Without the .nav .circle elements, we don't need to handle setActiveNav function
-/* gsap.utils.toArray(".nav .circle").forEach((circle, i) => {
-  circle.classList[i === index ? "add" : "remove"]("active");
-}); */

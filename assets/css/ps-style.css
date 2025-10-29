@@ -12,8 +12,8 @@
 /* ==== page common banner */
 .psComPageHead{background-repeat: no-repeat; background-size: cover; background-position: center; padding: 7.93em 0 6.687em;}
 .psComPageInfo{max-width: 720px; width: 100%;}
-.psComPageInfo h1{font-size: var(--fs-h1); color: var(--white); margin-bottom: 0.333em; letter-spacing: 0.005em;}
-.psComPageInfo p{color: var(--white); line-height: 1.3; letter-spacing: 0.005em;}
+.psComPageInfo h1{font-size: var(--fs-h1); color: var(--white); margin-bottom: 0.333em; letter-spacing: 0.005em;font-weight: var(--fw-semi-bold);line-height: 1.3;}
+.psComPageInfo p{color: var(--gray-100); line-height: 1.3; letter-spacing: 0.005em;}
 
 
 /* ==== footer ==== */
@@ -108,8 +108,10 @@ textarea {resize: none;min-height: 120px;}
 .psAboutKnowText > h2{font-size: var(--fs-h1); margin-bottom: 0.958em;}
 .psAboutKnowText > p {color: var(--black); line-height: 1.3; letter-spacing: 0.005em;}
 
-.psKnowSecHeading{max-width: 720px; width: 100%; margin-bottom: 1em;}
-.psKnowSecHeading > h2{font-size: var(--fs-h1); letter-spacing: 0.005em; color: var(--black); margin-bottom: 0.8333em;}
+.psKnowSecHeading{max-width: 720px; width: 100%;}
+.psKnowSecHeading > h2{font-size: var(--fs-h1); letter-spacing: 0.005em; color: var(--black); margin-bottom: 0.3333em;font-weight: var(--fw-semi-bold);}
+.psKnowSecHeading > p{font-size: var(--fs-body);color: var(--black);}
+.psKnowSecHeading > p:not(:last-child){margin-bottom: 1.5em;}
 .psArticleSlideWrapper{max-width: 1818px; margin-left: auto;}
 .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 258px;}
 .psArticleSlider > .slick-list.draggable .slick-track .slick-slide{margin: 0 14px; border-radius: 14px; overflow: hidden;}
@@ -119,11 +121,11 @@ textarea {resize: none;min-height: 120px;}
 .psArticleText > p{font-size: var(--fs-body); color: var(--white); line-height: 1.1313; letter-spacing: 0.005em;}
 .psArtSlideInfo:hover .psArticleText{bottom: 14px; opacity: 1;}
 
-.psAllArtBox{background-color: var(--gray-50);}
-.psAllArtSearch{max-width: 511px; width: 100%; border-radius: 8px; background-color: var(--white); display: flex; padding: 0.75em 0.5em; gap: 1em; margin-top: 3.5em;}
-.psAllArtSearchInput input{width: 100%; border: none;}
+/* .psAllArtBox{background-color: var(--gray-50);} */
+.psAllArtSearch{max-width: 511px; width: 100%; border-radius: 8px; background-color: var(--white); display: flex; padding: 0.75em 0.5em; gap: 1em;background-color: var(--gray-50);margin-bottom: 1.5em;}
+.psAllArtSearchInput input{width: 100%; border: none;background-color: var(--gray-50);}
 .psAllArtSearchInput input::placeholder{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; font-family: var(--primary-font);}
-.psAllArtBox{display: flex; flex-wrap: wrap; gap: 14px;}
+.psAllArtBox{flex-wrap: wrap; gap: 14px;}
 .psAllArtBoxInfo{max-width: calc(33.33% - 14px); overflow: hidden; border-radius: 14px;}
 .psAllArtText {max-width: 95%; width: 100%; background: rgba(0, 0, 0, 0.6); border-radius: 13.9062px; margin: auto; position: absolute; left: 0; right: 0; bottom: -50px; opacity: 0; padding: 14px; padding-right: 83px; transition: all 0.5s ease; backdrop-filter: blur(5px);}
 .psAllArtText > h3{font-size: var(--fs-sh); font-weight: var(--fw-semi-bold); color: var(--white); margin-bottom: 0.777em;}
@@ -196,8 +198,9 @@ backdrop-filter: blur(15px); border-radius: 16px;}
 .psProDetailHeading{max-width: 927px; width: 100%; padding-right: 2.5em;}
 .psProDetailHeading >  h2{font-size: var(--fs-h3); color: var(--black); padding-bottom: 1em; margin-bottom: 1em; border-bottom: 1px solid var(--gray-200);}
 
-.psProDetailVidBox{background-image: url('../images/prodetailvidbg.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 14.15em 0; display: flex; align-items: center; justify-content: center;}
-.psVideoPlayBtn{max-width: 114px; height: auto;}
+.psVideoPlayBtn{max-width:114px;height:auto;top:50%;left:50%;transform:translate(-50%,-50%);cursor:pointer;transition:opacity 0.3s ease;z-index:2;}
+.psProDetailVidBox video{width:100%;display:block;}
+
 
 .psProDetailFeature{background-color: var(--gray-50);}
 .psProFeatureHead{margin-bottom: 1.5em;}
@@ -213,13 +216,15 @@ backdrop-filter: blur(15px); border-radius: 16px;}
 
 
 /* ==== About Us page ==== */
+.psVisionMission{background-color: var(--gray-50);}
 .psVisionBlock{display: flex;}
 .psVmSmallBlock{max-width: 38%;}
 .psVmLargeBlock{max-width: 62%;}
 .psVmImg img {height: 100%; object-fit: cover;}
 .psVmHeading{display: flex; flex-direction: column; justify-content: center; padding: 0px 80px;}
 .psVmHeading >  h2{font-size: var(--fs-h1); font-weight: var(--fw-semi-bold); letter-spacing: 0.005em; margin-bottom: 0.833em;}
-.psVmHeading >  p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--black);}
+.psVmHeading >  p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700);}
+.psVmHeading >  p:not(:last-child){margin-bottom: 1.8em;}
 
 .psAboutStory{background-image: url('../images/ourstory-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 5.75em 0 10.75em;}
 .psAboutStoryText{max-width: 463px; width: 100%;}
@@ -233,10 +238,10 @@ backdrop-filter: blur(15px); border-radius: 16px;}
 .psglobTextInfo> p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-800);}
 .psglobTextInfo> p:not(:last-child) {margin-bottom: 1em}
 .psCertificateBlock {padding: 1.5em; border: 1px solid var(--gray-200); border-radius: 1em;}
-.psCertLogoTxt{display:flex; gap: 1.5em 1em; align-items: end; margin-bottom: 1em;}
-.psCertType > h3{font-size: var(--fs-h5); margin-bottom: 0.8em;}
-.psCertType > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-800);}
-.psCertLogo{max-width: 61px;}
+.psCertLogoTxt{display:flex; gap: 1.5em 1em; align-items: center; margin-bottom: 1em;}
+.psCertType > h3{font-size: var(--fs-h5); margin-bottom: 0.8em;color: var(--white);font-weight: var(--fw-semi-bold);}
+.psCertType > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-800);color: var(--gray-100);}
+.psCertLogo{max-width: 98px;}
 .psPartnerInfoBlock{max-width: 50%; background-image: url('../images/globtransimg.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 2.06em 5.62em 4.81em;}
 .psPartnerInfoBlock > ul > li{background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px); padding: 2.5em; border-radius: 1em;} 
 .psPartnerInfoBlock > ul > li:not(:last-child){margin-bottom: 1.5em;}
