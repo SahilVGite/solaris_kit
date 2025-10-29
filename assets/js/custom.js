@@ -278,62 +278,100 @@ setupVideoPlayer(".psProDetailVidBox video", ".psVideoPlayBtn");
 });
 
 
-
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-const cards = gsap.utils.toArray(".custom-card");
+/* -----------------------
+   Cards animation (stack)
+   ----------------------- */
+let cardsTL = null;
+function killTriggersForSelector(selector) {
+  ScrollTrigger.getAll().forEach(st => {
+    try {
+      if (!st.trigger) return;
+      // st.trigger can be a DOM node — check containment or equality
+      if (st.trigger === document.querySelector(selector) || document.querySelector(selector)?.contains(st.trigger)) {
+        st.kill();
+      }
+    } catch (e) {
+      // ignore any odd triggers
+    }
+  });
+}
 
-let tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".cards",
-    pin: true,
-    pinSpacing: true,
-    markers: false,
-    start: "top-=200px top", // when the top of the trigger hits the top of the viewport
-    end: "+=1000", // end after scrolling 1000px beyond the start
-    scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+function initCardsAnimation() {
+  // Kill only triggers related to .cards to avoid killing other sections
+  killTriggersForSelector(".cards");
+
+  // kill old timeline if exists
+  if (cardsTL) {
+    cardsTL.kill();
+    cardsTL = null;
   }
-});
 
-cards.forEach((card, i) => {
-  const nextCard = cards[i + 1];
+  const cards = gsap.utils.toArray(".custom-card");
+  if (!cards.length) return;
 
-  if (nextCard) {
-    // Animate the front card going backward (fade & scale down)
-    tl.to(card, {
-      yPercent: -15,
-      scale: 0.95,
-      opacity: 0.4,
-      zIndex: 8 - i,
-      ease: "power2.inOut"
-    });
+  // build timeline
+  cardsTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".cards",
+      pin: true,
+      pinSpacing: true,
+      markers: false,
+      start: "top-=200px top",
+      end: "+=1000",
+      scrub: 1,
+      invalidateOnRefresh: true
+    }
+  });
 
-    // Animate the next card coming to front
-    tl.to(nextCard, {
-      yPercent: 0,
-      scale: 1,
-      opacity: 1,
-      zIndex: 9 - i,
-      ease: "power2.inOut"
-    }, "<"); // "<" keeps both animations in sync
+  cards.forEach((card, i) => {
+    const nextCard = cards[i + 1];
 
-    tl.to(card, {
-      yPercent: -15,
-      scale: 0.95,
-      opacity: 1,
-      ease: "power2.inOut"
-    }, "<");
-  }
-});
+    if (nextCard) {
+      // Animate the front card going backward (fade & scale down)
+      cardsTL.to(card, {
+        yPercent: -15,
+        scale: 0.95,
+        opacity: 0.4,
+        zIndex: 8 - i,
+        ease: "power2.inOut"
+      });
 
+      // Animate the next card coming to front (in sync)
+      cardsTL.to(nextCard, {
+        yPercent: 0,
+        scale: 1,
+        opacity: 1,
+        zIndex: 9 - i,
+        ease: "power2.inOut"
+      }, "<"); // "<" keeps both animations in sync
 
+      // small settle for the previous card (optional)
+      cardsTL.to(card, {
+        yPercent: -15,
+        scale: 0.95,
+        opacity: 1,
+        ease: "power2.inOut"
+      }, "<");
+    }
+  });
+}
 
+/* -----------------------
+   Home section animation
+   ----------------------- */
+function killHmSec2Triggers() {
+  // kill only triggers that belong to .hmSec2
+  killTriggersForSelector(".hmSec2");
+}
 
-
-// Home Page Second Section animation
 function initHmSec2Animation() {
   const $section = $(".hmSec2");
   const slides = gsap.utils.toArray(".hmSec2slide");
+
+  // ensure we remove only .hmSec2 related triggers
+  killHmSec2Triggers();
 
   if (window.innerWidth >= 1024) {
     // Kill slick if exists
@@ -341,10 +379,7 @@ function initHmSec2Animation() {
       $section.slick("unslick");
     }
 
-    // Kill old ScrollTriggers
-    ScrollTrigger.getAll().forEach(st => st.kill());
-
-    // ✅ Wrap slides in a container if not wrapped
+    // Wrap slides in a container if not wrapped
     if (!$section.find(".hmSec2Inner").length) {
       $section.wrapInner('<div class="hmSec2Inner"></div>');
     }
@@ -370,7 +405,7 @@ function initHmSec2Animation() {
       flexShrink: 0,
     });
 
-    // ✅ Calculate dynamic scroll distance based on inner width
+    // Calculate dynamic scroll distance
     const totalScroll = inner.scrollWidth - $section.outerWidth();
 
     gsap.to(inner, {
@@ -378,19 +413,19 @@ function initHmSec2Animation() {
       ease: "none",
       scrollTrigger: {
         trigger: $section[0],
-        start: "top-=80 top", // pin 80px below top
-        end: `+=${totalScroll}`, // dynamically match scroll distance
+        start: "top-=80 top",
+        end: `+=${totalScroll}`,
         scrub: 1,
         pin: true,
         anticipatePin: 1,
-        invalidateOnRefresh: true, // important for resize recalculations
-      },
+        invalidateOnRefresh: true
+      }
     });
   } else {
-    // ✅ Below 1024px — use slick
+    // mobile: use slick
     if ($section.hasClass("slick-initialized")) return;
 
-    // Unwrap if wrapped
+    // Unwrap if wrapped earlier
     if ($section.find(".hmSec2Inner").length) {
       const inner = $section.find(".hmSec2Inner");
       inner.children().unwrap();
@@ -407,11 +442,26 @@ function initHmSec2Animation() {
       adaptiveHeight: true
     });
 
-    ScrollTrigger.getAll().forEach(st => st.kill());
+    // ensure no leftover triggers for this section
+    killHmSec2Triggers();
   }
 }
 
-$(document).ready(initHmSec2Animation);
+/* -----------------------
+   Init on ready / resize
+   ----------------------- */
+$(document).ready(function () {
+  initCardsAnimation();
+  initHmSec2Animation();
+});
+
+// Re-init where appropriate on resize
+let resizeTimer;
 $(window).on("resize", function () {
-  setTimeout(initHmSec2Animation, 500);
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function () {
+    // re-init both; each function kills only its own triggers
+    initCardsAnimation();
+    initHmSec2Animation();
+  }, 300);
 });

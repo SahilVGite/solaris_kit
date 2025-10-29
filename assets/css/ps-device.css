@@ -22,10 +22,15 @@
 
 
     /* ==== knowledge page ==== */
-    .psArticleSlideWrapper {max-width: 1625px; margin-left: auto;}
+    .psArticleSlideWrapper {max-width: 1652px; margin-left: auto;}
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 225px;}
 }
 
+@media only screen and (max-width:1700px){
+        /* ==== knowledge page ==== */
+    .psArticleSlideWrapper {max-width: 1625px; margin-left: auto;}
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 225px;}
+}
 @media only screen and (max-width:1600px){
     .main-wrapper{max-width: 1400px;}
 

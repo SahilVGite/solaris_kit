@@ -40,7 +40,7 @@
 .psContactSection {background-color: var(--primary-950);color: var(--gray-100);}
 .psContactContainer {display: flex;flex-wrap: wrap;justify-content: space-between;}
 .psContactInfo {flex: 1; max-width: calc(50% - 83px); width: 100%;}
-.psContactInfo h2 {color: var(--primary-50);font-size: var(--fs-h1);margin-bottom: 16px; letter-spacing: 0.005em;}
+.psContactInfo h2 {color: var(--primary-50);font-size: var(--fs-h1);margin-bottom: 16px; letter-spacing: 0.005em;font-weight: var(--fw-semi-bold);}
 .psContactInfo p {color: var(--primary-100);font-size: var(--fs-body);line-height: 1.3; letter-spacing: 0.005em;}
 .psContactDetails{margin-top: 5em; display: flex; row-gap: 24px; flex-direction: column;}
 .psContactDetails .psDetailItem {display: flex;align-items: center;font-size: var(--fs-body); gap: 21px;}
@@ -65,10 +65,10 @@ textarea {resize: none;min-height: 120px;}
 
 
 .psFaqSection {background-color: var(--gray-50);}
-.psFaqContent{display: flex;}
+.psFaqContent{display: flex;gap: 1em;}
 .psFaqHeading{max-width: 45%; width: 100%;}
-.psFaqHeading h2{font-size: var(--fs-h1); color: var(--gray-900); margin-bottom: 26px; letter-spacing: 0.005em;}
-.psFaqHeading p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700);}
+.psFaqHeading h2{font-size: var(--fs-h1); color: var(--gray-900); margin-bottom: 26px; letter-spacing: 0.005em;font-weight: var(--fw-semi-bold);max-width: 99%;line-height: 1.3;}
+.psFaqHeading p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700);max-width: 500px;}
 .psFaqBox{max-width: 55%; width: 100%;}
 
 .psAccBox{border-bottom: 1px solid var(--gray-200);}
@@ -94,7 +94,7 @@ textarea {resize: none;min-height: 120px;}
 .psProudctDetails {display: flex; justify-content: space-between;}
 .psProductImg{max-width: 500px; width: 100%; }
 .psProductInfo{max-width: 1140px; width: 100%; padding: 62px 80px; background-color: var(--white); display: flex; flex-direction: column; justify-content: center; border-radius: 16px;}
-.psProductInfo > h2{font-size: var(--fs-h1); color: var(--black); margin-bottom: 46px; letter-spacing: 0.005em;}
+.psProductInfo > h2{font-size: var(--fs-h1); color: var(--black); margin-bottom: 46px; letter-spacing: 0.005em;font-weight: var(--fw-semi-bold);}
 .psProductInfo > h2 > sup{font-weight: var(--fw-regular); font-size: var(--fs-h5);}
 .psProductInfo > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--black); margin-bottom: 40px;}
 .psProBtnBox {display: flex; gap: 8px;}
