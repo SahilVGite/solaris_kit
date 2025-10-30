@@ -181,7 +181,7 @@
 /* Map Sections */
 .mapSec{background-color: var(--gray-50);}
 .mapSecTitle > *{font-size: var(--fs-h1);color: var(--gray-900);font-weight: var(--fw-semi-bold);margin-bottom: 0.8333em;margin-top: var(--secGap);}
-.mapData{transition: all 0.3s;opacity: 0;pointer-events: none;position: absolute;top: 100%;left: 0;width: max-content;padding-top: 0.9375em;}
+.mapData{transition: all 0.3s;opacity: 0;pointer-events: none;position: absolute;top: 100%;left: 0;width: max-content;padding-top: 0.9375em;z-index: 9;}
 .mapData > div{background-color: var(--primary-800);padding: 1.5em;border-radius: 8px;max-width: 386px;}
 .mapPoint.active .mapData,.mapPoint:hover .mapData,.mapData:hover{opacity:1;pointer-events:auto;}
 .mapDataTitle{gap: 0.5em;}
