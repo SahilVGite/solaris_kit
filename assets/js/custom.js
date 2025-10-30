@@ -77,15 +77,10 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 600, // for mobile landscape
+        breakpoint: 610, // for small mobile
         settings: {
-          slidesToShow: 1.2
-        }
-      },
-      {
-        breakpoint: 500, // for small mobile
-        settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
+          dots: true
         }
       }
     ]
