@@ -18,7 +18,7 @@
     .psFooteBox5 {padding-left: 2.4em;}
 
     /* ==== Contact ==== */
-    .psformBox2 select{background-position: 40%;}
+    /* .psformBox2 select{background-position: 40%;} */
 
     /* ==== Product ==== */
     .psProductInfo{max-width: 1060px; padding: 62px 40px; }
@@ -40,7 +40,7 @@
     .main-wrapper{max-width: 1400px;}
 
     /* ==== Contact ==== */
-    .psformBox2 select{background-position: 40%;}
+    /* .psformBox2 select{background-position: 40%;} */
     .contactNumPrefix{overflow: hidden;}
     .contactNumPrefix .psContactSelect{width: 100%; flex: 1 1 80px;}
     .contactNumPrefix .psContactSelect select{width: 80px;}
@@ -81,7 +81,7 @@
     }
 
     .main-wrapper{max-width: 1280px;}
-    .psComPageInfo{max-width: 660px; width: 100%;}
+    .psComPageInfo{max-width: 569px; width: 100%;}
 
 
     /* ==== footer ==== */
@@ -100,7 +100,7 @@
     .psFormRow{gap: 24px 16px;}
     .psFormRow .psformBox{max-width: calc(50% - 8px);}
 
-    .psformBox2 select{background-position: 40%;}
+    /* .psformBox2 select{background-position: 40%;} */
     .contactNumPrefix{overflow: hidden;}
     .contactNumPrefix .psContactSelect{width: 100%; flex: 1 1 80px;}
     .contactNumPrefix .psContactSelect select{width: 80px;}
@@ -217,7 +217,7 @@
 @media only screen and (max-width:1200px){
     /* ==== Contact ==== */
     .psContactInfo, .psContactForm{max-width: calc(50% - 16px);}
-    .psformBox2 select { background-position: 52%;}
+    /* .psformBox2 select { background-position: 52%;} */
     .psContactDetails{margin-top: 3em;}
     .psFormRow input, .psFormRow select, .psFormRow textarea{font-size: 14px;}
     .psContactDetails{row-gap: 15px;}
@@ -263,7 +263,7 @@
 
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 144px;}
 
-    .psProudctDetails{flex-wrap: wrap-reverse; gap:20px}
+    .psProudctDetails{flex-wrap: wrap; gap:20px}
     .psProductImg{max-width: 100%; background-color: var(--white); padding: 20px 0; border-radius: 16px;}
     .psProductImg > img{max-width: 40%; margin: auto;}
     .psProductInfo{max-width: 100%; padding: 30px;}
@@ -292,7 +292,7 @@
 @media only screen and (max-width:950px){
 
     /* ==== Contact ==== */
-    .psformBox2 select{background-size: 7%; background-position: 61%;}
+    .psformBox2 select{background-size: 7%;}
     .contactNumPrefix .psContactSelect select {width: 63px;}
     .contactNumPrefix .psContactSelect select{background-position: 79%; background-size: 19%;}
 
@@ -348,7 +348,8 @@
     .psContactDetails {margin-top: 2em;}
     .psContactForm {margin-top: 3em;}
     .psFormRow {gap: 16px;}
-    .psformBox2 select { background-size: 4%; background-position: 28%;}
+    .psformBox2 select { background-size: 4%;}
+    /* background-position: 28%; */
 
     .psFaqContent{flex-wrap: wrap; flex-direction: column;}
     .psFaqHeading{max-width: 100%;}
@@ -389,6 +390,8 @@
     .psVmSmallBlock {max-width: 46%;}
     .psVmHeading {padding: 50px 30px;}
 
+
+    .psProductInfo > h2{padding-right: 0;}
 
 
 }
@@ -499,7 +502,7 @@
 @media only screen and (max-width:380px){
     .main-wrapper{padding: 0 10px;}
 
-    .psformBox2 select{background-position: 36%;}
+    /* .psformBox2 select{background-position: 36%;} */
     .contactNumPrefix .psContactSelect select {background-position: 86%; background-size: 15%;}
     .psContactBtnGroup {flex-wrap: wrap;}
     .psSendBtn, .psMeetingBtn  {width: 100% !important;}

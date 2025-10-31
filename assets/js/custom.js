@@ -198,7 +198,7 @@ $(document).ready(function () {
     infinite: true,
     speed: 300,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 2000,
     fade: true,
     cssEase: 'linear',
     pauseOnHover: false,

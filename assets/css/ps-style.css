@@ -51,7 +51,7 @@
 .psFormRow .psformBox{max-width: calc(50% - 1em); width: 100%;}
 .psFormRow.psFull {flex-direction: column;}
 .psFormRow input,.psFormRow select,.psFormRow textarea {flex: 1;background-color: var(--primary-900);border: none;color: var(--primary-100);padding: 0.59em 1em;border-radius: 4px;font-size: 16px; font-family: var(--primary-font); font-size: var(--fs-body); font-weight: var(--fw-regular); line-height: 1.3; letter-spacing: 0.005em;}
-.psformBox2 select{appearance: none; background-image: url(../images/selectdownarrow.svg);background-repeat: no-repeat;background-position: 30%;}
+.psformBox2 select{appearance: none; background-image: url(../images/selectdownarrow.svg);background-repeat: no-repeat;background-position: 96%;}
 .psFormRow input::placeholder, .psFormRow textarea::placeholder {color: var(--primary-100);}
 .contactNumPrefix{background-color: var(--primary-900); border-radius: 4px; display: flex;}
 .contactNumPrefix .psContactSelect{max-width: 85px; width: 100%;}
@@ -92,9 +92,9 @@ textarea {resize: none;min-height: 120px;}
 .psProductBox{background-color: var(--gray-50);}
 .psProductContent{display: flex; row-gap: 60px; flex-direction: column;}
 .psProudctDetails {display: flex; justify-content: space-between;}
-.psProductImg{max-width: 500px; width: 100%; }
+.psProductImg{max-width: 500px; width: 100%; background-color: var(--white); border-radius: 16px;}
 .psProductInfo{max-width: 1140px; width: 100%; padding: 62px 80px; background-color: var(--white); display: flex; flex-direction: column; justify-content: center; border-radius: 16px;}
-.psProductInfo > h2{font-size: var(--fs-h1); color: var(--black); margin-bottom: 46px; letter-spacing: 0.005em;font-weight: var(--fw-semi-bold);}
+.psProductInfo > h2{font-size: var(--fs-h1); color: var(--black); margin-bottom: 46px; letter-spacing: 0.005em;font-weight: var(--fw-semi-bold); padding-right: 20px;}
 .psProductInfo > h2 > sup{font-weight: var(--fw-regular); font-size: var(--fs-h5);}
 .psProductInfo > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--black); margin-bottom: 40px;}
 .psProBtnBox {display: flex; gap: 8px;}
