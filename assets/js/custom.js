@@ -79,6 +79,13 @@ $(document).ready(function () {
       {
         breakpoint: 620, // for small mobile
         settings: {
+          slidesToShow: 2,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 575, // for small mobile
+        settings: {
           slidesToShow: 1,
           dots: true
         }

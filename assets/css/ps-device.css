@@ -376,7 +376,7 @@
     .psAboutKnowImage img{object-fit: cover; aspect-ratio: 16/9;}
 
     .psArticleSlideWrapper ul {padding-left: 25px;}
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 233px;}
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 138px;}
 
 
     /* .psArticleText {max-width: 95%;} */
