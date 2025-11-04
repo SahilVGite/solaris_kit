@@ -66,8 +66,9 @@
 .whoWeserveCards > * > .whoWeserveCardImg > img{height: 100%;object-fit: cover;border-radius: 16px;}
 .whoWeserveCards > * > .whoWeserveCardImg{max-width: calc(41.41% - 0.75em);}
 .whoWeserveCards > * > .whoWeserveCardTxt{max-width: calc(58.59% - 0.75em);}
-.whoWeserveCardTitle > *{font-size: var(--fs-h1);max-width: 657px;margin-bottom: 0.5em;font-weight: var(--fw-semi-bold);}
-.whoWeserveCardDesc{gap: 1.125em;}
+.whoWeserveCardTitle > *{font-size: var(--fs-h2);max-width: 657px;margin-bottom: 0.5em;font-weight: var(--fw-semi-bold);}
+.whoWeserveCardDesc{gap: 1.125em; align-items: start;}
+.whoWeserveCardDesc > span{min-width: 24px;}
 .whoWeserveCardDesc > p{font-size: var(--fs-body);}
 .whoWeserveCardBtns{gap: 0.5em;margin-top: 2.5em;flex-flow: row wrap;}
 /* Home Why Solaris Section */

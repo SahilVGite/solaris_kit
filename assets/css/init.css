@@ -177,5 +177,5 @@ body.menu-open{overflow:hidden;}
 /* Tabbing */
 .tab-content{display: none;}
 .tab-content.active{display: flex;}
-.tabBtns .tabBtn{font-size: var(--fs-body);color: var(--gray-800);text-transform: capitalize;padding: 0.625em;width: max-content;white-space: nowrap;cursor: pointer;}
+.tabBtns .tabBtn{font-size: var(--fs-body);color: var(--gray-600);text-transform: capitalize;padding: 0.625em;width: max-content;white-space: nowrap;cursor: pointer;}
 .tabBtns .tabBtn.active{font-size: var(--fs-sh);color: var(--black);font-weight: var(--fw-medium);border-bottom: 2px solid var(--black);}

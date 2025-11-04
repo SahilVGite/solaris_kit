@@ -241,6 +241,11 @@
 }
 
 @media only screen and (max-width:1100px){  
+    .whySolarisSec, .whatWeOfferSec {padding-bottom: 80px;}
+    .whySolarisSec .slick-dots{bottom: -35px;}
+    .whatWeOfferSec .slick-dots{bottom: -35px;}
+    .whySolarisCard, .whatWeOfferCards ul li{margin: 10px;}
+
     .psFooterInfo{justify-content: start;}
     .psFooterInfo{flex-flow: row wrap;gap: 2em;}
     .psFooterInfo > *{max-width: calc(33.333% - 1.4em);}
@@ -254,7 +259,6 @@
     .psProductContent {row-gap: 20px;}
     .psProductInfo {max-width: 68%;padding: 2em;}
     .psProductImg {max-width: 30%;}
-
 
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 148px;}
 }

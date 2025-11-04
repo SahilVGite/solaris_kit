@@ -1,25 +1,24 @@
 $(document).ready(function () {
-
   // Sticky Header
   $(window).on("scroll", function () {
     $("header").toggleClass("stickyHead", $(this).scrollTop() > 30);
   });
 
   // Hamburger menu toggle
-  $('.menuIcon').on('click', function () {
-    $('.menuCont').toggleClass('active');
-    $('body').toggleClass('menu-open');
+  $(".menuIcon").on("click", function () {
+    $(".menuCont").toggleClass("active");
+    $("body").toggleClass("menu-open");
 
-    if (!$('.menu-overlay').length) {
-      $('header').append('<div class="menu-overlay"></div>');
+    if (!$(".menu-overlay").length) {
+      $("header").append('<div class="menu-overlay"></div>');
     }
   });
 
   // Close menu
-  $(document).on('click', '.menuClose, .menu-overlay', function () {
-    $('.menuCont').removeClass('active');
-    $('body').removeClass('menu-open');
-    $('.menu-overlay').remove();
+  $(document).on("click", ".menuClose, .menu-overlay", function () {
+    $(".menuCont").removeClass("active");
+    $("body").removeClass("menu-open");
+    $(".menu-overlay").remove();
   });
 
   // AOS Initialize
@@ -28,9 +27,8 @@ $(document).ready(function () {
     mirror: false,
     offset: 50,
     duration: 800,
-    easing: 'ease-in-out',
+    easing: "ease-in-out",
   });
-
 
   // Accordians
   // Show the first accordion content by default
@@ -54,9 +52,8 @@ $(document).ready(function () {
     $(".psAccHeading").not(this).removeClass("psAccActive");
   });
 
-
   // Latest article slider knowledge
-  $('.psArticleSlider').slick({
+  $(".psArticleSlider").slick({
     slidesToShow: 3.5,
     slidesToScroll: 1,
     autoplay: true,
@@ -67,98 +64,183 @@ $(document).ready(function () {
       {
         breakpoint: 1024, // for tablet / medium screen
         settings: {
-          slidesToShow: 2.5
-        }
+          slidesToShow: 2.5,
+        },
       },
       {
         breakpoint: 768, // for mobile landscape
         settings: {
-          slidesToShow: 1.5
-        }
+          slidesToShow: 1.5,
+        },
       },
       {
         breakpoint: 620, // for small mobile
         settings: {
           slidesToShow: 2,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 575, // for small mobile
         settings: {
           slidesToShow: 1,
-          dots: true
-        }
-      }
-    ]
+          dots: true,
+        },
+      },
+    ],
   });
 
-
-  $('.psHomeProjectSlider').slick({
+  $(".psHomeProjectSlider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
-    autoplaySpeed: 300000,
+    autoplaySpeed: 3000,
 
     responsive: [
       {
         breakpoint: 1450, // for tablet / medium screen
         settings: {
-          slidesToShow: 3
-        }
-      },{
+          slidesToShow: 3,
+        },
+      },
+      {
         breakpoint: 1024, // for tablet / medium screen
         settings: {
-          slidesToShow: 3
-        }
+          slidesToShow: 3,
+        },
       },
       {
         breakpoint: 768, // for mobile landscape
         settings: {
-          slidesToShow: 2
-        }
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 620, // for small mobile
         settings: {
           slidesToShow: 2,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 575, // for small mobile
         settings: {
           slidesToShow: 1,
-          dots: true
-        }
-      }
-    ]
+          dots: true,
+        },
+      },
+    ],
   });
 
+  function handleSlider() {
+    const $slider = $(".whySolarisCards");
+
+    if ($(window).width() <= 1100) {
+      // Initialize if not already initialized
+      if (!$slider.hasClass("slick-initialized")) {
+        $slider.slick({
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: true,
+          arrows: false,
+          dots: true,
+          autoplaySpeed: 3000,
+
+          responsive: [
+            {
+              breakpoint: 620, // for small mobile
+              settings: {
+                slidesToShow: 1,
+                dots: true,
+              },
+            },
+          ],
+        });
+      }
+    } else {
+      // Destroy if initialized
+      if ($slider.hasClass("slick-initialized")) {
+        $slider.slick("unslick");
+      }
+    }
+  }
+
+  // Initial call
+  handleSlider();
+
+  // Throttled resize event
+  let resizeTimer;
+  $(window).resize(function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(handleSlider, 250);
+  });
+
+  function handleWhatWeOfferSlider() {
+    const $slider = $(".whatWeOfferCards ul");
+
+    if ($(window).width() <= 1100) {
+      // Initialize if not already initialized
+      if (!$slider.hasClass("slick-initialized")) {
+        $slider.slick({
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: true,
+          arrows: false,
+          dots: true,
+          autoplaySpeed: 3000,
+
+          responsive: [
+            {
+              breakpoint: 620, // for small mobile
+              settings: {
+                slidesToShow: 1,
+                dots: true,
+              },
+            },
+          ],
+        });
+      }
+    } else {
+      // Destroy if initialized
+      if ($slider.hasClass("slick-initialized")) {
+        $slider.slick("unslick");
+      }
+    }
+  }
+
+  // Initial call
+  handleWhatWeOfferSlider();
+
+  // Throttled resize event
+  let whatWeOfferResizeTimer;
+  $(window).resize(function () {
+    clearTimeout(whatWeOfferResizeTimer);
+    whatWeOfferResizeTimer = setTimeout(handleWhatWeOfferSlider, 250);
+  });
 
   // solution tabing
-  $('.psNavTabs li a').click(function (e) {
+  $(".psNavTabs li a").click(function (e) {
     e.preventDefault();
 
     // Update tab active class
-    $('.psNavTabs li').removeClass('psActive');
-    $(this).parent().addClass('psActive');
+    $(".psNavTabs li").removeClass("psActive");
+    $(this).parent().addClass("psActive");
 
     // Show the selected tab content
-    $('.psTabPane').removeClass('psActive');
-    var target = $(this).attr('href');
-    $(target).addClass('psActive');
+    $(".psTabPane").removeClass("psActive");
+    var target = $(this).attr("href");
+    $(target).addClass("psActive");
   });
 
   // Home Partners and Supporters Marquee
-  $('.hmPartnerSupportMarquee').slick({
+  $(".hmPartnerSupportMarquee").slick({
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
     speed: 3000,
-    cssEase: 'linear',
+    cssEase: "linear",
     infinite: true,
     arrows: false,
     dots: false,
@@ -167,28 +249,28 @@ $(document).ready(function () {
     responsive: [
       {
         breakpoint: 1400,
-        settings: { slidesToShow: 5 }
+        settings: { slidesToShow: 5 },
       },
       {
         breakpoint: 1300,
-        settings: { slidesToShow: 4 }
+        settings: { slidesToShow: 4 },
       },
       {
         breakpoint: 850,
-        settings: { slidesToShow: 4 }
+        settings: { slidesToShow: 4 },
       },
       {
         breakpoint: 611,
-        settings: { slidesToShow: 3 }
+        settings: { slidesToShow: 3 },
       },
       {
         breakpoint: 500,
-        settings: { slidesToShow: 2 }
-      }
-    ]
+        settings: { slidesToShow: 2 },
+      },
+    ],
   });
 
-  $('.feedBackSlider').slick({
+  $(".feedBackSlider").slick({
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
@@ -199,28 +281,28 @@ $(document).ready(function () {
       {
         breakpoint: 1537, // for tablet / medium screen
         settings: {
-          slidesToShow: 4
-        }
+          slidesToShow: 4,
+        },
       },
       {
         breakpoint: 1025, // for mobile landscape
         settings: {
-          slidesToShow: 3
-        }
+          slidesToShow: 3,
+        },
       },
       {
         breakpoint: 850, // for mobile landscape
         settings: {
-          slidesToShow: 2
-        }
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 500, // for small mobile
         settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   // $('.hmSec2').slick({
@@ -235,7 +317,7 @@ $(document).ready(function () {
   //   pauseOnHover: false,
   // });
 
-  $('.psProductImg').slick({
+  $(".psProductImg").slick({
     dots: true,
     arrows: false,
     infinite: true,
@@ -243,7 +325,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2000,
     fade: true,
-    cssEase: 'linear',
+    cssEase: "linear",
     pauseOnHover: false,
   });
 
@@ -258,7 +340,6 @@ $(document).ready(function () {
     // Reinitialize Slick slider inside the active tab
     // $("#" + tab_id).find(".psAllArtBox").slick("setPosition");
   });
-
 
   // Map hover and mobile click code
   function isMobile() {
@@ -299,33 +380,30 @@ $(document).ready(function () {
     }
   });
 
+  // Video play code
+  function setupVideoPlayer(videoSelector, playBtnSelector) {
+    $(videoSelector).each(function () {
+      const video = $(this).get(0);
+      const playBtn = $(this)
+        .closest(".psProDetailVidBox")
+        .find(playBtnSelector);
 
+      playBtn.on("click", function () {
+        video.setAttribute("controls", true);
+        video.play();
+        playBtn.fadeOut(300);
+      });
 
-
-// Video play code
-function setupVideoPlayer(videoSelector, playBtnSelector) {
-  $(videoSelector).each(function () {
-    const video = $(this).get(0);
-    const playBtn = $(this).closest(".psProDetailVidBox").find(playBtnSelector);
-
-    playBtn.on("click", function () {
-      video.setAttribute("controls", true);
-      video.play();
-      playBtn.fadeOut(300);
+      $(video).on("ended", function () {
+        video.removeAttribute("controls");
+        playBtn.fadeIn(300);
+      });
     });
+  }
 
-    $(video).on("ended", function () {
-      video.removeAttribute("controls");
-      playBtn.fadeIn(300);
-    });
-  });
-}
-
-// only pass the video and play Button selector
-setupVideoPlayer(".psProDetailVidBox video", ".psVideoPlayBtn");
-
+  // only pass the video and play Button selector
+  setupVideoPlayer(".psProDetailVidBox video", ".psVideoPlayBtn");
 });
-
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -334,11 +412,14 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
    ----------------------- */
 let cardsTL = null;
 function killTriggersForSelector(selector) {
-  ScrollTrigger.getAll().forEach(st => {
+  ScrollTrigger.getAll().forEach((st) => {
     try {
       if (!st.trigger) return;
       // st.trigger can be a DOM node — check containment or equality
-      if (st.trigger === document.querySelector(selector) || document.querySelector(selector)?.contains(st.trigger)) {
+      if (
+        st.trigger === document.querySelector(selector) ||
+        document.querySelector(selector)?.contains(st.trigger)
+      ) {
         st.kill();
       }
     } catch (e) {
@@ -370,8 +451,8 @@ function initCardsAnimation() {
       start: "top-=200px top",
       end: "+=1000",
       scrub: 1,
-      invalidateOnRefresh: true
-    }
+      invalidateOnRefresh: true,
+    },
   });
 
   cards.forEach((card, i) => {
@@ -384,25 +465,33 @@ function initCardsAnimation() {
         scale: 0.95,
         opacity: 0.4,
         zIndex: 8 - i,
-        ease: "power2.inOut"
+        ease: "power2.inOut",
       });
 
       // Animate the next card coming to front (in sync)
-      cardsTL.to(nextCard, {
-        yPercent: 0,
-        scale: 1,
-        opacity: 1,
-        zIndex: 9 - i,
-        ease: "power2.inOut"
-      }, "<"); // "<" keeps both animations in sync
+      cardsTL.to(
+        nextCard,
+        {
+          yPercent: 0,
+          scale: 1,
+          opacity: 1,
+          zIndex: 9 - i,
+          ease: "power2.inOut",
+        },
+        "<"
+      ); // "<" keeps both animations in sync
 
       // small settle for the previous card (optional)
-      cardsTL.to(card, {
-        yPercent: -15,
-        scale: 0.95,
-        opacity: 1,
-        ease: "power2.inOut"
-      }, "<");
+      cardsTL.to(
+        card,
+        {
+          yPercent: -15,
+          scale: 0.95,
+          opacity: 1,
+          ease: "power2.inOut",
+        },
+        "<"
+      );
     }
   });
 }
@@ -467,8 +556,8 @@ function initHmSec2Animation() {
         scrub: 1,
         pin: true,
         anticipatePin: 1,
-        invalidateOnRefresh: true
-      }
+        invalidateOnRefresh: true,
+      },
     });
   } else {
     // mobile: use slick
@@ -488,7 +577,7 @@ function initHmSec2Animation() {
       autoplay: true,
       autoplaySpeed: 8000,
       pauseOnHover: false,
-      adaptiveHeight: true
+      adaptiveHeight: true,
     });
 
     // ensure no leftover triggers for this section
