@@ -58,6 +58,8 @@
         /* ==== knowledge page ==== */
     .psArticleSlideWrapper{max-width: 1460px;}
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 200px;}
+
+    .psHomeProjectSlider > .slick-list.draggable .slick-track .slick-slide{ margin: 0px 12px;}
 }
 @media only screen and (max-width:1500px){
     .menuSec{max-width: 72%;}
@@ -83,7 +85,6 @@
     .main-wrapper{max-width: 1280px;}
     .psComPageInfo{max-width: 569px; width: 100%;}
 
-
     /* ==== footer ==== */
     .psFooter {background-repeat: no-repeat;background-position: -5%;background-size: 51%;}
     .psFooteBox1{max-width: 129px; width: 100%;}
@@ -92,7 +93,6 @@
     .psFooteBox1{max-width: 284px; width: 100%;}
     .psFooteBox1{max-width: 117px; width: 100%;}
     .psFooteBox5 {padding-left: 2em;}
-
 
     /* ==== Contact Page ==== */
     .psContactInfo{max-width: 565px;}
@@ -109,12 +109,10 @@
     .psFaqHeading p{max-width: 404px;}
     .psFaqBox{max-width: 640px;}
 
-
     /* ==== Product page ==== */
     .psProductContent{row-gap: 24px;}
     .psProductImg{max-width: 518px;}
-    .psProductInfo {max-width: 737px; padding: 0px 40px;}
-
+    .psProductInfo {max-width: 737px; padding: 2em 2.5em;}
 
     /* ==== Knowledge page ==== */
     .psAboutKnowImage {max-width: 598px;width: 100%;}
@@ -128,12 +126,15 @@
     /* ==== Solution page ==== */
     .psEnergySave{padding: 58px 0;}
     .psTabInfo {max-width: 662px;padding-left: 2.5em;}
-    .psHotWaterInfo {max-width: 497px;}
-    .psHotWaterImg {max-width: 598px;}
+    .psHotWaterInfo {max-width: 518px;}
+    .psHotWaterImg {max-width: 708px;}
     .psCostumSolText {max-width: 598px;}
 
+    .psCustomSolHead{max-width: 46%;}
 
     .psVmSmallBlock {max-width: 623px;}
+
+    .psCerifiedBox{padding: 24px 0;}
     
 }
 
@@ -212,6 +213,8 @@
     .psAboutStoryText{max-width: 540px;}
     .psGlobTextBLock {padding: 2.375em 1.88em;}
     .psPartnerInfoBlock {padding: 2.375em 1.88em;}
+
+    .psOurProHead {margin-bottom: 2.31em !important;}
 }
 
 @media only screen and (max-width:1200px){
@@ -249,10 +252,8 @@
     .psCostumSolText{padding-left: 3em;}
 
     .psProductContent {row-gap: 20px;}
-    .psProductInfo {max-width: 68%;padding: 0px 40px;}
+    .psProductInfo {max-width: 68%;padding: 2em;}
     .psProductImg {max-width: 30%;}
-    .psProductInfo > h2{margin-bottom: 20px;}
-    .psProductInfo > p{margin-bottom: 20px;}
 
 
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 148px;}
@@ -363,12 +364,12 @@
 @media only screen and (max-width:768px){
     .psComPageHead{padding: 6em 0;}
 
+    .psFooter {padding-top: 3.12em;}
     .psFootBox > h3{margin-bottom: 1em;}
     .psFootBox > ul > li:not(:last-child) {margin-bottom: 0.8em;}
 
     .psFooterInfo > *{max-width: calc(50% - 1.4em);}
     .psFooteBox5{padding-left:0;}
-
 
     /* ==== knowledge page ==== */
     .psAboutKnowledge{flex-flow: row wrap-reverse;}
@@ -376,9 +377,10 @@
     .psAboutKnowImage{max-width: 100%;}
     .psAboutKnowImage img{object-fit: cover; aspect-ratio: 16/9;}
 
+    .psAboutCompany {padding-bottom: 80px;}
+
     .psArticleSlideWrapper ul {padding-left: 25px;}
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 138px;}
-
 
     /* .psArticleText {max-width: 95%;} */
     .psArtSlideInfo:hover .psArticleText {bottom: 8px;opacity: 1;}
@@ -390,10 +392,11 @@
     .psVmSmallBlock {max-width: 46%;}
     .psVmHeading {padding: 50px 30px;}
 
-
     .psProductInfo > h2{padding-right: 0;}
 
+    .psCerifiedBox{padding: 50px 0;}
 
+    .psOurProHead {margin-bottom: 2.31em !important;}
 }
 
 @media only screen and (max-width: 720px){
@@ -415,6 +418,7 @@
     .psArticleSlideWrapper ul {padding-left: 0px;}
     .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
     .psArticleSlider > .slick-list.draggable .slick-track .slick-slide{margin: 0 16px;}
+    .psHomeProjectSlider > .slick-list.draggable .slick-track .slick-slide{margin: 0 16px;}
 
 
     .psAllArtBox {padding-bottom: 60px; justify-content: center;}
@@ -429,10 +433,12 @@
     .menuIcon,.menuClose{max-width:30px;}
     .psArticleSlider .slick-dots{bottom: -30px;}
     .psArticleSlideWrapper {max-width: 100%;padding: 0 15px;}
+}
 
-
-   
-
+@media only screen and (max-width:575px){
+    .psLateArticleBox{padding-bottom: 70px;}
+    .psHomeProjectSlider > .slick-list.draggable .slick-track .slick-slide {border-radius: 14px !important; overflow: hidden;}
+    .psHomeProjectSlider > .slick-dots {bottom: -35px; }
 }
 
 @media only screen and (max-width:550px){

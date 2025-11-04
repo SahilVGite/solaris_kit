@@ -9,7 +9,7 @@
 }
 @media (max-width:1366px){
 .wrapper1336{padding-inline: 30px;}
-.psProDetailVidBox{padding:10em 0;}
+/* .psProDetailVidBox{padding:10em 0;} */
 .psVideoPlayBtn{max-width:6%;}
 .ourStoryTxt{width: calc(50.833% - 2.5em);}
 }
@@ -68,7 +68,7 @@
 }
 @media (max-width:610px){
 .psProFeatureBlock li{max-width: 100%;}
-.psProDetailVidBox{padding:6em 0;}
+/* .psProDetailVidBox{padding:6em 0;} */
 .custom-card-txt{padding:3em 2em;}
 .hmVideoSecTxt{flex-direction: column;gap: 1em;}
 .hmVideoSecTxt > *,.whySolarisCard,.whatWeOfferCard{width: 100%;max-width: 100%;}

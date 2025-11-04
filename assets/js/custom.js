@@ -94,6 +94,49 @@ $(document).ready(function () {
   });
 
 
+  $('.psHomeProjectSlider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+    autoplaySpeed: 300000,
+
+    responsive: [
+      {
+        breakpoint: 1450, // for tablet / medium screen
+        settings: {
+          slidesToShow: 3
+        }
+      },{
+        breakpoint: 1024, // for tablet / medium screen
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768, // for mobile landscape
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 620, // for small mobile
+        settings: {
+          slidesToShow: 2,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 575, // for small mobile
+        settings: {
+          slidesToShow: 1,
+          dots: true
+        }
+      }
+    ]
+  });
+
+
   // solution tabing
   $('.psNavTabs li a').click(function (e) {
     e.preventDefault();

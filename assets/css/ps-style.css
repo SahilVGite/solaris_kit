@@ -94,9 +94,9 @@ textarea {resize: none;min-height: 120px;}
 .psProudctDetails {display: flex; justify-content: space-between;}
 .psProductImg{max-width: 500px; width: 100%; background-color: var(--white); border-radius: 16px;}
 .psProductInfo{max-width: 1140px; width: 100%; padding: 62px 80px; background-color: var(--white); display: flex; flex-direction: column; justify-content: center; border-radius: 16px;}
-.psProductInfo > h2{font-size: var(--fs-h1); color: var(--black); margin-bottom: 46px; letter-spacing: 0.005em;font-weight: var(--fw-semi-bold); padding-right: 20px;}
+.psProductInfo > h2{font-size: var(--fs-h1); color: var(--black); margin-bottom: 0.666em; letter-spacing: 0.005em;font-weight: var(--fw-semi-bold); padding-right: 20px;}
 .psProductInfo > h2 > sup{font-weight: var(--fw-regular); font-size: var(--fs-h5);}
-.psProductInfo > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--black); margin-bottom: 40px;}
+.psProductInfo > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--black); margin-bottom: 1.5em;}
 .psProBtnBox {display: flex; gap: 8px;}
 
 
@@ -111,12 +111,14 @@ textarea {resize: none;min-height: 120px;}
 .psAboutKnowText > p {color: var(--black); line-height: 1.3; letter-spacing: 0.005em;}
 
 .psKnowSecHeading{max-width: 720px; width: 100%;}
-.psKnowSecHeading > h2{font-size: var(--fs-h1); letter-spacing: 0.005em; color: var(--black); margin-bottom: 0.3333em;font-weight: var(--fw-semi-bold);}
-.psKnowSecHeading > p{font-size: var(--fs-body);color: var(--black);margin-bottom: 2.5em;}
+.psKnowSecHeading > h2{font-size: var(--fs-h1); letter-spacing: 0.005em; color: var(--gray-9    00); margin-bottom: 0.3333em;font-weight: var(--fw-semi-bold);}
+.psKnowSecHeading > p{font-size: var(--fs-body);color: var(--gray-700);}
 .psKnowSecHeading > p:not(:last-child){margin-bottom: 1.5em;}
+.psTab1HotWater > p:not(:last-child){margin-bottom: 0;}
 .psArticleSlideWrapper{max-width: 2134px; margin-left: auto;}
 .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 293px;}
 .psArticleSlider > .slick-list.draggable .slick-track .slick-slide{margin: 0 14px; border-radius: 14px; overflow: hidden;}
+.psHomeProjectSlider  > .slick-list.draggable .slick-track .slick-slide{margin-right: 24px; border-radius: 14px; overflow: hidden;}
 .psArticleSlider > .slick-slider button{top: -10%;}
 .psArticleText {max-width: calc(100% - 28px); width: 100%; background: rgba(0, 0, 0, 0.6); border-radius: 13.9062px; margin: auto; position: absolute; left: 0; right: 0; bottom: -50px; opacity: 0; padding: 14px; transition: all 0.5s ease; backdrop-filter: blur(10px);}
 .psArticleText > h3{font-size: var(--fs-sh); font-weight: var(--fw-semi-bold); color: var(--white); margin-bottom: 0.777em;}
@@ -143,7 +145,7 @@ textarea {resize: none;min-height: 120px;}
 
 /* ==== Solution page ==== */
 .psSolutionPageHead{background-image: url('../images/solutionheadbg.png'); padding: 10.06em 0 18.06em;}
-.psSolutionPageHead > div > .psComPageInfo{padding: 40px; background: rgba(0, 54, 52, 0.8);
+.psSolutionPageHead > div > .psComPageInfo{max-width: 660px; padding: 40px; padding-right: 20px; background: rgba(0, 54, 52, 0.8);
 backdrop-filter: blur(15px); border-radius: 16px;}
 .psSolutionPageHead > div > .psComPageInfo p:not(:last-child) {margin-bottom: 1em;}
 
@@ -175,19 +177,24 @@ backdrop-filter: blur(15px); border-radius: 16px;}
 .psHotWaterHeading > h2{margin-bottom: 16px; font-family: var(--fs-h1); letter-spacing: 0.005em; color: var(--white);}
 .psHotWaterHeading > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--white);}
 .psEnergyCapSec ul li:not(:last-child) {margin-bottom: 1.5em;}
-.psEnergyCapHead{display: flex; align-items: center; gap: 1em; margin-bottom: 1.5em;}
-.psEnergyCapHead h3{font-size: var(--fs-h5); color: var(--white);}
+.psEnergyCapHead{display: flex; align-items: center; gap: 1em; margin-bottom: 1.5em; color: var(--gray-700);}
+.psEnergyCapHead span svg{max-width: 24px;}
+.psEnergyCapHead h3{font-size: var(--fs-h5); color: var(--white); font-weight: var(--fw-semi-bold);}
+.psEnergyCapfoot > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--white);}
 .psEnergyCapSec ul li > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--white);}
-
+.psEnergyCapHead > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--white); font-weight: var(--fw-bold);}
 
 .psCustomSol{ padding: 7.625em 0;}
 .psCustomSolInfo{display: flex; align-items: center;}
-.psCustomSolHead{max-width: 50%; width: 100%; padding-right: 5em;  }
+.psCustomSolHead{max-width: 50%; width: 100%; padding-right: 5em; border-right: 1px solid var(--gray-200);}
 .psCustomHEading{max-width: 100%;}
+.psCustomSolImg {margin-top: 2em;}
 .psCustomHEading > h2{margin-bottom: 16px;}
-.psCostumSolText{max-width: 50%; width: 100%; padding: 13.5px 0; padding-left: 5em; border-left: 1px solid var(--gray-200);}
+.psCostumSolText{max-width: 50%; width: 100%; padding: 13.5px 0; padding-left: 5em; }
 .psCostumSolText .psEnergyCapHead h3 {font-size: var(--fs-h5);color: var(--gray-900);}
 .psCostumSolText .psEnergyCapSec ul li > p{color: var(--gray-700);}
+.psCustomSolPoint{padding: revert; list-style-type: disc;}
+.psCustomSolPoint li:not(:last-child){margin-bottom: 1em !important; color: var(--gray-700);}
 
 
 
@@ -239,7 +246,7 @@ backdrop-filter: blur(15px); border-radius: 16px;}
 .psglobTextInfo > h2{font-size: var(--fs-h3); margin-bottom: 0.812em;}
 .psglobTextInfo> p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-800);}
 .psglobTextInfo> p:not(:last-child) {margin-bottom: 1em}
-.psCertificateBlock {padding: 1.5em; border: 1px solid var(--gray-200); border-radius: 1em;}
+.psCerifiedBox{background-color: var(--primary-950);}
 .psCertLogoTxt{display:flex; gap: 1.5em 1em; align-items: center; margin-bottom: 1em;}
 .psCertType > h3{font-size: var(--fs-h5); margin-bottom: 0.8em;color: var(--white);font-weight: var(--fw-semi-bold);}
 .psCertType > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-800);color: var(--gray-100);}
@@ -253,3 +260,6 @@ backdrop-filter: blur(15px); border-radius: 16px;}
 .psAboutCompany{background-color: var(--gray-50);}
 .psOurProject{padding-bottom: 0;}
 .psOurProject .psArtSlideInfo{border-bottom-left-radius: 0 !important;border-bottom-right-radius: 0 !important;}
+
+
+.psOurProHead{margin-bottom: 4.31em !important;}
