@@ -1,4 +1,14 @@
 $(document).ready(function () {
+
+  // AOS Initialize
+  AOS.init({
+    once: true,
+    mirror: false,
+    offset: 50,
+    duration: 800,
+    easing: "ease-in-out",
+  });
+
   // Sticky Header
   $(window).on("scroll", function () {
     $("header").toggleClass("stickyHead", $(this).scrollTop() > 30);
@@ -21,14 +31,7 @@ $(document).ready(function () {
     $(".menu-overlay").remove();
   });
 
-  // AOS Initialize
-  AOS.init({
-    once: false,
-    mirror: false,
-    offset: 50,
-    duration: 800,
-    easing: "ease-in-out",
-  });
+  
 
   // Accordians
   // Show the first accordion content by default
@@ -95,7 +98,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 300000,
 
     responsive: [
       {
@@ -105,13 +108,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 1024, // for tablet / medium screen
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768, // for mobile landscape
+        breakpoint: 991, // for mobile landscape
         settings: {
           slidesToShow: 2,
         },

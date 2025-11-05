@@ -290,8 +290,11 @@
 
     .psCustomSol{padding: 3.15em 0;}
     .psCustomSolInfo{flex-flow: row wrap;}
-    .psCustomSolHead{max-width: 100%; padding-right: 0; padding-bottom: 2em;}
+    .psCustomSolHead{max-width: 100%; padding-right: 0; padding-bottom: 2em; border-right: 0;}
     .psCostumSolText{max-width: 100%; border-top: 1px solid var(--gray-200); border-left: 0; padding: 0; padding-top: 2em;}
+
+    li.psArtSlideInfo > .psOurProSlideBox > img{aspect-ratio: inherit;}
+    li.psArtSlideInfo:hover .psOurProSlideBox > img{aspect-ratio: inherit;}
 }
 
 @media only screen and (max-width:950px){
@@ -468,7 +471,7 @@
     .psSolutionPageHead > div > .psComPageInfo{padding: 20px;}
     .psEnergySave {padding: 50px 0;}
     .psEnergySaveHeading{margin-bottom: 1.5em;}
-    .psEnergyCapHead{margin-bottom: 0.5em;}
+    .psEnergyCapHead{margin-bottom: 1em;}
     .psCostumSolText{padding-top: 1.5em;}
 
     .psEnergyCapHead{gap: 0.5em;}
