@@ -43,20 +43,20 @@
 .hmPartnerSupportSec .psKnowSecHeading > p{margin-bottom: 2.5em;}
 .feedBackSec .psKnowSecHeading > *{color: var(--gray-50);}
 .feedBackSliderCard{padding: 1.5em;background:rgba(45,44,43,0.5);border-radius:16px;backdrop-filter: blur(10px);margin-inline: 1em;}
-.feedBackSliderCardTitle > *{font-size: var(--fs-h5);color: var(--gray-50);font-weight: var(--fw-semi-bold);}
+.feedBackSliderCardTitle > *{font-size: var(--fs-h5);color: var(--gray-50);font-weight: var(--fw-semi-bold); text-transform: capitalize;}
 .starRating{gap: 0.3125em;margin-top: 0.3125em;margin-bottom: 2.1563em;}
 .feedBackSliderCardComment > p{font-size: var(--fs-body);color: var(--white);}
 /* Home What We Offer Section */
-.whatWeOfferTitle > *{font-size: var(--fs-h2);color: var(--white);font-weight: var(--fw-semi-bold);}
+.whatWeOfferTitle > *{font-size: var(--fs-h2);color: var(--white);font-weight: var(--fw-semi-bold); text-transform: capitalize;}
 .whatWeOfferDesc > p{font-size: var(--fs-body);margin-top: 1em;margin-bottom: 2.5em;color: var(--white);max-width: 859px;}
 .whatWeOfferSec{background: rgba(0, 0, 0, 0.6) url(../images/whatWeOffer-bg.png) center / cover no-repeat;}
 .whatWeOfferCards > ul{gap: 1.5em;}
 .whatWeOfferCardText{bottom: 0.8694em;width: calc(100% - (0.8694em * 2));left: 50%;transform: translateX(-50%); background: rgba(0, 0, 0, 0.6);border-radius: 13.9062px;backdrop-filter: blur(10px);padding: 0.8691em;}
-.whatWeOfferCardText > *:first-child{font-size: var(--fs-sh);color: var(--white);font-weight: var(--fw-semi-bold);margin-bottom: 0.7727em;}
+.whatWeOfferCardText > *:first-child{font-size: var(--fs-sh);color: var(--white);font-weight: var(--fw-semi-bold);margin-bottom: 0.7727em; }
 .whatWeOfferCardText > p{font-size: var(--fs-body);color: var(--white);line-height: 1.1313;max-width: 85%;}
 /* Home Who We Serve Section */
 .whoWeserveSec{background-color: var(--gray-50);}
-.whoWeserveTitle > *{font-size: var(--fs-h1);font-weight: var(--fw-semi-bold);}
+.whoWeserveTitle > *{font-size: var(--fs-h1);font-weight: var(--fw-semi-bold); text-transform: capitalize;}
 .whoWeserveDesc > p{font-size: var(--fs-body);margin-top: 1.5em;}
 .whoWeserveCards{display: flex;flex-direction: column;gap: 1.5em;margin-top: 2.5em;}
 .whoWeserveCard{gap: 1.5em;flex-flow: row wrap;align-items: stretch;}
@@ -74,9 +74,9 @@
 /* Home Why Solaris Section */
 .whySolarisHead{background-color: var(--gray-50);border-radius: 16px;padding: 2.5em;}
 .whySolarisHead > *{max-width: 50%;width: 100%;}
-.whySolarisTitle{padding-right: 2.5em;margin-right: 2.5em;position: relative;}
+.whySolarisTitle{padding-right: 1.5em;margin-right: 2.5em;position: relative;}
 .whySolarisTitle::after{content: '';background-color: var(--gray-200);width: 1px;height: 100%;position: absolute;top: 0;right: 0;}
-.whySolarisTitle > *{font-size: var(--fs-h2);font-weight: var(--fw-semi-bold);}
+.whySolarisTitle > *{font-size: var(--fs-h2);font-weight: var(--fw-semi-bold); text-transform: capitalize;}
 .whySolarisDesc > p{font-size: var(--fs-body);color: var(--gray-800);line-height: 1.3;}
 .whySolarisDesc > p:not(:first-child){margin-top: 1em;}
 .whySolarisCardInfo{top: 0;left: 0;justify-content: space-between;width: 100%;height: 100%;color: var(--white);padding: 1em;}
@@ -125,7 +125,8 @@
 .hmSec2slide:nth-child(2){background-color: var(--primary-800);}
 .hmSec2slide:nth-child(3){background-color: var(--primary-600);}
 .hmSec2slide:nth-child(4){background-color: var(--primary-400);}
-.hmSec2TxtTitle > *{font-size: var(--fs-h1);font-weight: var(--fw-semi-bold);color: var(--white);line-height: 1.3;}
+.hmSec2TxtTitle > *{font-size: var(--fs-h1);font-weight: var(--fw-semi-bold);color: var(--white);line-height: 1.3; text-transform: capitalize;}
+.hmSec2TxtTitle > * > span{color: var(--primary-400);}
 .hmSec2TxtDesc > p{font-size: var(--fs-body);color: var(--gray-50);line-height: 1.3;margin-top: 1.5em;margin-bottom: 2.5em;}
 .hmSec2Specs > ul > li{gap: 1.125em;font-size: var(--fs-body);color: var(--white);}
 .hmSec2Specs > ul > li:not(:first-child){border-top: 1px solid var(--white);padding-top: 1em;margin-top: 1em;}

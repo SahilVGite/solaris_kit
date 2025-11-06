@@ -12,7 +12,7 @@
 /* ==== page common banner */
 .psComPageHead{background-repeat: no-repeat; background-size: cover; background-position: center; padding: 7.93em 0 6.687em;}
 .psComPageInfo{max-width: 717px; width: 100%;}
-.psComPageInfo h1{font-size: var(--fs-h1); color: var(--white); margin-bottom: 0.333em; letter-spacing: 0.005em;font-weight: var(--fw-semi-bold);line-height: 1.3;}
+.psComPageInfo h1{font-size: var(--fs-h1); color: var(--white); margin-bottom: 0.333em; letter-spacing: 0.005em;font-weight: var(--fw-semi-bold);line-height: 1.3; text-transform: capitalize;}
 .psComPageInfo p{color: var(--gray-100); line-height: 1.3; letter-spacing: 0.005em;}
 
 
@@ -111,7 +111,7 @@ textarea {resize: none;min-height: 120px;}
 .psAboutKnowText > p {color: var(--black); line-height: 1.3; letter-spacing: 0.005em;}
 
 .psKnowSecHeading{max-width: 720px; width: 100%;}
-.psKnowSecHeading > h2{font-size: var(--fs-h1); line-height: normal; letter-spacing: 0.005em; color: var(--black); margin-bottom: 0.3333em;font-weight: var(--fw-semi-bold);}
+.psKnowSecHeading > h2{font-size: var(--fs-h1); line-height: normal; letter-spacing: 0.005em; color: var(--black); margin-bottom: 0.3333em;font-weight: var(--fw-semi-bold); text-transform: capitalize;}
 .psKnowSecHeading > p{font-size: var(--fs-body);color: var(--black);}
 .psKnowSecHeading > p:not(:last-child){margin-bottom: 1.5em;}
 .psTab1HotWater > p:not(:last-child){margin-bottom: 0;}
@@ -126,7 +126,7 @@ textarea {resize: none;min-height: 120px;}
 .psArtSlideInfo:hover .psArticleText{bottom: 14px; opacity: 1;}
 .psHomeProjectSlider  > .slick-list.draggable .slick-track {display: flex; align-items: flex-end;}
 .psHomeProjectSlider  > .slick-list.draggable .slick-track .slick-active {margin-right: 24px;}
-li.psArtSlideInfo > .psOurProSlideBox > img{aspect-ratio: 1/1.05 ; object-fit: cover; transition: all 0.5s ease;}
+li.psArtSlideInfo > .psOurProSlideBox > img{aspect-ratio: 1/1.05 ; object-fit: fill; transition: all 0.5s ease;}
 li.psArtSlideInfo:hover .psOurProSlideBox > img{aspect-ratio: 1/1.25;}
 
 /* .psAllArtBox{background-color: var(--gray-50);} */
@@ -180,13 +180,17 @@ backdrop-filter: blur(15px); border-radius: 16px;}
 .psHotWaterHeading{margin-bottom: 2.5em;}
 .psHotWaterHeading > h2{margin-bottom: 16px; font-family: var(--fs-h1); letter-spacing: 0.005em; color: var(--white);}
 .psHotWaterHeading > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--white);}
-.psEnergyCapSec ul li:not(:last-child) {margin-bottom: 1.5em;}
+.psEnergyCapSec ul li:not(:last-child) {margin-bottom: 0;}
 .psEnergyCapHead{display: flex; align-items: center; gap: 1em; margin-bottom: 1.5em; color: var(--gray-600);}
 .psEnergyCapHead span svg{max-width: 24px;}
 .psEnergyCapHead h3{font-size: var(--fs-h5); color: var(--white); font-weight: var(--fw-semi-bold);}
 .psEnergyCapfoot > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--white);}
 .psEnergyCapSec ul li > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--white);}
 .psEnergyCapHead > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700); font-weight: var(--fw-regular);}
+.psEnergyTabSubHead{margin-bottom: 1.5em;}
+.psEnergyTabSubHead > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-700); font-weight: var(--fw-bold);
+color: var(--white);}
+
 
 .psCustomSol{ padding: 7.625em 0;}
 .psCustomSolInfo{display: flex; align-items: center;}

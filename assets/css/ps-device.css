@@ -456,7 +456,7 @@
         --fs-base: 16px; /* Base Value: 16 */
 
         --fs-h1: 28px;
-        --fs-h2: 24px;
+        --fs-h2: 18px;
         --fs-h3: 20px;
         --fs-h4: 16px;
         --fs-h5: 16px;
@@ -479,6 +479,9 @@
     .psProductImg > img {max-width: 95%;margin: auto;}
 
     .psNavTabs > li > a{font-size: 18px;}
+
+
+    .whoWeserveCardTxt {background-color: var(--white);padding: 1.5em;}
 }
 
 @media only screen and (max-width:500px){
@@ -513,6 +516,13 @@
 }
 
 @media only screen and (max-width:380px){
+    :root{
+        /* =====================
+        Typography
+        ===================== */
+        --fs-h2: 17px;
+    }
+
     .main-wrapper{padding: 0 10px;}
 
     /* .psformBox2 select{background-position: 36%;} */
