@@ -47,6 +47,11 @@
 .hmHeroSection .main-wrapper.d-flex{flex-direction: column-reverse;}
 .mapPoint,.mapPoint::before{font-size: 12px;}
 .mapData{left: auto;right: 0;}
+
+
+.whatWeOfferCardText, .whySolarisCardInfoTxt {bottom: 8px;opacity: 1;}
+.whySolarisCardInfoIcon{opacity: 1;}
+.whySolarisCard:hover .whySolarisCardInfoTxt, .whatWeOfferCard:hover .whatWeOfferCardText{bottom: 8px; opacity: 1;}
 }
 @media (max-width:768px){
 .caseStudyTxt{max-width: 100%;}

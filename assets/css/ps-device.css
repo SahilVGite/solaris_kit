@@ -1,6 +1,7 @@
 @media only screen and (max-width:1920px){
     .psArticleSlideWrapper {max-width: 1818px;margin-left: auto;}
-    .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 258px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 258px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 0px;}
 }
 
 @media only screen and (max-width:1880px){
@@ -28,13 +29,15 @@
 
     /* ==== knowledge page ==== */
     .psArticleSlideWrapper {max-width: 1652px; margin-left: auto;}
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 225px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 225px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
 }
 
 @media only screen and (max-width:1700px){
         /* ==== knowledge page ==== */
     .psArticleSlideWrapper {max-width: 1625px; margin-left: auto;}
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 225px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 225px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
 }
 @media only screen and (max-width:1600px){
     .main-wrapper{max-width: 1400px;}
@@ -51,13 +54,15 @@
 
     /* ==== knowledge page ==== */
     .psArticleSlideWrapper{max-width: 1500px;}
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 200px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 200px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
 }
 
 @media only screen and (max-width:1536px){
         /* ==== knowledge page ==== */
     .psArticleSlideWrapper{max-width: 1460px;}
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 200px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 200px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
 
     .psHomeProjectSlider > .slick-list.draggable .slick-track .slick-slide{ margin: 0px 12px;}
 }
@@ -118,7 +123,8 @@
     .psAboutKnowImage {max-width: 598px;width: 100%;}
     .psAboutKnowText {max-width: 565px;}
     .psArticleSlideWrapper{max-width: 95.5%;}
-    .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 198px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 198px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track{padding-left: 0px;}
     /* .psArticleText{max-width:309px;} */
     .psSolutionText{max-width: 817px;}
     .psAllArtText{max-width: 383px;}
@@ -154,7 +160,8 @@
     .psContactContainer{gap: 40px;}
 
     .psArticleSlideWrapper ul {padding-left: 68px;}
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 173px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 173px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
 
     .psSolutionText {max-width: 710px;}
     .psAboutKnowText{padding-right: 20px;}
@@ -226,7 +233,8 @@
     .psContactDetails{row-gap: 15px;}
 
 
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 160px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 160px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
     .psSolutionText {max-width: 650px; padding: 40px 40px 280px 40px;}
 
 
@@ -260,7 +268,8 @@
     .psProductInfo {max-width: 68%;padding: 2em;}
     .psProductImg {max-width: 30%;}
 
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 148px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 148px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
 }
 
 @media only screen and (max-width:1024px){
@@ -286,7 +295,8 @@
     .psSolutionPageHead{padding: 8.06em 0 14.06em;}
 
     .psArticleSlideWrapper ul {padding-left: 30px;}
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 177px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 177px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
 
     .psCustomSol{padding: 3.15em 0;}
     .psCustomSolInfo{flex-flow: row wrap;}
@@ -324,7 +334,8 @@
 }
 
 @media only screen and (max-width: 915px) {
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 162px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 162px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
 }
 
 @media only screen and (max-width:820px){
@@ -364,7 +375,8 @@
     .psFaqHeading p {max-width: 100%; padding-right: 0px;}
     .psFaqBox{max-width: 100%; margin-top: 2em;}
 
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 140px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 140px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
     .psAboutKnowText{padding-right: 20px; margin-left: 50px;}
 }
 
@@ -387,7 +399,8 @@
     .psAboutCompany {padding-bottom: 80px;}
 
     .psArticleSlideWrapper ul {padding-left: 25px;}
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 138px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 138px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
 
     /* .psArticleText {max-width: 95%;} */
     .psArtSlideInfo:hover .psArticleText {bottom: 8px;opacity: 1;}
@@ -408,12 +421,14 @@
 
 @media only screen and (max-width: 720px){
     .psArticleSlideWrapper ul {padding-left: 30px;}
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 215px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 215px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
 }
 
 @media only screen and (max-width: 700px){
     .psArticleSlideWrapper ul {padding-left: 30px;}
-    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 215px;}
+    /* .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 215px;} */
+    .psArticleSlider > .slick-list.draggable .slick-track {padding-left: 0px;}
 }
 
 

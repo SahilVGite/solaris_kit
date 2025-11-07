@@ -42,7 +42,7 @@
 .feedBackSec .psKnowSecHeading > p,.hmPartnerSupportSec .psKnowSecHeading > p{max-width: 475px;}
 .hmPartnerSupportSec .psKnowSecHeading > p{margin-bottom: 2.5em;}
 .feedBackSec .psKnowSecHeading > *{color: var(--gray-50);}
-.feedBackSliderCard{padding: 1.5em;background:rgba(45,44,43,0.5);border-radius:16px;backdrop-filter: blur(10px);margin-inline: 1em;}
+.feedBackSliderCard{padding: 1.5em;background:rgba(45,44,43,0.5);border-radius:16px;backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);margin-inline: 1em;}
 .feedBackSliderCardTitle > *{font-size: var(--fs-h5);color: var(--gray-50);font-weight: var(--fw-semi-bold); text-transform: capitalize;}
 .starRating{gap: 0.3125em;margin-top: 0.3125em;margin-bottom: 2.1563em;}
 .feedBackSliderCardComment > p{font-size: var(--fs-body);color: var(--white);}
@@ -51,7 +51,9 @@
 .whatWeOfferDesc > p{font-size: var(--fs-body);margin-top: 1em;margin-bottom: 2.5em;color: var(--white);max-width: 859px;}
 .whatWeOfferSec{background: rgba(0, 0, 0, 0.6) url(../images/whatWeOffer-bg.png) center / cover no-repeat;}
 .whatWeOfferCards > ul{gap: 1.5em;}
-.whatWeOfferCardText{bottom: 0.8694em;width: calc(100% - (0.8694em * 2));left: 50%;transform: translateX(-50%); background: rgba(0, 0, 0, 0.6);border-radius: 13.9062px;backdrop-filter: blur(10px);padding: 0.8691em;}
+.whatWeOfferCard{overflow: hidden;}
+.whatWeOfferCardText{bottom: -50px; max-width: calc(100% - (0.8694em * 2));width: 100%; margin: auto; left: 0; right: 0; background: rgba(0, 0, 0, 0.6);border-radius: 13.9062px;backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 0.8691em; opacity: 0;transition: all 0.5s ease;}
+.whatWeOfferCard:hover .whatWeOfferCardText{opacity: 1; bottom: 16px;}
 .whatWeOfferCardText > *:first-child{font-size: var(--fs-sh);color: var(--white);font-weight: var(--fw-semi-bold);margin-bottom: 0.7727em; }
 .whatWeOfferCardText > p{font-size: var(--fs-body);color: var(--white);line-height: 1.1313;max-width: 85%;}
 /* Home Who We Serve Section */
@@ -79,14 +81,18 @@
 .whySolarisTitle > *{font-size: var(--fs-h2);font-weight: var(--fw-semi-bold); text-transform: capitalize;}
 .whySolarisDesc > p{font-size: var(--fs-body);color: var(--gray-800);line-height: 1.3;}
 .whySolarisDesc > p:not(:first-child){margin-top: 1em;}
-.whySolarisCardInfo{top: 0;left: 0;justify-content: space-between;width: 100%;height: 100%;color: var(--white);padding: 1em;}
-.whySolarisCardInfoIcon{width: max-content;background:rgba(0,0,0,0.3);border-radius:16px;padding: 1em;backdrop-filter: blur(10px);}
+.whySolarisCardInfo{top: 0;left: 0;justify-content: space-between;width: 100%;height: 100%;color: var(--white);padding: 1em; }
+.whySolarisCardInfoIcon{width: max-content;background:rgba(0,0,0,0.3);border-radius:16px;padding: 1em;backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); opacity: 0;
+transition: all 0.5s ease;}
+.whySolarisCard:hover .whySolarisCardInfoIcon{opacity: 1; }
 .whySolarisCardInfoIcon img{max-width: 24px;width: 100%;}
 .whySolarisCardImg > img{border-radius: 16px;}
-.whySolarisCardInfoTxt{width: 100%;background:rgba(0,0,0,0.3);border-radius:16px;padding: 1em;backdrop-filter: blur(10px);}
+.whySolarisCardInfoTxt{max-width: calc(100% - (0.8694em * 2));width: 100%; margin: auto; background:rgba(0,0,0,0.3);border-radius:16px;padding: 1em;backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); position: absolute; left: 0;right: 0;bottom: -50px;opacity: 0;transition: all 0.5s ease;}
+.whySolarisCard:hover .whySolarisCardInfoTxt{bottom: 16px; opacity: 1;}
 .whySolarisCardInfoTitle > *{font-size: var(--fs-h5);font-weight: var(--fw-semi-bold);margin-bottom: 0.8em;}
 .whySolarisCardInfoDesc > p{font-size: var(--fs-body);color: var(--gray-50);}
 .whySolarisCards{gap: 1.125em;margin-top: 2.6875em;}
+.whySolarisCard {overflow: hidden;}
 /* Home Case Study Section */
 .caseStudyImg{top: 0;right: 0;width: 48%;height: 100%;}
 .caseStudyImg > img{height:100%;object-fit:cover;}

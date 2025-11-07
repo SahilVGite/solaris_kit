@@ -93,7 +93,9 @@ textarea {resize: none;min-height: 120px;}
 .psProductContent{display: flex; row-gap: 60px; flex-direction: column;}
 .psProudctDetails {display: flex; justify-content: space-between;}
 .psProductImg{max-width: 500px; width: 100%; background-color: var(--white); border-radius: 16px;}
-.psProductImg > .slick-list > .slick-track img{border-radius: 16px;}
+.psProductImg > .slick-list{height: 100%;}
+.psProductImg > .slick-list > .slick-track{height: 100%;}
+.psProductImg > .slick-list > .slick-track img{border-radius: 16px; object-fit: cover;}
 .psProductInfo{max-width: 1140px; width: 100%; padding: 62px 80px; background-color: var(--white); display: flex; flex-direction: column; justify-content: center; border-radius: 16px;}
 .psProductInfo > h2{font-size: var(--fs-h1); color: var(--black); margin-bottom: 0.666em; letter-spacing: 0.005em;font-weight: var(--fw-semi-bold); padding-right: 20px; text-transform: capitalize;}
 .psProductInfo > h2 > sup{font-weight: var(--fw-regular); font-size: var(--fs-h5);}
@@ -129,6 +131,7 @@ textarea {resize: none;min-height: 120px;}
 .psHomeProjectSlider  > .slick-list.draggable .slick-track .slick-active {margin-right: 24px;}
 li.psArtSlideInfo > .psOurProSlideBox > img{aspect-ratio: 1/1.05 ; object-fit: fill; transition: all 0.5s ease;}
 li.psArtSlideInfo:hover .psOurProSlideBox > img{aspect-ratio: 1/1.25;}
+.psArticleSlider .slick-dots {bottom: -36px;}
 
 /* .psAllArtBox{background-color: var(--gray-50);} */
 .psAllArtSearch{max-width: 511px; width: 100%; border-radius: 8px; background-color: var(--white); display: flex; padding: 0.75em 0.5em; gap: 1em;background-color: var(--gray-50);margin-bottom: 1.5em;}
@@ -275,4 +278,5 @@ color: var(--white);}
 .psOurProHead{margin-bottom: 4.31em !important;}
 
 
-
+.psDemo2{transition: all 0.5s ease;}
+.psDemo2:hover {width: 100%; flex: 5 1; position: relative; z-index: 99999999999;}

@@ -65,8 +65,8 @@
 }
 
 *{-webkit-tap-highlight-color:transparent;}
-html,body{scroll-behavior: smooth;}
-body{text-rendering:optimizeSpeed;line-height:1.5;font-family:var(--primary-font);font-weight:400; overflow-x: hidden;}
+html,body{scroll-behavior: smooth; overflow-x: hidden;}
+body{text-rendering:optimizeSpeed;line-height:1.5;font-family:var(--primary-font);font-weight:400; }
 body,h1,h2,h3,h4,h5,h6,p,ul,ul li{margin:0;padding:0;}
 *,*::before,*::after{outline:none;box-sizing:border-box;scroll-behavior:smooth;}
 *{margin:0;padding:0;}

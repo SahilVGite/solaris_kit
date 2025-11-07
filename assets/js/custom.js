@@ -61,7 +61,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
-    autoplaySpeed: 300000,
+    dots: true,
+    infinite: false,
+    autoplaySpeed: false,
 
     responsive: [
       {
@@ -73,7 +75,7 @@ $(document).ready(function () {
       {
         breakpoint: 768, // for mobile landscape
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 2,
         },
       },
       {
