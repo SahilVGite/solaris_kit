@@ -64,11 +64,13 @@
 .hmHeroImg > img{max-width:358px;}
 .hmHeroTxt{margin-top: var(--secGap);}
 .hmHeroSection .hmHeroTop{gap:2em;}
-.certifyLogo{max-width:45px;}
+.certifyLogo{max-width:100px;}
 .hmSec2Txt{max-width: 100%;}
 .hmSec2slideImg{position: relative;max-width: 100%;aspect-ratio: 16 / 9;}
 .hmSec2slide{min-height: auto;}
 .hmSec2slide{display: flex !important;flex-direction: column-reverse;}
+
+.hmSlideLogo{max-width: 115px; margin-top: 1.5em;}
 
 }
 @media (max-width:610px){
