@@ -27,6 +27,7 @@
 .custom-card-txt{padding: 5em;}
 .custom-card-txt > h4{color: var(--white);font-size: var(--fs-h4);padding-bottom: 0.5rem;margin-bottom: 1rem;border-bottom: 1px solid white;}
 .custom-card-txt > p{color: var(--gray-50);font-size: var(--fs-body);}
+.custom-card-txt > p:not(:last-child){margin-bottom: 1.5em;}
 
 
 /* Home Page */

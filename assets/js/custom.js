@@ -56,56 +56,44 @@ $(document).ready(function () {
   });
 
   // Latest article slider knowledge
-  const slider = $(".psArticleSlider");
+  // $(".psArticleSlider").slick({
+  //   slidesToShow: 3.5,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   arrows: false,
+  //   dots: true,
+  //   infinite: false,
+  //   autoplaySpeed: false,
 
-// Initialize Slick
-slider.slick({
-  slidesToShow: 3.5,
-  slidesToScroll: 1,
-  autoplay: true,
-  arrows: false,
-  dots: true,
-  infinite: false,
-  autoplaySpeed: 3000, // must be a number (milliseconds)
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: { slidesToShow: 2.5 },
-    },
-    {
-      breakpoint: 768,
-      settings: { slidesToShow: 2 },
-    },
-    {
-      breakpoint: 620,
-      settings: { slidesToShow: 2, dots: true },
-    },
-    {
-      breakpoint: 575,
-      settings: { slidesToShow: 1, dots: true },
-    },
-  ],
-});
-
-// Create an IntersectionObserver to detect when slider is in view
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // Slider is visible → start autoplay
-        slider.slick("slickPlay");
-      } else {
-        // Slider is NOT visible → pause autoplay
-        slider.slick("slickPause");
-      }
-    });
-  },
-  { threshold: 0.3 } // 0.3 = start autoplay when 30% of slider is visible
-);
-
-// Start observing the slider
-observer.observe(slider[0]);
-
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024, // for tablet / medium screen
+  //       settings: {
+  //         slidesToShow: 2.5,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 768, // for mobile landscape
+  //       settings: {
+  //         slidesToShow: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 620, // for small mobile
+  //       settings: {
+  //         slidesToShow: 2,
+  //         dots: true,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 575, // for small mobile
+  //       settings: {
+  //         slidesToShow: 1,
+  //         dots: true,
+  //       },
+  //     },
+  //   ],
+  // });
 
   $(".psHomeProjectSlider").slick({
     slidesToShow: 3,
@@ -626,4 +614,69 @@ $(window).on("resize", function () {
     initCardsAnimation();
     initHmSec2Animation();
   }, 300);
+});
+
+
+
+// Ensure this runs after DOM ready
+$(function () {
+  // Apply to each slider instance separately
+  $(".psArticleSlider").each(function (index, el) {
+    const $slider = $(el);
+
+    // Initialize slick for THIS instance
+    $slider.slick({
+      slidesToShow: 3.5,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: false,
+      dots: true,
+      infinite: false,
+      autoplaySpeed: 3000,
+      responsive: [
+        { breakpoint: 1024, settings: { slidesToShow: 2.5 } },
+        { breakpoint: 768, settings: { slidesToShow: 2 } },
+        { breakpoint: 620, settings: { slidesToShow: 2, dots: true } },
+        { breakpoint: 575, settings: { slidesToShow: 1, dots: true } },
+      ],
+    });
+
+    // Small safety: make sure slick initialized before observer uses methods
+    // (Slick attaches a class 'slick-initialized')
+    const waitForInit = () => {
+      if ($slider.hasClass("slick-initialized")) {
+        attachObserver();
+      } else {
+        // poll until initialized (very short interval)
+        setTimeout(waitForInit, 50);
+      }
+    };
+
+    function attachObserver() {
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            // entry.target is the DOM element for this slider
+            const $target = $(entry.target);
+
+            if (entry.isIntersecting) {
+              // only play this slider
+              $target.slick("slickPlay");
+            } else {
+              $target.slick("slickPause");
+            }
+          });
+        },
+        {
+          threshold: 0.25, // tweak: 0.25 => 25% visible before play
+          root: null,
+          rootMargin: "0px",
+        }
+      );
+
+      obs.observe(el);
+    }
+
+    waitForInit();
+  });
 });
