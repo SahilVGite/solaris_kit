@@ -417,6 +417,8 @@
     .psCerifiedBox{padding: 50px 0;}
 
     .psOurProHead {margin-bottom: 2.31em !important;}
+
+    .psCertLogoTxt{align-items: start;}
 }
 
 @media only screen and (max-width: 720px){
@@ -520,6 +522,8 @@
     .psProBtnBox{flex-wrap: wrap;}
     .psProEnqBtn {width: 100%; text-align: center;}
     .psProDiscBtn {width: 100%; text-align: center;}
+
+    .psCertLogoTxt{flex-wrap: wrap;}
 }
 
 @media only screen and (max-width:400px){

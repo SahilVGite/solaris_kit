@@ -43,6 +43,7 @@
 .hmPartnerSupportSec .psKnowSecHeading > p{margin-bottom: 2.5em;}
 .feedBackSec .psKnowSecHeading > *{color: var(--gray-50);}
 .feedBackSliderCard{padding: 1.5em;background:rgba(45,44,43,0.5);border-radius:16px;backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);margin-inline: 1em;}
+.feedBackSliderCard .psSubLogo{max-width: 93px; margin-bottom: 542;}
 .feedBackSliderCardTitle > *{font-size: var(--fs-h5);color: var(--gray-50);font-weight: var(--fw-semi-bold); text-transform: capitalize;}
 .starRating{gap: 0.3125em;margin-top: 0.3125em;margin-bottom: 2.1563em;}
 .feedBackSliderCardComment > p{font-size: var(--fs-body);color: var(--white);}
@@ -201,5 +202,5 @@ transition: all 0.5s ease;}
 .mapPoint::before{content: '';font-size: var(--fs-body);background-color: var(--primary-800);width: 1em;height: 1em;border-radius: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
 .mapPoint1{top:6%;right:26%;}
 .mapPoint2{top:24%;right:39%;}
-.mapPoint3{top:70%;left:35%;display: flex;}
+.mapPoint3{top:42%;left:40%;display: flex;}
 .mapPoint3 .mapData{top: 0;left: 100%;padding-left: 0.9375em;padding-top: 0;}

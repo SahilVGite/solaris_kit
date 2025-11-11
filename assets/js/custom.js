@@ -270,7 +270,7 @@ $(document).ready(function () {
   });
 
   $(".feedBackSlider").slick({
-    slidesToShow: 5,
+    slidesToShow: 3.5,
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
@@ -413,11 +413,24 @@ let cardsTL = null;
 function killTriggersForSelector(selector) {
   ScrollTrigger.getAll().forEach((st) => {
     try {
-      if (!st.trigger) return;
-      // st.trigger can be a DOM node — check containment or equality
+      const trigger = st.trigger;
+      if (!trigger) return;
+
+      // find the element for the selector once
+      const el = document.querySelector(selector);
+      if (!el) return;
+
+      // st.trigger may be an Element, or a selector string (or other types)
+      // Only call contains when trigger is a Node with nodeType defined to avoid
+      // passing undefined or non-Node values into contains (which may read nodeType).
+      const isSameElement = trigger === el;
+      const isNode = !!(trigger && typeof trigger === "object" && "nodeType" in trigger);
+      const isSelectorString = typeof trigger === "string";
+
       if (
-        st.trigger === document.querySelector(selector) ||
-        document.querySelector(selector)?.contains(st.trigger)
+        isSameElement ||
+        (isNode && el.contains(trigger)) ||
+        (isSelectorString && el === document.querySelector(trigger))
       ) {
         st.kill();
       }

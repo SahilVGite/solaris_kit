@@ -129,8 +129,8 @@ textarea {resize: none;min-height: 120px;}
 .psArtSlideInfo:hover .psArticleText{bottom: 14px; opacity: 1;}
 .psHomeProjectSlider  > .slick-list.draggable .slick-track {display: flex; align-items: flex-end;}
 .psHomeProjectSlider  > .slick-list.draggable .slick-track .slick-active {margin-right: 24px;}
-li.psArtSlideInfo > .psOurProSlideBox > img{aspect-ratio: 1/1.05 ; object-fit: fill; transition: all 0.5s ease;}
-li.psArtSlideInfo:hover .psOurProSlideBox > img{aspect-ratio: 1/1.25;}
+li.psArtSlideInfo > .psOurProSlideBox > img{ object-fit: fill; transition: all 0.5s ease;}
+/* li.psArtSlideInfo:hover .psOurProSlideBox > img{aspect-ratio: 1/1.25;} */
 .psArticleSlider .slick-dots {bottom: -36px;}
 
 /* .psAllArtBox{background-color: var(--gray-50);} */
@@ -263,6 +263,7 @@ color: var(--white);}
 .psCertLogoTxt{display:flex; gap: 1.5em 1em; align-items: center; margin-bottom: 1em;}
 .psCertType > h3{font-size: var(--fs-h5); margin-bottom: 0.8em;color: var(--white);font-weight: var(--fw-semi-bold);}
 .psCertType > p{font-size: var(--fs-body); line-height: 1.3; letter-spacing: 0.005em; color: var(--gray-800);color: var(--gray-100);}
+.psCertType > p:not(:last-child) {margin-bottom: 16px;}
 .psCertLogo{max-width: 98px;}
 .psPartnerInfoBlock{max-width: 50%; background-image: url('../images/globtransimg.png'); background-repeat: no-repeat; background-size: cover; background-position: center; padding: 2.06em 5.62em 4.81em;}
 .psPartnerInfoBlock > ul > li{background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px); padding: 2.5em; border-radius: 1em;} 
