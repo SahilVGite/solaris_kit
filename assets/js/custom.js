@@ -56,44 +56,56 @@ $(document).ready(function () {
   });
 
   // Latest article slider knowledge
-  $(".psArticleSlider").slick({
-    slidesToShow: 3.5,
-    slidesToScroll: 1,
-    autoplay: true,
-    arrows: false,
-    dots: true,
-    infinite: false,
-    autoplaySpeed: false,
+  const slider = $(".psArticleSlider");
 
-    responsive: [
-      {
-        breakpoint: 1024, // for tablet / medium screen
-        settings: {
-          slidesToShow: 2.5,
-        },
-      },
-      {
-        breakpoint: 768, // for mobile landscape
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 620, // for small mobile
-        settings: {
-          slidesToShow: 2,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 575, // for small mobile
-        settings: {
-          slidesToShow: 1,
-          dots: true,
-        },
-      },
-    ],
-  });
+// Initialize Slick
+slider.slick({
+  slidesToShow: 3.5,
+  slidesToScroll: 1,
+  autoplay: true,
+  arrows: false,
+  dots: true,
+  infinite: false,
+  autoplaySpeed: 3000, // must be a number (milliseconds)
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: { slidesToShow: 2.5 },
+    },
+    {
+      breakpoint: 768,
+      settings: { slidesToShow: 2 },
+    },
+    {
+      breakpoint: 620,
+      settings: { slidesToShow: 2, dots: true },
+    },
+    {
+      breakpoint: 575,
+      settings: { slidesToShow: 1, dots: true },
+    },
+  ],
+});
+
+// Create an IntersectionObserver to detect when slider is in view
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Slider is visible → start autoplay
+        slider.slick("slickPlay");
+      } else {
+        // Slider is NOT visible → pause autoplay
+        slider.slick("slickPause");
+      }
+    });
+  },
+  { threshold: 0.3 } // 0.3 = start autoplay when 30% of slider is visible
+);
+
+// Start observing the slider
+observer.observe(slider[0]);
+
 
   $(".psHomeProjectSlider").slick({
     slidesToShow: 3,
